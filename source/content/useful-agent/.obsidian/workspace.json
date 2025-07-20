@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "欢迎.md",
+                "file": "rag/📚RAG技术学习笔记.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "欢迎"
+              "title": "📚RAG技术学习笔记"
             }
           }
         ]
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "欢迎.md",
+                "file": "rag/📚RAG技术学习笔记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "欢迎 的反向链接列表"
+              "title": "📚RAG技术学习笔记 的反向链接列表"
             }
           },
           {
@@ -129,12 +129,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "欢迎.md",
+                "file": "rag/📚RAG技术学习笔记.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "欢迎 的出链列表"
+              "title": "📚RAG技术学习笔记 的出链列表"
             }
           },
           {
@@ -158,13 +158,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "欢迎.md",
+                "file": "rag/📚RAG技术学习笔记.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "欢迎 的大纲"
+              "title": "📚RAG技术学习笔记 的大纲"
             }
           }
         ]
@@ -181,25 +181,27 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "excalidraw-cn:Create New Excalidraw File": false
     }
   },
   "active": "bd276ccc8bfe5fa9",
   "lastOpenFiles": [
+    "rag/🏗️我的RAG系统重构笔记.md",
+    "rag/mermaid/RAG选型建议.md",
+    "rag/mermaid/文档解析的5种姿势.md",
+    "rag/mermaid/检索这些年的进化.md",
+    "rag/mermaid/技术演进时间线.md",
+    "rag/mermaid/记忆管理边界.md",
+    "rag/📚RAG技术学习笔记.md",
+    "欢迎.md",
     "agent/agent流程.md",
     "agent/agent架构副本.md",
     "agent/2.0框架图.md",
     "agent",
-    "rag/mermaid/记忆管理边界.md",
-    "rag/mermaid/检索这些年的进化.md",
-    "rag/mermaid/文档解析的5种姿势.md",
-    "rag/mermaid/技术演进时间线.md",
-    "rag/mermaid/RAG选型建议.md",
     "rag/mermaid/kag流程图.md",
-    "rag/📚RAG技术学习笔记.md",
-    "rag/🏗️我的RAG系统重构笔记.md",
     "rag/mermaid",
-    "rag",
-    "欢迎.md"
+    "rag"
   ]
 }
