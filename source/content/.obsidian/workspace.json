@@ -1,62 +1,70 @@
 {
   "main": {
-    "id": "2e9225e34664efd4",
+    "id": "1b4e4369ca330b31",
     "type": "split",
     "children": [
       {
-        "id": "0571c1c94d829fac",
+        "id": "37fd7caa3063f10f",
         "type": "tabs",
         "children": [
           {
-            "id": "47ef711f7e8c1d64",
+            "id": "bd276ccc8bfe5fa9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "rag/📚RAG技术学习笔记.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "2d8837e6263008e3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "category-folder/Some note.md",
-                "mode": "source",
-                "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "📚RAG技术学习笔记"
             }
           }
-        ],
-        "currentTab": 1
+        ]
+      },
+      {
+        "id": "a141c7b25ed8da61",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "deb30e34d3e5cff7",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "关系图谱"
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "1243752a4df710bb",
+    "id": "cdbbe6f0f4d2cd89",
     "type": "split",
     "children": [
       {
-        "id": "8a4c81639dc8783e",
+        "id": "3731b564f44b0a5a",
         "type": "tabs",
         "children": [
           {
-            "id": "b77831b90dd9f87b",
+            "id": "8a4a80da53789a38",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
-              }
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
             }
           },
           {
-            "id": "0829eb50dbb8a2b3",
+            "id": "5ec4aadba2bff8ed",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -67,15 +75,19 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
             }
           },
           {
-            "id": "436d75c49c949463",
+            "id": "da0cf640abd40ae8",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
             }
           }
         ]
@@ -85,20 +97,19 @@
     "width": 300
   },
   "right": {
-    "id": "ba1ec06a672fb227",
+    "id": "826ae5105491db05",
     "type": "split",
     "children": [
       {
-        "id": "6cea78168fbf9ccd",
+        "id": "5811d51109dabfee",
         "type": "tabs",
         "children": [
           {
-            "id": "2aa5a4c073617928",
+            "id": "8cfe6460bb452461",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "category-folder/Some note.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,40 +117,52 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
             }
           },
           {
-            "id": "5acb7020384970a8",
+            "id": "bfcfe32b3f89eafd",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "category-folder/Some note.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "出链"
             }
           },
           {
-            "id": "f850ba7e9e699bea",
+            "id": "bb995cf842f5d0ba",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
-              }
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
             }
           },
           {
-            "id": "2d9129bb8dcf7983",
+            "id": "234dd32feee86b68",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "category-folder/Some note.md"
-              }
+                "file": "Excalidraw/Drawing 2025-07-20 12.22.07.excalidraw.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Drawing 2025-07-20 12.22.07.excalidraw 的大纲"
             }
           }
         ]
@@ -151,20 +174,32 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-git:Open Git source control": false,
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
     }
   },
-  "active": "2d8837e6263008e3",
+  "active": "8a4a80da53789a38",
   "lastOpenFiles": [
-    "category-folder/index.md",
-    "category-folder/Some note.md",
-    "index.md",
-    "category-folder"
+    "rag/📚RAG技术学习笔记.md",
+    "Excalidraw/Drawing 2025-07-20 12.22.07.excalidraw.md",
+    "Excalidraw",
+    "rag/🏗️我的RAG系统重构笔记.md",
+    "rag/mermaid/RAG选型建议.md",
+    "rag/mermaid/文档解析的5种姿势.md",
+    "rag/mermaid/检索这些年的进化.md",
+    "rag/mermaid/技术演进时间线.md",
+    "rag/mermaid/记忆管理边界.md",
+    "欢迎.md",
+    "agent/agent流程.md",
+    "agent/agent架构副本.md",
+    "agent/2.0框架图.md",
+    "agent",
+    "rag/mermaid/kag流程图.md",
+    "rag/mermaid",
+    "rag"
   ]
 }
