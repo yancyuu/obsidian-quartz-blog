@@ -34,9 +34,8 @@ export const defaultContentPageLayout: PageLayout = {
       	const name = node.displayName.toLowerCase();
 
       	// 🚫 隐藏这些内容
-      	if (name === 'assets' ||
+      	if (name === 'excalid' ||
           name === 'images' ||
-          name === '_assets' ||
           name.endsWith('.png') ||
           name.endsWith('.jpg') ||
           name.endsWith('.svg')) {
@@ -69,9 +68,8 @@ export const defaultListPageLayout: PageLayout = {
       	const name = node.displayName.toLowerCase();
       
       	// 🚫 隐藏这些内容
-      	if (name === 'assets' || 
+      	if (name === 'excalid' || 
           name === 'images' || 
-          name === '_assets' ||
           name.endsWith('.png') || 
           name.endsWith('.jpg') || 
           name.endsWith('.svg')) {

@@ -485,6 +485,8 @@ async function fillDocument(data: { [key: FullSlug]: ContentDetails }) {
                     slugLower.endsWith('.jpg') ||
                     slugLower.endsWith('.svg') ||
                     slugLower.endsWith('.pdf') ||
+		    slugLower.startsWith('excalid/') ||
+		    slugLower.startsWith('/excalid/') ||
                     slugLower.startsWith('images/') ||
                     slugLower.includes('/images/');
 
