@@ -454,7 +454,19 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
       ...getByField("content"),
       ...getByField("tags"),
     ])
-    const finalResults = [...allIds].map((id) => formatForDisplay(currentSearchTerm, id))
+    // const finalResults = [...allIds].map((id) => formatForDisplay(currentSearchTerm, id))
+    
+    const finalResults = [...allIds]
+    .map((id) => formatForDisplay(currentSearchTerm, id))
+    .filter(result => {
+      const slugLower = result.slug.toLowerCase();
+      const pathParts = slugLower.split(/[/\\]/);
+      return !(slugLower.endsWith('.png') ||
+               slugLower.endsWith('.jpg') ||
+               slugLower.endsWith('.svg') ||
+               pathParts.includes('excalid') ||
+               pathParts.includes('images'));
+    });
     await displayResults(finalResults)
   }
 
