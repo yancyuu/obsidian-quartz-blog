@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RAG/📚RAG技术学习笔记.md",
+                "file": "📚RAG/📚RAG技术学习笔记.md",
                 "mode": "source",
                 "source": false
               },
@@ -27,7 +27,7 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "RAG/excalid/文档解析的5种姿势.excalidraw.md"
+                "file": "📚RAG/excalid/文档解析的5种姿势.excalidraw.md"
               },
               "icon": "excalidraw-icon",
               "title": "文档解析的5种姿势.excalidraw"
@@ -39,7 +39,7 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "RAG/excalid/记忆管理边界.excalidraw.md"
+                "file": "📚RAG/excalid/记忆管理边界.excalidraw.md"
               },
               "icon": "excalidraw-icon",
               "title": "记忆管理边界.excalidraw"
@@ -51,7 +51,7 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "RAG/images/记忆管理边界.excalidraw.svg"
+                "file": "📚RAG/images/记忆管理边界.excalidraw.svg"
               },
               "icon": "lucide-image",
               "title": "记忆管理边界.excalidraw"
@@ -63,7 +63,7 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "RAG/excalid/技术演进时间线.excalidraw.md"
+                "file": "📚RAG/excalid/技术演进时间线.excalidraw.md"
               },
               "icon": "excalidraw-icon",
               "title": "技术演进时间线.excalidraw"
@@ -75,7 +75,7 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "RAG/excalid/技术演进时间线.excalidraw.md"
+                "file": "📚RAG/excalid/技术演进时间线.excalidraw.md"
               },
               "icon": "excalidraw-icon",
               "title": "技术演进时间线.excalidraw"
@@ -87,7 +87,7 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "RAG/excalid/记忆管理边界.excalidraw.md"
+                "file": "📚RAG/excalid/记忆管理边界.excalidraw.md"
               },
               "icon": "excalidraw-icon",
               "title": "记忆管理边界.excalidraw"
@@ -99,7 +99,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "基础知识/python/属性property的优缺点.md",
+                "file": "💻基础知识/python/属性property的优缺点.md",
                 "mode": "source",
                 "source": false
               },
@@ -113,7 +113,7 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "基础知识/images/image1.jpeg"
+                "file": "💻基础知识/images/image1.jpeg"
               },
               "icon": "lucide-image",
               "title": "image1"
@@ -125,7 +125,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Agent/Agent落地时/🍖从一个Agent到十个Agent：构建可演化的智能体系统架构.md",
+                "file": "🤖Agent/Agent落地时/🍖从一个Agent到十个Agent：构建可演化的智能体系统架构.md",
                 "mode": "source",
                 "source": false
               },
@@ -139,7 +139,7 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "基础知识/images/image1 1.jpeg"
+                "file": "💻基础知识/images/image1 1.jpeg"
               },
               "icon": "lucide-image",
               "title": "image1 1"
@@ -296,51 +296,51 @@
   "active": "9a462a30c9d90090",
   "lastOpenFiles": [
     "Agent/Agent落地时/💬大模型量化.md",
-    "Agent/Agent落地时/🍖从一个Agent到十个Agent：构建可演化的智能体系统架构.md",
-    "Agent/Agent落地时/💆Copilot和Agent的区别.md",
-    "MCP&A2A/🚧 MCP 与 A2A：下一代智能体通信协议，真的适合企业吗？.md",
-    "DeepSeek/DeepSeek通用提示词工程.md",
-    "MCP&A2A",
-    "DeepSeek/DeepSeek架构原理.md",
-    "DeepSeek/DeepSeek使用说明.md",
-    "DeepSeek",
-    "个人笔记/voc舆情分析系统.md",
+    "🤖Agent/Agent落地时/🍖从一个Agent到十个Agent：构建可演化的智能体系统架构.md",
+    "🤖Agent/Agent落地时/💆Copilot和Agent的区别.md",
+    "📓MCP&A2A/🚧 MCP 与 A2A：下一代智能体通信协议，真的适合企业吗？.md",
+    "🙇DeepSeek/DeepSeek通用提示词工程.md",
+    "📓MCP&A2A",
+    "🙇DeepSeek/DeepSeek架构原理.md",
+    "🙇DeepSeek/DeepSeek使用说明.md",
+    "🙇DeepSeek",
+    "🙍个人笔记/voc舆情分析系统.md",
     "index.md",
     "Agent/😻AIGC行业知识库(干货).md",
     "Agent/😻行业知识库(干货).md",
-    "GPT/Openai主要用到的模型及其用途👇.md",
-    "GPT/一站式解析ChatGPT入门相关知识.md",
-    "Agent/Agent入门时/Langchain里的多轮对话.md",
-    "Agent/Agent入门时/结合notebook的agent.md",
-    "Agent/Agent入门时/个人电脑上部署的 ChatGLM-6B 体验.md",
-    "Agent/提示词/📰新闻资讯.md",
-    "Agent/提示词/🎨AI绘画-风景.md",
-    "Agent/提示词/🎷越狱.md",
-    "Agent/提示词/😁文章模仿大师.md",
-    "Agent/提示词/🛕剧评提示词模板.md",
-    "Agent/提示词/💹公众号优化.md",
-    "Agent/提示词/👍常用提示词.md",
-    "个人笔记/体验了数字游民生活俩月后，我决定放弃了.md",
-    "Agent/images/Pasted image 20250720173359.png",
-    "Agent/images/Pasted image 20250720173342.png",
-    "基础知识/python/Python基础.md",
-    "基础知识/python/python核心编程.md",
-    "Agent/excalid",
-    "Agent/images/附件.png",
-    "RAG/images/记忆管理边界.excalidraw.svg",
-    "Agent/images",
-    "Agent/Agent落地时",
-    "GPT",
-    "基础知识/images/Untitled 19.png",
-    "基础知识/images/Untitled 7.jpeg",
-    "基础知识/images/image66.jpeg",
-    "基础知识/images/image49.jpeg",
-    "基础知识/images/image23 1.jpeg",
-    "基础知识/images/image19 1.jpeg",
-    "个人笔记",
-    "基础知识/运维",
-    "基础知识/mysql",
-    "基础知识/redis",
+    "🗨️GPT/Openai主要用到的模型及其用途👇.md",
+    "🗨️GPT/一站式解析ChatGPT入门相关知识.md",
+    "🤖Agent/Agent入门时/Langchain里的多轮对话.md",
+    "🤖Agent/Agent入门时/结合notebook的agent.md",
+    "🤖Agent/Agent入门时/个人电脑上部署的 ChatGLM-6B 体验.md",
+    "🤖Agent/提示词/📰新闻资讯.md",
+    "🤖Agent/提示词/🎨AI绘画-风景.md",
+    "🤖Agent/提示词/🎷越狱.md",
+    "🤖Agent/提示词/😁文章模仿大师.md",
+    "🤖Agent/提示词/🛕剧评提示词模板.md",
+    "🤖Agent/提示词/💹公众号优化.md",
+    "🤖Agent/提示词/👍常用提示词.md",
+    "🙍个人笔记/体验了数字游民生活俩月后，我决定放弃了.md",
+    "🤖Agent/images/Pasted image 20250720173359.png",
+    "🤖Agent/images/Pasted image 20250720173342.png",
+    "💻基础知识/python/Python基础.md",
+    "💻基础知识/python/python核心编程.md",
+    "🤖Agent/excalid",
+    "🤖Agent/images/附件.png",
+    "📚RAG/images/记忆管理边界.excalidraw.svg",
+    "🤖Agent/images",
+    "🤖Agent/Agent落地时",
+    "🗨️GPT",
+    "💻基础知识/images/Untitled 19.png",
+    "💻基础知识/images/Untitled 7.jpeg",
+    "💻基础知识/images/image66.jpeg",
+    "💻基础知识/images/image49.jpeg",
+    "💻基础知识/images/image23 1.jpeg",
+    "💻基础知识/images/image19 1.jpeg",
+    "🙍个人笔记",
+    "💻基础知识/运维",
+    "💻基础知识/mysql",
+    "💻基础知识/redis",
     "agent/未命名.canvas"
   ]
 }
