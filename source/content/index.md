@@ -15,10 +15,7 @@ cssclasses:
 [[📚RAG技术学习笔记]]
 [[🏗️我的RAG系统重构笔记]]
 [[🧘以人为中心的Agent]]
-
-## 😍 一个知识齐全的知识库：
-[AGI掘金知识库](https://agijuejin.feishu.cn/wiki/UvJPwhfkiitMzhkhEfycUnS9nAm)
-
+[[🍖从一个Agent到十个Agent：构建可演化的智能体系统架构]]
 ## 👋 关于我在搞什么
 
 最近主要在玩AI Agent开发，经常被各种框架搞得头大，所以决定把学到的东西都记下来，免得过两天又忘了。
