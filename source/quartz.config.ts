@@ -26,9 +26,8 @@ const config: QuartzConfig = {
  	    //"assets/index.md",            // 隐藏资源文件夹首页
   	    //"assets/*/index.md",          // 隐藏所有资源子文件夹首页
 	    //"assets/excalid/**",
-  
-	    // 🎯 只隐藏markdown文件
-  	    "**/private/**",            // 私人标记文件
+	    "_*/**",
+  	   
     ],
     defaultDateType: "created",
     theme: {
