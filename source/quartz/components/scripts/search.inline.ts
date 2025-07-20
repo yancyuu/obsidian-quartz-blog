@@ -482,8 +482,6 @@ async function fillDocument(data: { [key: FullSlug]: ContentDetails }) {
   // 🎯 添加这个过滤逻辑
   const slugLower = slug.toLowerCase();
   const pathParts = slugLower.split(/[/\\]/); // 同时处理 / 和 \
-  console.log('slugLower:', slugLower);
-  console.log('pathParts:', pathParts);
   const shouldSkip = slugLower.endsWith('.png') ||
                     slugLower.endsWith('.jpg') ||
                     slugLower.endsWith('.svg') ||
