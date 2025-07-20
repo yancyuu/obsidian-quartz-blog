@@ -1,21 +1,6 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 
-// 在 quartz.layout.ts 中
-Component.Explorer({
-  filterFn: (node) => {
-    const name = node.displayName.toLowerCase();
-    
-    // 隐藏assets文件夹和图片文件
-    if (name === '_assets' || name === 'images' || 
-        name.endsWith('.png') || name.endsWith('.jpg') || 
-        name.endsWith('.svg')) {
-      return false;
-    }
-    
-    return true;
-  }
-})
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
@@ -43,7 +28,25 @@ export const defaultContentPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
-    Component.DesktopOnly(Component.Explorer()),
+    Component.DesktopOnly(
+  	Component.Explorer({
+    	filterFn: (node) => {
+      	const name = node.displayName.toLowerCase();
+
+      	// 🚫 隐藏这些内容
+      	if (name === 'assets' ||
+          name === 'images' ||
+          name === '_assets' ||
+          name.endsWith('.png') ||
+          name.endsWith('.jpg') ||
+          name.endsWith('.svg')) {
+        return false;
+      }
+
+      return true;
+    }
+  })
+),
   ],
   right: [
     Component.Graph(),
@@ -60,7 +63,25 @@ export const defaultListPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
-    Component.DesktopOnly(Component.Explorer()),
+    Component.DesktopOnly(
+  	Component.Explorer({
+    	filterFn: (node) => {
+      	const name = node.displayName.toLowerCase();
+      
+      	// 🚫 隐藏这些内容
+      	if (name === 'assets' || 
+          name === 'images' || 
+          name === '_assets' ||
+          name.endsWith('.png') || 
+          name.endsWith('.jpg') || 
+          name.endsWith('.svg')) {
+        return false;
+      }
+      
+      return true;
+    }
+  })
+),
   ],
   right: [],
 }
