@@ -27,7 +27,7 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "_assets/excalid/文档解析的5种姿势.excalidraw.md"
+                "file": "rag/excalid/文档解析的5种姿势.excalidraw.md"
               },
               "icon": "excalidraw-icon",
               "title": "文档解析的5种姿势.excalidraw"
@@ -39,7 +39,7 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "_assets/excalid/记忆管理边界.excalidraw.md"
+                "file": "rag/excalid/记忆管理边界.excalidraw.md"
               },
               "icon": "excalidraw-icon",
               "title": "记忆管理边界.excalidraw"
@@ -51,7 +51,7 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "_assets/images/记忆管理边界.excalidraw.svg"
+                "file": "rag/images/记忆管理边界.excalidraw.svg"
               },
               "icon": "lucide-image",
               "title": "记忆管理边界.excalidraw"
@@ -63,7 +63,7 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "_assets/excalid/技术演进时间线.excalidraw.md"
+                "file": "rag/excalid/技术演进时间线.excalidraw.md"
               },
               "icon": "excalidraw-icon",
               "title": "技术演进时间线.excalidraw"
@@ -75,7 +75,7 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "_assets/excalid/技术演进时间线.excalidraw.md"
+                "file": "rag/excalid/技术演进时间线.excalidraw.md"
               },
               "icon": "excalidraw-icon",
               "title": "技术演进时间线.excalidraw"
@@ -87,7 +87,7 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "_assets/excalid/记忆管理边界.excalidraw.md"
+                "file": "rag/excalid/记忆管理边界.excalidraw.md"
               },
               "icon": "excalidraw-icon",
               "title": "记忆管理边界.excalidraw"
@@ -123,14 +123,12 @@
             "id": "9a462a30c9d90090",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "rag/常用reranker模型.md",
-                "mode": "source",
-                "source": false
+                "file": "agent/excalid/agent流程.md"
               },
-              "icon": "lucide-file",
-              "title": "常用reranker模型"
+              "icon": "excalidraw-icon",
+              "title": "agent流程"
             }
           },
           {
@@ -147,27 +145,6 @@
           }
         ],
         "currentTab": 9
-      },
-      {
-        "id": "0a2776e219b3551b",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "ad08dc482e43ffbd",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "rag/常用reranker模型.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "常用reranker模型 的大纲"
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -314,8 +291,20 @@
       "excalidraw-cn:Create New Excalidraw File": false
     }
   },
-  "active": "9a462a30c9d90090",
+  "active": "8a4a80da53789a38",
   "lastOpenFiles": [
+    "agent/excalid/agent架构副本.md",
+    "agent/excalid/agent流程.md",
+    "rag/excalid/文档解析的5种姿势.excalidraw.md",
+    "rag/excalid/检索这些年的进化.excalidraw.md",
+    "rag/excalid/技术演进时间线.excalidraw.md",
+    "rag/excalid/记忆管理边界.excalidraw.md",
+    "agent/excalid/2.0框架图.md",
+    "agent/excalid",
+    "agent/images/附件.png",
+    "rag/images/记忆管理边界.excalidraw.svg",
+    "rag/常用reranker模型.md",
+    "agent/images",
     "rag/构建知识图谱.md",
     "agent/agent入门时/LangChain里的Agent.md",
     "agent/agent入门时/Llama Index连接外部资料库.md",
@@ -323,7 +312,6 @@
     "agent/GPT/Openai主要用到的模型及其用途👇.md",
     "个人笔记/voc舆情分析系统.md",
     "agent/GPT/一站式解析ChatGPT入门相关知识 d2ee6ecfe50e40ab95d24361b7db1ff6.md",
-    "agent/未命名",
     "agent/agent入门时/流式生成与模型微调.md",
     "agent/agent入门时/结合notebook的agent.md",
     "agent/agent落地时/大模型量化.md",
@@ -341,27 +329,16 @@
     "基础知识/images/image19 1.jpeg",
     "基础知识/images/image9.jpeg",
     "基础知识/images/image2.jpeg",
-    "基础知识/images/image1 1.jpeg",
-    "基础知识/images/image1.jpeg",
     "个人笔记/体验了数字游民生活俩月后，我决定放弃了 3f04ab836ddc42548bc3f4d1b337c710.md",
     "基础知识/计算机原理/hash冲突.md",
     "个人笔记",
     "基础知识/目录.md",
     "基础知识/python/GIL.md",
-    "基础知识/计算机原理/GET POST.md",
-    "个人笔记/爬取大众点评实战.md",
-    "agent/提示词/剧评提示词模板.md",
-    "基础知识/算法/交换数据的值.md",
-    "基础知识/计算机原理/系统编程.md",
-    "基础知识/计算机原理 b04bf2b1768a4bc9b4f5d90bc8583d26.md",
-    "基础知识/运维/基准测试.md",
-    "基础知识/运维/对称加密和非对称加密.md",
     "基础知识/运维",
     "基础知识/mysql",
     "基础知识/redis",
     "基础知识/算法",
     "基础知识/分布式&高并发",
-    "基础知识/设计模式",
     "agent/未命名.canvas"
   ]
 }
