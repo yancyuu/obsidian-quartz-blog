@@ -14,9 +14,11 @@
 
 ### 1.2 Python 2 和 Python 3 的区别
 
-- `print` 语句 vs `print()` 函数。
+```python
+print` 语句 vs `print()` 函数。
 - `range` 和 `xrange`。
 - 整数除法。
+```
 
 ### 1.3 GIL（全局解释器锁）
 
@@ -172,3 +174,5 @@ s[::-1]
 [MVC](MVC.md)
 
 [生成器](生成器.md)
+
+[^1]: 

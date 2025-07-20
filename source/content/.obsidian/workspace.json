@@ -123,12 +123,14 @@
             "id": "9a462a30c9d90090",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "agent/excalid/agent流程.md"
+                "file": "基础知识/python/Python基础.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "agent流程"
+              "icon": "lucide-file",
+              "title": "Python基础"
             }
           },
           {
@@ -291,10 +293,10 @@
       "excalidraw-cn:Create New Excalidraw File": false
     }
   },
-  "active": "8a4a80da53789a38",
+  "active": "9a462a30c9d90090",
   "lastOpenFiles": [
-    "agent/excalid/agent架构副本.md",
     "agent/excalid/agent流程.md",
+    "agent/excalid/agent架构副本.md",
     "rag/excalid/文档解析的5种姿势.excalidraw.md",
     "rag/excalid/检索这些年的进化.excalidraw.md",
     "rag/excalid/技术演进时间线.excalidraw.md",
