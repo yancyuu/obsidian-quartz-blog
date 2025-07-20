@@ -477,19 +477,6 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
 async function fillDocument(data: { [key: FullSlug]: ContentDetails }) {
   let id = 0
   const promises: Array<Promise<unknown>> = []
-  # for (const [slug, fileData] of Object.entries<ContentDetails>(data)) {
-  #  promises.push(
-  #    index.addAsync(id++, {
-  #      id,
-  #      slug: slug as FullSlug,
-  #      title: fileData.title,
-  #      content: fileData.content,
-  #      tags: fileData.tags,
-  #    }),
-  #  )
-  #}
-
-  # return await Promise.all(promises)
 
   for (const [slug, fileData] of Object.entries<ContentDetails>(data)) {
   // 🎯 添加这个过滤逻辑
