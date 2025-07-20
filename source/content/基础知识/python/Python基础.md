@@ -1,6 +1,4 @@
 
----
-
 ## Python 面试准备教程
 
 ### 1. 基础知识
@@ -15,9 +13,9 @@
 ### 1.2 Python 2 和 Python 3 的区别
 
 ```python
-print` 语句 vs `print()` 函数。
-- `range` 和 `xrange`。
-- 整数除法。
+print 语句 vs print() 函数。
+`range` 和 `xrange`。
+整数除法。
 ```
 
 ### 1.3 GIL（全局解释器锁）
