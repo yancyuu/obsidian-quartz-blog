@@ -37,12 +37,10 @@
             "id": "6575d5ee25f3a69c",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "rag/mermaid/记忆管理边界.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "记忆管理边界.excalidraw"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ],
@@ -195,10 +193,13 @@
   },
   "active": "6575d5ee25f3a69c",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2025-07-20 12.33.57.excalidraw.md",
+    "agent/mermaid/2.0框架图.md",
+    "rag/mermaid/记忆管理边界.excalidraw.md",
+    "agent/mermaid",
     "rag/📚RAG技术学习笔记.md",
     "欢迎.md",
     "rag/🏗️我的RAG系统重构笔记.md",
-    "rag/mermaid/记忆管理边界.excalidraw.md",
     "rag/mermaid/记忆管理边界.excalidraw.svg",
     "rag/mermaid/RAG选型建议.excalidraw.md",
     "rag/mermaid/RAG选型建议.excalidraw.svg",
@@ -211,12 +212,10 @@
     "rag/mermaid/技术演进时间线.excalidraw.svg",
     "rag/mermaid/检索这些年的进化.excalidraw.svg",
     "rag/mermaid/Drawing 2025-07-20 12.43.01.md",
-    "Excalidraw/Drawing 2025-07-20 12.33.57.excalidraw.md",
     "Excalidraw",
     "Excalidraw/Drawing 2025-07-20 12.22.07.excalidraw.md",
-    "agent/agent流程.md",
-    "agent/agent架构副本.md",
-    "agent/2.0框架图.md",
+    "agent/mermaid/agent流程.md",
+    "agent/mermaid/agent架构副本.md",
     "agent",
     "rag/mermaid",
     "rag"
