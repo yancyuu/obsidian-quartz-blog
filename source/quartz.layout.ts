@@ -34,8 +34,6 @@ export const defaultContentPageLayout: PageLayout = {
       	const name = node.displayName.toLowerCase();
         const pathParts = name.split(/[/\\]/); // 同时处理 / 和 \
       	
-        console.log('displayName:', node.displayName);
-        console.log('pathParts:', pathParts);
 	// 🚫 隐藏这些内容
       	if (pathParts.includes('excalid') ||
           pathParts.includes('images')||
@@ -70,8 +68,6 @@ export const defaultListPageLayout: PageLayout = {
     	filterFn: (node) => {
       	const name = node.displayName.toLowerCase();
         const pathParts = name.split(/[/\\]/); // 同时处理 / 和 \
-      	console.log('displayName:', node.displayName);
-        console.log('pathParts:', pathParts);
 	// 🚫 隐藏这些内容
       	if (pathParts.includes('excalid') ||
           pathParts.includes('images')||
