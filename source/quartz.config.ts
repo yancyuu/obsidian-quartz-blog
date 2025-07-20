@@ -26,7 +26,7 @@ const config: QuartzConfig = {
  	    //"assets/index.md",            // 隐藏资源文件夹首页
   	    //"assets/*/index.md",          // 隐藏所有资源子文件夹首页
 	    //"assets/excalid/**",
-	    "_*/**",
+	    "__*/**",
   	   
     ],
     defaultDateType: "created",
