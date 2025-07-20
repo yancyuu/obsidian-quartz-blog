@@ -1,8 +1,3 @@
-# 一站式解析ChatGPT入门相关知识
-
-Owner: yancy yu
-
-在如今纷繁复杂的网络课程环境中，新手往往难以找到有效的入门资源。为了帮助各位快速、系统地建立ChatGPT相关的知识体系，AI懒人推出了全新的“系列课程”。课程涵盖基础篇、认知篇、实战篇、AI绘画篇、变现篇等丰富内容，大家多多期待，有想进入咱们AI懒人社区的，直接看[进阶变现教程获取](https://qh5pw4yu10.feishu.cn/wiki/AkQ9w2FDxiOGCIkQKrvcJcKVned) 。
 
 ## **前言**
 
