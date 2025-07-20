@@ -1,3 +1,63 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+/* 推荐的防复制配置 - 平衡保护和用户体验 */
+/* 添加到 quartz/styles/custom.scss */
+
+/* 主内容区域防选择 */
+.content article,
+.article-container p,
+.article-container h1,
+.article-container h2,
+.article-container h3,
+.article-container h4,
+.article-container h5,
+.article-container h6 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* 图片保护 */
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
+  pointer-events: none;
+}
+
+/* 保留代码块的可复制性（程序员友好） */
+pre, 
+code,
+.highlight {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+}
+
+/* 保留搜索和输入功能 */
+input, 
+textarea, 
+.search-container * {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
+  pointer-events: auto !important;
+}
+
+/* 版权提示 */
+.content::before {
+  content: "🔒 内容受版权保护";
+  position: absolute;
+  top: -25px;
+  right: 0;
+  font-size: 12px;
+  color: var(--gray);
+  opacity: 0.6;
+}
+
+/* 简单的右键禁用提示 */
+body {
+  -webkit-touch-callout: none;
+}
