@@ -9,7 +9,7 @@ import * as Plugin from "./quartz/plugins"
 const config: QuartzConfig = {
   configuration: {
     pageTitle: "🌱 代码与咖啡",
-    pageTitleSuffix: "🚀 用AI加速世界",
+    pageTitleSuffix: "🚀 用AI加速世界| yancyyu",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
@@ -22,10 +22,6 @@ const config: QuartzConfig = {
 	    "templates", 
 	    ".obsidian",
 
-	    // 🎯 隐藏文件夹浏览但保留资源访问
- 	    //"assets/index.md",            // 隐藏资源文件夹首页
-  	    //"assets/*/index.md",          // 隐藏所有资源子文件夹首页
-	    //"assets/excalid/**",
 	    "__*/**",
   	   
     ],
