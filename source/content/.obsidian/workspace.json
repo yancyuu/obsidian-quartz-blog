@@ -27,7 +27,7 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "assets/excalid/文档解析的5种姿势.excalidraw.md"
+                "file": "_assets/excalid/文档解析的5种姿势.excalidraw.md"
               },
               "icon": "excalidraw-icon",
               "title": "文档解析的5种姿势.excalidraw"
@@ -39,7 +39,7 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "assets/excalid/记忆管理边界.excalidraw.md"
+                "file": "_assets/excalid/记忆管理边界.excalidraw.md"
               },
               "icon": "excalidraw-icon",
               "title": "记忆管理边界.excalidraw"
@@ -51,7 +51,7 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "assets/images/记忆管理边界.excalidraw.svg"
+                "file": "_assets/images/记忆管理边界.excalidraw.svg"
               },
               "icon": "lucide-image",
               "title": "记忆管理边界.excalidraw"
@@ -63,7 +63,7 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "assets/excalid/技术演进时间线.excalidraw.md"
+                "file": "_assets/excalid/技术演进时间线.excalidraw.md"
               },
               "icon": "excalidraw-icon",
               "title": "技术演进时间线.excalidraw"
@@ -75,7 +75,7 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "assets/excalid/技术演进时间线.excalidraw.md"
+                "file": "_assets/excalid/技术演进时间线.excalidraw.md"
               },
               "icon": "excalidraw-icon",
               "title": "技术演进时间线.excalidraw"
@@ -87,7 +87,7 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "assets/excalid/记忆管理边界.excalidraw.md"
+                "file": "_assets/excalid/记忆管理边界.excalidraw.md"
               },
               "icon": "excalidraw-icon",
               "title": "记忆管理边界.excalidraw"
@@ -255,37 +255,37 @@
       "excalidraw-cn:Create New Excalidraw File": false
     }
   },
-  "active": "3bc8af3dbe6ea8a9",
+  "active": "8a4a80da53789a38",
   "lastOpenFiles": [
     "rag/🏗️我的RAG系统重构笔记.md",
-    "assets/excalid/2.0框架图.md",
-    "assets/excalid/技术演进时间线.excalidraw.md",
-    "assets/excalid/记忆管理边界.excalidraw.md",
+    "_assets/excalid/2.0框架图.md",
+    "_assets/excalid/技术演进时间线.excalidraw.md",
+    "_assets/excalid/记忆管理边界.excalidraw.md",
     "rag/📚RAG技术学习笔记.md",
-    "assets/excalid",
-    "assets/images/技术演进时间线.excalidraw.svg",
-    "assets/images/记忆管理边界.excalidraw.svg",
+    "_assets/excalid",
+    "_assets/images/技术演进时间线.excalidraw.svg",
+    "_assets/images/记忆管理边界.excalidraw.svg",
     "private",
-    "assets/images",
-    "assets",
+    "_assets/images",
+    "_assets",
     "index.md",
     "欢迎.md",
     "mermaid",
     "Excalidraw/Drawing 2025-07-20 12.33.57.excalidraw.md",
     "agent/mermaid",
-    "assets/excalid/RAG选型建议.excalidraw.md",
-    "assets/images/RAG选型建议.excalidraw.svg",
-    "assets/excalid/kag流程图.excalidraw.md",
-    "assets/images/kag流程图.excalidraw.svg",
-    "assets/excalid/文档解析的5种姿势.excalidraw.md",
-    "assets/images/文档解析的5种姿势.excalidraw.svg",
-    "assets/excalid/检索这些年的进化.excalidraw.md",
-    "assets/images/检索这些年的进化.excalidraw.svg",
+    "_assets/excalid/RAG选型建议.excalidraw.md",
+    "_assets/images/RAG选型建议.excalidraw.svg",
+    "_assets/excalid/kag流程图.excalidraw.md",
+    "_assets/images/kag流程图.excalidraw.svg",
+    "_assets/excalid/文档解析的5种姿势.excalidraw.md",
+    "_assets/images/文档解析的5种姿势.excalidraw.svg",
+    "_assets/excalid/检索这些年的进化.excalidraw.md",
+    "_assets/images/检索这些年的进化.excalidraw.svg",
     "rag/mermaid/Drawing 2025-07-20 12.43.01.md",
     "Excalidraw",
     "Excalidraw/Drawing 2025-07-20 12.22.07.excalidraw.md",
-    "assets/excalid/agent流程.md",
-    "assets/excalid/agent架构副本.md",
+    "_assets/excalid/agent流程.md",
+    "_assets/excalid/agent架构副本.md",
     "agent",
     "assets/mermaid",
     "rag"
