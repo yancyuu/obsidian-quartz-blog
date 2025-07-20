@@ -480,8 +480,8 @@ async function fillDocument(data: { [key: FullSlug]: ContentDetails }) {
 
   for (const [slug, fileData] of Object.entries<ContentDetails>(data)) {
   // 🎯 添加这个过滤逻辑
-  const pathParts = slugLower.split(/[/\\]/); // 同时处理 / 和 \
   const slugLower = slug.toLowerCase();
+  const pathParts = slugLower.split(/[/\\]/); // 同时处理 / 和 \
   const shouldSkip = slugLower.endsWith('.png') ||
                     slugLower.endsWith('.jpg') ||
                     slugLower.endsWith('.svg') ||
