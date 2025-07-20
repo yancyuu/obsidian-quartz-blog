@@ -17,7 +17,20 @@ const config: QuartzConfig = {
     },
     locale: "zh-CN",
     baseUrl: "quartz.jzhao.xyz",
-    ignorePatterns: ["**/mermaid/**", "private", "templates", ".obsidian"],
+    ignorePatterns: [
+	    "private", 
+	    "templates", 
+	    ".obsidian",
+
+	    // 🎯 隐藏文件夹浏览但保留资源访问
+ 	    "assets/index.md",            // 隐藏资源文件夹首页
+  	    "assets/*/index.md",          // 隐藏所有资源子文件夹首页
+  
+	    // 🎯 只隐藏markdown文件
+  	    "**/*-private.md",            // 私人标记文件
+  	    "**/*-draft.md",              // 草稿文件
+  	    "**/TODO*.md",                // 待办文件
+    ],
     defaultDateType: "created",
     theme: {
       fontOrigin: "googleFonts",
