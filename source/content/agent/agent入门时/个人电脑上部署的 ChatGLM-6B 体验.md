@@ -16,8 +16,7 @@ ChatGLM-6B 是一个开源的、支持中英双语的对话语言模型，基于
 
 体验效果如下：
 
-[](https://article-images.zsxq.com/Fiv3gNd28HBUmw-5EnOMcD4sKpl2)
-
+![[Pasted image 20250720173342.png]]
 ### 
 
 ### **Google Colab 上使用**
@@ -75,8 +74,7 @@ Mac 上也可以使用 GPU 加速，这些官方文档里都有解决方案。
 
 本地体验效果：
 
-[](https://article-images.zsxq.com/FpiHmMf69Jz02OPwV1Ry5NYVXjRk)
-
+![[Pasted image 20250720173359.png]]
 ## 微调：
 
 [ChatGLM-6B 在 ModelWhale 平台的部署与微调教程 - Heywhale.com](https://www.heywhale.com/mw/project/6436d82948f7da1fee2be59e)
