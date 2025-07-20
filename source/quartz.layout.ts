@@ -32,9 +32,10 @@ export const defaultContentPageLayout: PageLayout = {
   	Component.Explorer({
     	filterFn: (node) => {
       	const name = node.displayName.toLowerCase();
-
+        const pathParts = name.split(/[/\\]/); // 同时处理 / 和 \
       	// 🚫 隐藏这些内容
-      	if (/(?:^|\/)(excalid|images)(?:\/|$)/.test(name) ||
+      	if (pathParts.includes('excalid') ||
+          pathParts.includes('images')||
           name.endsWith('.png') ||
           name.endsWith('.jpg') ||
           name.endsWith('.svg')) {
@@ -65,9 +66,10 @@ export const defaultListPageLayout: PageLayout = {
   	Component.Explorer({
     	filterFn: (node) => {
       	const name = node.displayName.toLowerCase();
-      
+        const pathParts = name.split(/[/\\]/); // 同时处理 / 和 \
       	// 🚫 隐藏这些内容
-      	if (/(?:^|\/)(excalid|images)(?:\/|$)/.test(name) ||
+      	if (pathParts.includes('excalid') ||
+          pathParts.includes('images')||
           name.endsWith('.png') || 
           name.endsWith('.jpg') || 
           name.endsWith('.svg')) {
