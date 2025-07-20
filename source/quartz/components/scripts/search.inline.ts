@@ -487,8 +487,6 @@ async function fillDocument(data: { [key: FullSlug]: ContentDetails }) {
                     slugLower.endsWith('.svg') ||
 		    pathParts.includes('excalid') ||
                     pathParts.includes('images');
- console.log('shouldSkip:', shouldSkip);
- console.log(':pathParts', pathParts);
 
   if (shouldSkip) {
     continue; // 跳过这个文件
@@ -505,4 +503,5 @@ async function fillDocument(data: { [key: FullSlug]: ContentDetails }) {
     }),
   )
 }
+await Promise.all(promises)
 }
