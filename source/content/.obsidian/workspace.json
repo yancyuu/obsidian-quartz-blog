@@ -99,16 +99,42 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "rag/📚RAG技术学习笔记.md",
+                "file": "agent/初级agent/AI项目1：AI连接外部资料库，让Llama Index带你阅读一本书.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "📚RAG技术学习笔记"
+              "title": "AI项目1：AI连接外部资料库，让Llama Index带你阅读一本书"
+            }
+          },
+          {
+            "id": "d6bdf8f2a35825eb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "agent/初级agent/以人为中心的Agent.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "以人为中心的Agent"
+            }
+          },
+          {
+            "id": "0789da1236cac765",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "基础知识/image1 1.jpeg"
+              },
+              "icon": "lucide-image",
+              "title": "image1 1"
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -140,7 +166,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:\"assets/未命名/\" ",
+                "query": "最终方案 d369878b3a4245cbbf348caf1e7ed25b",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -255,39 +281,53 @@
       "excalidraw-cn:Create New Excalidraw File": false
     }
   },
-  "active": "8a4a80da53789a38",
+  "active": "d6bdf8f2a35825eb",
   "lastOpenFiles": [
-    "rag/🏗️我的RAG系统重构笔记.md",
-    "_assets/excalid/2.0框架图.md",
-    "_assets/excalid/技术演进时间线.excalidraw.md",
-    "_assets/excalid/记忆管理边界.excalidraw.md",
+    "agent/初级agent/AI项目1：AI连接外部资料库，让Llama Index带你阅读一本书.md",
+    "agent/初级agent/以人为中心的Agent.md",
+    "agent/初级agent/最终方案.md",
+    "agent/初级agent/初版方案.md",
+    "agent/初级agent/AI项目5：voc舆情分析系统.md",
+    "index.md",
+    "agent/初级agent/AI项目6：智能客服 a059ba2cd3384cc0b3f40c85f3d875b0.md",
+    "agent/初级agent/AI项目4：流式生成与模型微调，打造极致的对话体验.md",
+    "agent/初级agent/AI项目3：让AI做决策，LangChain里的“中介”和“特工”.md",
+    "agent/初级agent/AI项目2：Langchain里的“记忆力”，多轮对话.md",
+    "基础知识/科迅嘉联.md",
+    "基础知识/image1 1.jpeg",
+    "基础知识/image2.jpeg",
+    "基础知识/image1.jpeg",
+    "基础知识/icmp e953984d0ccf4244b6f99be77507a85f.md",
+    "基础知识/image69.jpeg",
+    "基础知识/images",
+    "agent/未命名.canvas",
+    "agent/提示词/AI绘画-风景 fdd01400066b480fa3711a459f99959b.md",
+    "agent/提示词",
+    "agent/初级agent",
+    "基础知识/设计步骤 85ad429276634ed08c5836c825569dfb.md",
+    "基础知识/分布式事务 a4127992109a49d0a4045878fbc7a4b2.md",
+    "基础知识/动态创建类 e366663dd5374226a9a65324399bd43d.md",
+    "基础知识/翻译【线上】 bcfa38a37075436780b7922915ae63e1.md",
+    "基础知识/订餐中台服务设计 48614b44adfd4586a6e200f68ce1a96b.md",
+    "基础知识/闭包 d3195f51332e42bc9423dd419f73272f.md",
+    "基础知识/5、高可用架构设计 6a51e8f0d70f4e4e874078fa6a526a41.md",
+    "基础知识/3、如何测量系统 b594108a9db242149fb30e4057f6f92b.md",
+    "基础知识/2、影响性能原因 d422e19e9a584a14a0bce099234ae6ab.md",
+    "基础知识/1、大事务的问题.md",
+    "基础知识/__init__和__new__的区别.md",
     "rag/📚RAG技术学习笔记.md",
+    "基础知识/Untitled.png",
+    "基础知识/Untitled.jpeg",
+    "基础知识/Untitled 9.png",
+    "基础知识/Untitled 8.png",
+    "基础知识/Untitled 7.png",
+    "基础知识/Untitled 7.jpeg",
+    "基础知识",
+    "4c13141a-90a5-4129-8631-568848f6f801_Export-237f5fed-4579-47f1-a42c-9b248c8a4bfc",
     "_assets/excalid",
-    "_assets/images/技术演进时间线.excalidraw.svg",
-    "_assets/images/记忆管理边界.excalidraw.svg",
     "__private",
     "_assets/images",
     "_assets",
-    "index.md",
-    "欢迎.md",
-    "mermaid",
-    "Excalidraw/Drawing 2025-07-20 12.33.57.excalidraw.md",
-    "agent/mermaid",
-    "_assets/excalid/RAG选型建议.excalidraw.md",
-    "_assets/images/RAG选型建议.excalidraw.svg",
-    "_assets/excalid/kag流程图.excalidraw.md",
-    "_assets/images/kag流程图.excalidraw.svg",
-    "_assets/excalid/文档解析的5种姿势.excalidraw.md",
-    "_assets/images/文档解析的5种姿势.excalidraw.svg",
-    "_assets/excalid/检索这些年的进化.excalidraw.md",
-    "_assets/images/检索这些年的进化.excalidraw.svg",
-    "rag/mermaid/Drawing 2025-07-20 12.43.01.md",
-    "Excalidraw",
-    "Excalidraw/Drawing 2025-07-20 12.22.07.excalidraw.md",
-    "_assets/excalid/agent流程.md",
-    "_assets/excalid/agent架构副本.md",
-    "agent",
-    "assets/mermaid",
-    "rag"
+    "mermaid"
   ]
 }
