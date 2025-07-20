@@ -97,12 +97,14 @@
             "id": "3bc8af3dbe6ea8a9",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "assets/excalid/2.0框架图.md"
+                "file": "rag/📚RAG技术学习笔记.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "2.0框架图"
+              "icon": "lucide-file",
+              "title": "📚RAG技术学习笔记"
             }
           }
         ],
@@ -255,8 +257,9 @@
   },
   "active": "3bc8af3dbe6ea8a9",
   "lastOpenFiles": [
-    "assets/excalid/技术演进时间线.excalidraw.md",
+    "rag/🏗️我的RAG系统重构笔记.md",
     "assets/excalid/2.0框架图.md",
+    "assets/excalid/技术演进时间线.excalidraw.md",
     "assets/excalid/记忆管理边界.excalidraw.md",
     "rag/📚RAG技术学习笔记.md",
     "assets/excalid",
@@ -266,7 +269,6 @@
     "assets/images",
     "assets",
     "index.md",
-    "rag/🏗️我的RAG系统重构笔记.md",
     "欢迎.md",
     "mermaid",
     "Excalidraw/Drawing 2025-07-20 12.33.57.excalidraw.md",

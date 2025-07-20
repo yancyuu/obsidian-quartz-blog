@@ -25,7 +25,7 @@ const config: QuartzConfig = {
 	    // 🎯 隐藏文件夹浏览但保留资源访问
  	    "assets/index.md",            // 隐藏资源文件夹首页
   	    "assets/*/index.md",          // 隐藏所有资源子文件夹首页
-	    "assets/excalid/**"
+	    "assets/excalid/**",
   
 	    // 🎯 只隐藏markdown文件
   	    "**/*-private.md",            // 私人标记文件
