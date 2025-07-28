@@ -4,201 +4,176 @@
     "type": "split",
     "children": [
       {
-        "id": "37fd7caa3063f10f",
+        "id": "7bb45cf30792c997",
         "type": "tabs",
+        "dimension": 72.56317689530685,
         "children": [
           {
-            "id": "bd276ccc8bfe5fa9",
+            "id": "87f9fb712f79bb3c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "📚RAG/📚RAG技术学习笔记.md",
+                "file": "🤖Agent/Agent入门时/个人电脑上部署的 ChatGLM-6B 体验.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "📚RAG技术学习笔记"
-            }
+              "title": "个人电脑上部署的 ChatGLM-6B 体验"
+            },
+            "group": "d373d4fc8e06b2d7"
           },
           {
-            "id": "91c60efc7049fab3",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "📚RAG/excalid/文档解析的5种姿势.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "文档解析的5种姿势.excalidraw"
-            }
-          },
-          {
-            "id": "6575d5ee25f3a69c",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "📚RAG/excalid/记忆管理边界.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "记忆管理边界.excalidraw"
-            }
-          },
-          {
-            "id": "ac703ba78d61317f",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "📚RAG/images/记忆管理边界.excalidraw.svg"
-              },
-              "icon": "lucide-image",
-              "title": "记忆管理边界.excalidraw"
-            }
-          },
-          {
-            "id": "d7382f0ecdff961d",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "📚RAG/excalid/技术演进时间线.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "技术演进时间线.excalidraw"
-            }
-          },
-          {
-            "id": "f3fba0cd13bc5b14",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "📚RAG/excalid/技术演进时间线.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "技术演进时间线.excalidraw"
-            }
-          },
-          {
-            "id": "5d9d864cba775f57",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "📚RAG/excalid/记忆管理边界.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "记忆管理边界.excalidraw"
-            }
-          },
-          {
-            "id": "3bc8af3dbe6ea8a9",
+            "id": "bdd8f985b899b6c8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "💻基础知识/python/属性property的优缺点.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "属性property的优缺点"
+              "title": "index"
             }
           },
           {
-            "id": "bfe74317d8d97587",
+            "id": "dda8c8a7ee61d080",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "release-notes",
               "state": {
-                "file": "💻基础知识/images/image1.jpeg"
+                "currentVersion": "1.9.12"
               },
-              "icon": "lucide-image",
-              "title": "image1"
+              "icon": "lucide-book-up",
+              "title": "版本说明 1.9.12"
             }
           },
           {
-            "id": "9a462a30c9d90090",
+            "id": "0a1231ce622ca346",
             "type": "leaf",
             "state": {
-              "type": "image",
-              "state": {
-                "file": "Pasted image 20250810172853.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250810172853"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           },
           {
-            "id": "fd6c3223b04a5f07",
+            "id": "6b2aa25bb4cb64ff",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🤖Agent/Agent落地时/🧘Agent企业落地架构.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "🧘Agent企业落地架构"
+              "title": "index"
             }
           },
           {
-            "id": "397eb97e6b61e3ff",
+            "id": "aae3bb20263243ba",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🤖Agent/Agent框架/CAMEL-AI：多智能体系统的开源模块化框架.md",
+                "file": "🤖Agent/AI应用面试.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CAMEL-AI：多智能体系统的开源模块化框架"
+              "title": "AI应用面试"
             }
           },
           {
-            "id": "9d0f4f33783ca248",
+            "id": "5c2c910e062fff89",
             "type": "leaf",
             "state": {
-              "type": "image",
-              "state": {
-                "file": "🤖Agent/excalid/AI一体化架构.png"
-              },
-              "icon": "lucide-image",
-              "title": "AI一体化架构"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           },
           {
-            "id": "25e47c79f572156e",
+            "id": "43dd03006f373f40",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "📚RAG/excalid/self-rag流程图.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "self-rag流程图"
+            }
+          },
+          {
+            "id": "5f09ad7b9d2834a7",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "🤖Agent/excalid/2.0架构图.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "2.0架构图"
+            }
+          },
+          {
+            "id": "a0aed66e3a76f476",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🙍个人笔记/20251007-📘 《个人开发者出海与共创企划书》.md",
+                "file": "💻基础知识/python/多类继承规则.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "20251007-📘 《个人开发者出海与共创企划书》"
+              "title": "多类继承规则"
             }
           },
           {
-            "id": "0789da1236cac765",
+            "id": "2cf2ee1d31d7bc13",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "💻基础知识/images/image1 1.jpeg"
+                "file": "🤖Agent/Agent落地时/2025-0305🐰 Agentic-RAG架构选型指南.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "image1 1"
+              "icon": "lucide-file",
+              "title": "2025-0305🐰 Agentic-RAG架构选型指南"
             }
           }
         ],
-        "currentTab": 13
+        "currentTab": 4
+      },
+      {
+        "id": "22bf9b9d3babb63c",
+        "type": "tabs",
+        "dimension": 27.436823104693143,
+        "children": [
+          {
+            "id": "a8e51e8fd98acde9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "🤖Agent/Agent入门时/个人电脑上部署的 ChatGLM-6B 体验.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "个人电脑上部署的 ChatGLM-6B 体验 的大纲"
+            },
+            "group": "d373d4fc8e06b2d7"
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -346,54 +321,53 @@
       "excalidraw-cn:Create New Excalidraw File": false
     }
   },
-  "active": "25e47c79f572156e",
+  "active": "6b2aa25bb4cb64ff",
   "lastOpenFiles": [
-    "🙍个人笔记/爬取大众点评实战.md",
-    "🙍个人笔记/20251007-📘 《个人开发者出海与共创企划书》.md",
-    "🙍个人笔记/体验了数字游民生活俩月后，我决定放弃了.md",
-    "🙍个人笔记/有赞repo-1105.md",
-    "🙍个人笔记/voc舆情分析系统.md",
-    "🤖Agent/Agent框架/CAMEL-AI：多智能体系统的开源模块化框架.md",
-    "🙍个人笔记/2025-09-25.md",
-    "🤖Agent/Agent框架/Agents 2.0：符号学习助力智能体自我进化.md",
-    "🤖Agent/Agent落地时/🧘Agent企业落地架构.md",
-    "🤖Agent/Agent落地时/🍖从一个Agent到十个Agent：构建可演化的智能体系统架构.md",
-    "🤖Agent/excalid/agent架构副本.md",
-    "🤖Agent/excalid/agent流程.md",
     "🤖Agent/excalid/AI应用基础架构.png",
-    "🤖Agent/excalid/AI一体化架构.png",
-    "Excalidraw/Drawing 2025-08-16 22.23.33.excalidraw.md",
-    "📚RAG/售后客服 · Agentic RAG 精华共识.md",
-    "🤖Agent/Agent框架",
-    "💻基础知识/python/__init__和__new__的区别.md",
-    "💻基础知识/python/属性property的优缺点.md",
-    "💻基础知识/python/python核心编程.md",
-    "💻基础知识/python/迭代器.md",
-    "💻基础知识/设计模式/策略模式.md",
-    "🙍个人笔记/面试-20250925.md",
     "🤖Agent/excalid/AI应用基础架构.md",
+    "🤖Agent/excalid/AI一体化架构.png",
+    "🤖Agent/Agent落地时/🧘Agent企业落地架构.md",
+    "🤖Agent/Agent框架/CAMEL-AI：多智能体系统的开源模块化框架.md",
+    "🤖Agent/Agent框架/Agents 2.0：符号学习助力智能体自我进化.md",
+    "🤖Agent/Agent框架",
+    "🙍个人笔记/20251007-📘 《个人开发者出海与共创企划书》.md",
+    "📚RAG/售后客服 · Agentic RAG 精华共识.md",
     "🤖Agent/Agent落地时/🧘以人为中心的Agent.md",
     "🤖Agent/Agent落地时/💆Copilot和Agent的区别.md",
-    "index.md",
-    "Pasted image 20250810184105.png",
-    "Pasted image 20250810172853.png",
-    "未命名.md",
-    "Excalidraw",
+    "🤖Agent/Agent落地时/🐰一个基于RAG的Agent的演化路径.md",
+    "🤖Agent/Agent落地时/🍖从一个Agent到十个Agent：构建可演化的智能体系统架构.md",
+    "🤖Agent/AI2.0流程图.md",
     "📚RAG/📚RAG技术学习笔记.md",
+    "📚RAG/🏗️我的RAG系统重构笔记.md",
+    "📚RAG/构建知识图谱.md",
+    "__wxzs.md",
+    "index.md",
+    "mermaid.png",
+    "🙍个人笔记/voc舆情分析系统.md",
+    "🙍个人笔记/AI系统存量改造架构-20250928.md",
+    "🙍个人笔记/Agent企业架构-20250922.md",
+    "🙍个人笔记/AI架构.md",
+    "🤖Agent/提示词/🎨AI绘画-风景.md",
+    "🤖Agent/提示词/🎷越狱.md",
+    "💻基础知识/python/MVC.md",
+    "🤖Agent/AI应用面试.md",
+    "📚RAG/excalid/self-rag流程图.md",
+    "📚RAG/images/self-rag流程图.svg",
+    "📚RAG/images/self-rag流程图.svg",
+    "📚RAG/excalid/self-rag流程图.png",
+    "📚RAG/images/self-rag流程图.svg",
+    "🤖Agent/images/2.0AI应用层架构图(SOA+DDD).svg",
+    "🤖Agent/images/2.0AI应用层架构图(SOA+DDD).svg",
+    "📚RAG/images/文档解析的5种姿势.excalidraw.svg",
+    "Excalidraw",
+    "AI知识库/数据建模",
+    "Agent设计/2.0",
+    "Agent设计/解析",
+    "universal-ui-kit.excalidrawlib",
+    "python AI应用面试",
+    "AI知识库",
+    "Agent设计",
     "📓MCP&A2A",
-    "🙇DeepSeek",
-    "🤖Agent/images/Pasted image 20250720173359.png",
-    "🤖Agent/images/Pasted image 20250720173342.png",
-    "🤖Agent/excalid",
-    "🤖Agent/images/附件.png",
-    "📚RAG/images/记忆管理边界.excalidraw.svg",
-    "🤖Agent/images",
-    "🤖Agent/Agent落地时",
-    "🗨️GPT",
-    "💻基础知识/images/Untitled 19.png",
-    "💻基础知识/images/Untitled 7.jpeg",
-    "🙍个人笔记",
-    "💻基础知识/运维",
     "agent/未命名.canvas"
   ]
 }
