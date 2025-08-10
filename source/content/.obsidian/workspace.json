@@ -131,7 +131,8 @@
               },
               "icon": "lucide-file",
               "title": "售后客服 · Agentic RAG 精华共识"
-            }
+            },
+            "group": "b0a7178c94980356"
           },
           {
             "id": "0789da1236cac765",
@@ -147,6 +148,28 @@
           }
         ],
         "currentTab": 9
+      },
+      {
+        "id": "1c7cbf7fcc50bba2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "def01eb2ba592622",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "🙍个人笔记/售后客服 · Agentic RAG 精华共识.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "售后客服 · Agentic RAG 精华共识 的大纲"
+            },
+            "group": "b0a7178c94980356"
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -295,6 +318,8 @@
   },
   "active": "9a462a30c9d90090",
   "lastOpenFiles": [
+    "Pasted image 20250810184105.png",
+    "Pasted image 20250810172853.png",
     "🤖Agent/Agent落地时/🍖从一个Agent到十个Agent：构建可演化的智能体系统架构.md",
     "🙍个人笔记/售后客服 · Agentic RAG 精华共识.md",
     "🤖Agent/Agent落地时/未命名.md",
@@ -322,7 +347,6 @@
     "🤖Agent/提示词/🛕剧评提示词模板.md",
     "🤖Agent/提示词/💹公众号优化.md",
     "🤖Agent/提示词/👍常用提示词.md",
-    "🙍个人笔记/体验了数字游民生活俩月后，我决定放弃了.md",
     "🤖Agent/images/Pasted image 20250720173359.png",
     "🤖Agent/images/Pasted image 20250720173342.png",
     "🤖Agent/excalid",
@@ -336,7 +360,6 @@
     "💻基础知识/images/image66.jpeg",
     "💻基础知识/images/image49.jpeg",
     "💻基础知识/images/image23 1.jpeg",
-    "💻基础知识/images/image19 1.jpeg",
     "🙍个人笔记",
     "💻基础知识/运维",
     "💻基础知识/mysql",
