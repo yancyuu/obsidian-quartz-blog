@@ -17,9 +17,9 @@ https://developer.aliyun.com/ebook/8442/read?spm=a2c6h.26392459.ebook-detail.2.2
 
 
 ### AI 应用的核心是 AI Agent
-![[Pasted image 20250924164757.png]]
+![[AI应用基础架构.png]]
 ### AI 应用架构新范式
-![[Pasted image 20250924164936.png]]
+![[AI一体化架构.png]]
 这里的重点是：
 1. 一个AI网关三种角色，具备统一的管控底座，同时又实现各角色的协同调度。那是否一上来就需要AI网关，我认为是不必要的，可以先下沉到Mcp-client也就是agent层，后续再按照复杂度规划。
 2. MSE Nacos 发挥注册中心优势，增加MCP Registry能力，实现普通服务和MCP服务的统一管理，结合网关实现现存业务0改造转换为MCP服务。

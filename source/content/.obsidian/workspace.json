@@ -163,6 +163,18 @@
             "id": "9d0f4f33783ca248",
             "type": "leaf",
             "state": {
+              "type": "image",
+              "state": {
+                "file": "🤖Agent/excalid/AI一体化架构.png"
+              },
+              "icon": "lucide-image",
+              "title": "AI一体化架构"
+            }
+          },
+          {
+            "id": "25e47c79f572156e",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
                 "file": "🤖Agent/Agent框架/CAMEL-AI：多智能体系统的开源模块化框架.md",
@@ -186,7 +198,7 @@
             }
           }
         ],
-        "currentTab": 12
+        "currentTab": 13
       }
     ],
     "direction": "vertical"
@@ -334,9 +346,16 @@
       "excalidraw-cn:Create New Excalidraw File": false
     }
   },
-  "active": "9d0f4f33783ca248",
+  "active": "25e47c79f572156e",
   "lastOpenFiles": [
     "🤖Agent/Agent框架/Agents 2.0：符号学习助力智能体自我进化.md",
+    "🤖Agent/Agent落地时/🧘Agent企业落地架构.md",
+    "🤖Agent/Agent落地时/🍖从一个Agent到十个Agent：构建可演化的智能体系统架构.md",
+    "🤖Agent/excalid/agent架构副本.md",
+    "🤖Agent/excalid/agent流程.md",
+    "🤖Agent/excalid/AI应用基础架构.png",
+    "🤖Agent/excalid/AI一体化架构.png",
+    "Excalidraw/Drawing 2025-08-16 22.23.33.excalidraw.md",
     "🤖Agent/Agent框架/CAMEL-AI：多智能体系统的开源模块化框架.md",
     "📚RAG/售后客服 · Agentic RAG 精华共识.md",
     "🤖Agent/Agent框架",
@@ -349,12 +368,7 @@
     "💻基础知识/python/迭代器.md",
     "💻基础知识/设计模式/策略模式.md",
     "🙍个人笔记/面试-20250925.md",
-    "🤖Agent/Agent落地时/🧘Agent企业落地架构.md",
-    "Pasted image 20250924164936.png",
-    "Pasted image 20250924164757.png",
     "🤖Agent/excalid/AI应用基础架构.md",
-    "🤖Agent/excalid/agent流程.md",
-    "🤖Agent/Agent落地时/🍖从一个Agent到十个Agent：构建可演化的智能体系统架构.md",
     "🤖Agent/Agent落地时/🧘以人为中心的Agent.md",
     "🤖Agent/Agent落地时/💆Copilot和Agent的区别.md",
     "🙍个人笔记/有赞repo-1105.md",
@@ -362,12 +376,10 @@
     "index.md",
     "Pasted image 20250810184105.png",
     "Pasted image 20250810172853.png",
-    "Excalidraw/Drawing 2025-08-16 22.23.33.excalidraw.md",
     "未命名.md",
     "Excalidraw",
     "📚RAG/📚RAG技术学习笔记.md",
     "🤖Agent/Agent落地时/未命名.md",
-    "🤖Agent/提示词/😁文章模仿大师.md",
     "📓MCP&A2A",
     "🙇DeepSeek",
     "🤖Agent/images/Pasted image 20250720173359.png",
