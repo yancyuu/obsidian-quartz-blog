@@ -61,3 +61,65 @@ textarea,
 body {
   -webkit-touch-callout: none;
 }
+
+/* 亮色模式美化样式 */
+:root:not([saved-theme="dark"]) {
+  /* 添加更现代的阴影效果 */
+  .page {
+    background: linear-gradient(135deg, #fefefe 0%, #f9fafb 100%);
+  }
+  
+  /* 美化卡片效果 */
+  .sidebar {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(139, 157, 183, 0.1);
+    border-radius: 12px;
+  }
+  
+  /* 改善文章背景 */
+  article {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 12px rgba(139, 157, 183, 0.06);
+    border: 1px solid rgba(139, 157, 183, 0.05);
+  }
+  
+  /* 改善链接样式 */
+  a {
+    transition: all 0.2s ease;
+    
+    &:hover {
+      transform: translateY(-1px);
+    }
+  }
+  
+  /* 改善代码块背景 */
+  pre {
+    background: #f8fafc;
+    border: 1px solid rgba(139, 157, 183, 0.1);
+    box-shadow: inset 0 2px 4px rgba(139, 157, 183, 0.03);
+  }
+  
+  code:not(pre code) {
+    background: rgba(37, 99, 235, 0.06);
+    border: 1px solid rgba(37, 99, 235, 0.1);
+  }
+  
+  /* 改善表格样式 */
+  table {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(139, 157, 183, 0.06);
+  }
+  
+  /* 改善引用块样式 */
+  blockquote {
+    background: rgba(37, 99, 235, 0.02);
+    border-radius: 6px;
+    padding: 1rem 1.5rem;
+    box-shadow: inset 3px 0 0 var(--secondary);
+    border-left: none;
+  }
+}
