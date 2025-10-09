@@ -45,14 +45,13 @@
             "id": "1a02d45610055034",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "diff-view",
               "state": {
-                "file": "👩‍💻 个人笔记/2023-1001 🍗体验了数字游民生活俩月后，我决定放弃了.md",
-                "mode": "source",
-                "source": false
+                "file": "source/quartz/styles/custom.scss",
+                "staged": true
               },
-              "icon": "lucide-file",
-              "title": "2023-1001 🍗体验了数字游民生活俩月后，我决定放弃了"
+              "icon": "git-pull-request",
+              "title": "Diff View (custom.scss)"
             }
           }
         ],
@@ -216,10 +215,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1a02d45610055034",
+  "active": "00ef2ccf6279c871",
   "lastOpenFiles": [
-    "👩‍💻 个人笔记/2023-0410 🐷AI时代来临普通人如何破局.md",
     "👩‍💻 个人笔记/2023-1001 🍗体验了数字游民生活俩月后，我决定放弃了.md",
+    "👩‍💻 个人笔记/2023-0410 🐷AI时代来临普通人如何破局.md",
     "👩‍💻 个人笔记/2023-0403 🕷️爬取大众点评实战.md",
     "未命名",
     "👩‍💻 个人笔记/2025-0922 👩‍🏫Agent企业架构.md",
