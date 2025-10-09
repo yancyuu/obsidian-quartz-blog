@@ -21,12 +21,14 @@
             "id": "3ddfadf998982b2c",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "👩‍💻 个人笔记/20250922 Agent企业架构.md"
+                "file": "📚RAG/2025-0919 🤖售后客服 · Agentic RAG 精华共识.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "20250922 Agent企业架构"
+              "icon": "lucide-file",
+              "title": "2025-0919 🤖售后客服 · Agentic RAG 精华共识"
             }
           }
         ],
@@ -192,9 +194,20 @@
   },
   "active": "3ddfadf998982b2c",
   "lastOpenFiles": [
-    "👩‍💻 个人笔记/20251007-📘 个人开发者出海与共创企划书.md",
+    "📚RAG/2025-0928 🧪 AI应用-RAG面试题.md",
+    "📚RAG/2025-0919 🤖售后客服 · Agentic RAG 精华共识.md",
+    "📚RAG/2025-0813 🏗️我的RAG系统重构笔记.md",
+    "📚RAG/2025-0729 📊构建知识图谱.md",
+    "📚RAG/2025-0105 📚RAG技术进化路线.md",
+    "📚RAG/2025-0425 📚RAG技术学习笔记.md",
+    "📚RAG/2024-0729 📚常用reranker模型.md",
+    "📚RAG/2025-0701 📖 AI知识增强实现方案.md",
+    "📚RAG/全文检索.md",
+    "📚RAG/2025-0625 🏗️ RAG系统重构笔记.md",
+    "📚RAG/excalid/记忆管理边界.excalidraw.md",
     "👩‍💻 个人笔记/excalid/20250928 AI系统存量改造架构.md",
     "👩‍💻 个人笔记/20250922 Agent企业架构.md",
+    "👩‍💻 个人笔记/20251007-📘 个人开发者出海与共创企划书.md",
     "👩‍💻 个人笔记/20240611 voc舆情分析系统.md",
     "👩‍💻 个人笔记/20241105 有赞repo.md",
     "👩‍💻 个人笔记/20231001 体验了数字游民生活俩月后，我决定放弃了.md",
@@ -209,19 +222,8 @@
     "excalidraw 25-10-09 02.21.37.ex",
     "🤖Agent/提示词/🛕剧评提示词模板.md",
     "🤖Agent/提示词/Drawing 2025-10-09 14.21.56.excalidraw.md",
-    "🤖Agent/提示词/编程规则提示词.md",
-    "🤖Agent/提示词/编程提示词.md",
-    "未命名看板 1.md",
     "未命名.base",
     "excalidraw 25-10-09 02.17.23.ex",
-    "🤖Agent/从hello world到真正能用的agent/2025-0628 🍖从一个Agent到十个Agent：构建可演化的智能体系统架构.md",
-    "🤖Agent/从hello world到真正能用的agent/2025-0305🐰 Agentic-RAG架构选型指南.md",
-    "🤖Agent/从hello world到真正能用的agent/🐰一个基于RAG的Agent的演化路径.md",
-    "🤖Agent/从hello world到真正能用的agent/2023-1104 Llama Index连接外部资料库.md",
-    "🤖Agent/从hello world到真正能用的agent/2023-1103 LangChain里的Agent.md",
-    "🤖Agent/从hello world到真正能用的agent/2023-1102 LangChain里的多轮对话.md",
-    "🤖Agent/从hello world到真正能用的agent/2023-1101流式生成与模型微调.md",
-    "🤖Agent/从hello world到真正能用的agent/2024-0909 结合notebook的agent.md",
     "🤖Agent/images/2.0AI应用层架构图(SOA+DDD).svg",
     "📚RAG/images/self-rag流程图.svg",
     "🤖Agent/excalid/AI应用基础架构.png",

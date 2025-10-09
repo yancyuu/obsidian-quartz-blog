@@ -4,7 +4,7 @@ AI应用框架相关：
 [[2023-1103 LangChain里的Agent]]
 [[2024-0826 🔁 使用Langgraph的坑]]
 
-[[🧪 AI应用-RAG面试题]]
+[[2025-0928 🧪 AI应用-RAG面试题]]
 [[🧪 Python面试]]
 [[Python基础]]
 [[python核心编程]]
