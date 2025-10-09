@@ -21,14 +21,12 @@
             "id": "3ddfadf998982b2c",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "🧚DeepSeek/DeepSeek架构原理.md",
-                "mode": "source",
-                "source": false
+                "file": "👩‍💻 个人笔记/20250922 Agent企业架构.md"
               },
-              "icon": "lucide-file",
-              "title": "DeepSeek架构原理"
+              "icon": "excalidraw-icon",
+              "title": "20250922 Agent企业架构"
             }
           }
         ],
@@ -194,6 +192,16 @@
   },
   "active": "3ddfadf998982b2c",
   "lastOpenFiles": [
+    "👩‍💻 个人笔记/20251007-📘 个人开发者出海与共创企划书.md",
+    "👩‍💻 个人笔记/excalid/20250928 AI系统存量改造架构.md",
+    "👩‍💻 个人笔记/20250922 Agent企业架构.md",
+    "👩‍💻 个人笔记/20240611 voc舆情分析系统.md",
+    "👩‍💻 个人笔记/20241105 有赞repo.md",
+    "👩‍💻 个人笔记/20231001 体验了数字游民生活俩月后，我决定放弃了.md",
+    "👩‍💻 个人笔记/excalid",
+    "👩‍💻 个人笔记/20230403 爬取大众点评实战.md",
+    "👩‍💻 个人笔记/内容创作方向.md",
+    "🧚DeepSeek/DeepSeek架构原理.md",
     "🤖Agent/AI2.0流程图.md",
     "🤖Agent/AI应用面试.md",
     "🤖Agent/提示词/编程提示词规则.md",
@@ -214,15 +222,6 @@
     "🤖Agent/从hello world到真正能用的agent/2023-1102 LangChain里的多轮对话.md",
     "🤖Agent/从hello world到真正能用的agent/2023-1101流式生成与模型微调.md",
     "🤖Agent/从hello world到真正能用的agent/2024-0909 结合notebook的agent.md",
-    "🤖Agent/从hello world到真正能用的agent/2025-0426🧘以人为中心的Agent.md",
-    "🤖Agent/从hello world到真正能用的agent/2024-0826 🔁 使用Langgraph的坑.md",
-    "🤖Agent/从hello world到真正能用的agent/2023-1001 个人电脑上部署的 ChatGLM-6B 体验.md",
-    "🤖Agent/从hello world到真正能用的agent/2025-1002🧘Agent企业落地架构.md",
-    "🤖Agent/从hello world到真正能用的agent/2025-0618 🧘以人为中心的Agent.md",
-    "🤖Agent/💆Copilot和Agent的区别.md",
-    "index.md",
-    "👩‍💻 个人笔记/Agent企业架构-20250922.md",
-    "👩‍💻 个人笔记/AI系统存量改造架构-20250928.md",
     "🤖Agent/images/2.0AI应用层架构图(SOA+DDD).svg",
     "📚RAG/images/self-rag流程图.svg",
     "🤖Agent/excalid/AI应用基础架构.png",
@@ -236,7 +235,6 @@
     "Agent设计/2.0",
     "Agent设计/解析",
     "universal-ui-kit.excalidrawlib",
-    "python AI应用面试",
     "agent/未命名.canvas"
   ]
 }
