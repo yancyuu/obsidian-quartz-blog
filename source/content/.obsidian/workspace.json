@@ -59,12 +59,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🤖Agent/提示词/🛕剧评提示词模板.md",
+                "file": "👩‍💻 个人笔记/2025-1014 mumu安卓模拟器破解.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "🛕剧评提示词模板"
+              "title": "2025-1014 mumu安卓模拟器破解"
             }
           }
         ],
@@ -141,7 +141,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🤖Agent/提示词/🛕剧评提示词模板.md",
+                "file": "👩‍💻 个人笔记/2025-1014 mumu安卓模拟器破解.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "🛕剧评提示词模板 的反向链接列表"
+              "title": "2025-1014 mumu安卓模拟器破解 的反向链接列表"
             }
           },
           {
@@ -160,12 +160,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🤖Agent/提示词/🛕剧评提示词模板.md",
+                "file": "👩‍💻 个人笔记/2025-1014 mumu安卓模拟器破解.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "🛕剧评提示词模板 的出链列表"
+              "title": "2025-1014 mumu安卓模拟器破解 的出链列表"
             }
           },
           {
@@ -226,16 +226,21 @@
       "command-palette:打开命令面板": false,
       "obsidian-excalidraw-plugin:新建绘图文件": false,
       "excalidraw-cn:Create New Excalidraw File": false,
-      "obsidian-kanban:创建新看板": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "00ef2ccf6279c871",
+  "active": "cab91b2a0a001ed7",
   "lastOpenFiles": [
+    "👩‍💻 个人笔记/2025-1007 📘个人开发者出海与共创企划书.md",
+    "👩‍💻 个人笔记/2025-1014 mumu安卓模拟器破解.md",
+    "Pasted image 20251014141706.png",
+    "Pasted image 20251014141636.png",
+    "Pasted image 20251014141621.png",
+    "Pasted image 20251014140255.png",
+    "🤖Agent/提示词/🛕剧评提示词模板.md",
     "🤖Agent/提示词/💻 编程提示词规则.md",
     "🤖Agent/提示词/🎷越狱.md",
     "🤖Agent/提示词/🎴 生成飞书卡片样式的海报html.md",
-    "🤖Agent/提示词/🛕剧评提示词模板.md",
     "🤖Agent/提示词/😁文章模仿大师.md",
     "🤖Agent/提示词/📰新闻资讯.md",
     "🤖Agent/提示词/💹公众号仿写.md",
@@ -256,8 +261,6 @@
     "🤖Agent/从hello-world到真正能用的agent/2023-1101流式生成与模型微调.md",
     "🤖Agent/从hello-world到真正能用的agent/2023-1001 个人电脑上部署的 ChatGLM-6B 体验.md",
     "🗨️GPT/Openai主要用到的模型及其用途👇.md",
-    "🗨️GPT/一站式解析ChatGPT入门相关知识.md",
-    "👩‍💻 个人笔记/2024-1105 📖有赞repo.md",
     "🤖Agent/excalid/AI系统存量改造架构图.svg",
     "未命名",
     "🤖Agent/excalid 1",
@@ -270,8 +273,6 @@
     "🤖Agent/excalid/AI一体化架构.png",
     "🤖Agent/Agent框架",
     "mermaid.png",
-    "📚RAG/excalid/self-rag流程图.png",
-    "📚RAG/images/文档解析的5种姿势.excalidraw.svg",
     "Excalidraw",
     "AI知识库/数据建模",
     "Agent设计/2.0",
