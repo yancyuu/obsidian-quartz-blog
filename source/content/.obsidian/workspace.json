@@ -203,7 +203,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 347.5
+    "width": 200
   },
   "right": {
     "id": "826ae5105491db05",
@@ -307,18 +307,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8a4a80da53789a38",
+  "active": "9540cdfc267e98d5",
   "lastOpenFiles": [
-    "面试题/AI应用面试.md",
-    "🤖Agent/爆品流程图.md",
     "🤖Agent/Agent框架/Agent开发JD.md",
+    "🤖Agent/爆品流程图.md",
+    "🤖Agent/AI2.0流程图.md",
+    "面试题/AI应用面试.md",
     "🤖Agent/2025-1103单品王.md",
     "💻基础知识/python/🧪 Python面试.md",
     "面试题/python垃圾回收.md",
     "面试题/fastapi.md",
     "面试题/fastmcp.md",
     "面试题/nodejs.md",
-    "🤖Agent/AI2.0流程图.md",
     "🤖Agent/💆Copilot和Agent的区别.md",
     "🤖Agent/从hello-world到真正能用的agent/2025-1002🧘Agent企业落地架构.md",
     "🤖Agent/Agent框架/Agents 2.0：符号学习助力智能体自我进化.md",
