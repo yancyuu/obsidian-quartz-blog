@@ -97,7 +97,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "面试题/python垃圾回收.md",
+                "file": "💻基础知识/python/python垃圾回收.md",
                 "mode": "source",
                 "source": false
               },
@@ -137,16 +137,32 @@
             "id": "9540cdfc267e98d5",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "🤖Agent/爆品流程图.md"
+                "file": "面试题/AI应用面试.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "爆品流程图"
+              "icon": "lucide-file",
+              "title": "AI应用面试"
+            }
+          },
+          {
+            "id": "fe7ea1795a03a78d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🤖Agent/Agent框架/AgentLight：Agent终极训练器.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "AgentLight：Agent终极训练器"
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -203,7 +219,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 347.5
   },
   "right": {
     "id": "826ae5105491db05",
@@ -219,7 +235,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "👩‍💻 个人笔记/2025-1014 mumu安卓模拟器破解.md",
+                "file": "🤖Agent/Agent框架/AgentLight：Agent终极训练器.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -229,7 +245,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "2025-1014 mumu安卓模拟器破解 的反向链接列表"
+              "title": "AgentLight：Agent终极训练器 的反向链接列表"
             }
           },
           {
@@ -238,12 +254,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "👩‍💻 个人笔记/2025-1014 mumu安卓模拟器破解.md",
+                "file": "🤖Agent/Agent框架/AgentLight：Agent终极训练器.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "2025-1014 mumu安卓模拟器破解 的出链列表"
+              "title": "AgentLight：Agent终极训练器 的出链列表"
             }
           },
           {
@@ -267,13 +283,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Drawing 2025-07-20 12.22.07.excalidraw.md",
+                "file": "🤖Agent/Agent框架/AgentLight：Agent终极训练器.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Drawing 2025-07-20 12.22.07.excalidraw 的大纲"
+              "title": "AgentLight：Agent终极训练器 的大纲"
             }
           },
           {
@@ -307,21 +323,31 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9540cdfc267e98d5",
+  "active": "fe7ea1795a03a78d",
   "lastOpenFiles": [
-    "🤖Agent/Agent框架/Agent开发JD.md",
-    "🤖Agent/爆品流程图.md",
-    "🤖Agent/AI2.0流程图.md",
-    "面试题/AI应用面试.md",
-    "🤖Agent/2025-1103单品王.md",
-    "💻基础知识/python/🧪 Python面试.md",
-    "面试题/python垃圾回收.md",
+    "🤖Agent/Agent框架/Agents 2.0：符号学习助力智能体自我进化.md",
+    "🤖Agent/Agent框架/Agno：专为代理工程而设计.md",
+    "🤖Agent/Agent框架/AgentLight：Agent终极训练器.md",
+    "🤖Agent/Agent框架/CAMEL-AI：多智能体系统的开源模块化框架.md",
+    "📚RAG/2024-0729 📚常用reranker模型.md",
+    "面试题/Agent开发JD.md",
+    "📚RAG/2025-0105 📚RAG技术进化路线.md",
+    "Pasted image 20251113141327.png",
+    "面试题/BBF层.md",
+    "面试题/Python 核心编程知识.md",
     "面试题/fastapi.md",
     "面试题/fastmcp.md",
-    "面试题/nodejs.md",
+    "面试题/AI应用面试.md",
+    "💻基础知识/python/python核心编程.md",
+    "💻基础知识/python/python垃圾回收.md",
+    "💻基础知识/python/Python基础.md",
+    "面试题/RAG.md",
+    "🤖Agent/爆品流程图.md",
+    "🤖Agent/2025-1103单品王.md",
+    "🤖Agent/AI2.0流程图.md",
     "🤖Agent/💆Copilot和Agent的区别.md",
+    "💻基础知识/python/🧪 Python面试.md",
     "🤖Agent/从hello-world到真正能用的agent/2025-1002🧘Agent企业落地架构.md",
-    "🤖Agent/Agent框架/Agents 2.0：符号学习助力智能体自我进化.md",
     "🤖Agent/excalid/基于【飞书】的FastAI中台.svg",
     "🤖Agent/excalid/基于【飞书】的FastAI中台.md",
     "🤖Agent/excalid/基于【飞书】的AI化存量改造架构图.svg",
@@ -330,21 +356,11 @@
     "🤖Agent/excalid/基于【飞书】的AI化存量改造架构图.md",
     "🤖Agent/excalid/AI-runtime架构.png",
     "🤖Agent/excalid/AI-Agent应用基础架构.png",
-    "🤖Agent/excalid/AI-Agent应用基础架构.md",
-    "👩‍💻 个人笔记/excalid/简化开发流程.md",
-    "👩‍💻 个人笔记/2025-1007 📘个人开发者出海与共创企划书.md",
     "🤖Agent/images/小火鸭Agent1.0时序图.svg",
     "🤖Agent/images/意图识别流程.svg",
     "🤖Agent/images/Pasted image 20250720173342.png",
     "🤖Agent/images/Pasted image 20250720173359.png",
     "🤖Agent/images/附件.png",
-    "🤖Agent/images/2.0AI应用层架构图(SOA+DDD).svg",
-    "🤖Agent/Agent框架/CAMEL-AI：多智能体系统的开源模块化框架.md",
-    "🤖Agent/excalid/意图识别流程.md",
-    "👩‍💻 个人笔记/2023-0403 🕷️爬取大众点评实战.md",
-    "👩‍💻 个人笔记/2023-0410 🐷AI时代来临普通人如何破局.md",
-    "👩‍💻 个人笔记/2023-1001 🍗体验了数字游民生活俩月后，我决定放弃了.md",
-    "👩‍💻 个人笔记/2024-0611 📈voc舆情分析系统.md",
     "excalidraw 25-11-04 02.27.28.ex",
     "面试题",
     "👩‍💻 个人笔记/excalid",

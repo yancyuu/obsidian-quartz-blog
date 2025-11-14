@@ -1,13 +1,8 @@
-AI应用框架相关：
-[[2023-1104 Llama Index连接外部资料库]]
-[[2023-1102 LangChain里的多轮对话]]
-[[2023-1103 LangChain里的Agent]]
-[[2024-0826 🔁 使用Langgraph的坑]]
-
-[[RAG]]
-[[🧪 Python面试]]
-[[Python基础]]
-[[python核心编程]]
+基础:
+[[fastapi]]
+[[fastmcp]]
+[[BBF层]]
+[[Python 核心编程知识]]
 
 ## 🎯 高级面试题（Agent 开发方向）
 
