@@ -1,3 +1,5 @@
+## 开源地址：
+https://github.com/camel-ai/camel
 ## 介绍
 
 CAMEL-AI 是一个开源社区，致力于寻找用于数据生成、世界模拟和任务自动化的代理的缩放规律。
