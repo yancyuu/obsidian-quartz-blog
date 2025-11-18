@@ -1,4 +1,4 @@
-### 引用：[[2025-0625 🏗️ RAG系统重构笔记]]
+### 引用：[[../../📚RAG/2025-0625 🏗️ RAG系统重构笔记]]
 ## 架构演进路径
 
 ![](https://qcnzd8v4xqbd.feishu.cn/space/api/box/stream/download/asynccode/?code=MDVhMTE2ZDQ3NjY0NjJiMjBlZjJlYTkxN2FjOWJiMGRfWjZXOVpIcHppY2JxaFpoakFJVGFqaFlramNqY203ZURfVG9rZW46VHFIdGJiNEYxb0U3a0h4VFRGaGNYZjVPbmpoXzE3NTQwMTUxNzU6MTc1NDAxODc3NV9WNA)
@@ -54,7 +54,7 @@ Agentic RAG
 ### 技术实现路径
 
 #### 意图识别架构设计
-![[意图识别流程.svg]]
+![[../images/意图识别流程.svg]]
   
 #### Self-RAG核心流程(伪代码)
 
@@ -87,7 +87,7 @@ def self_rag_pipeline(query):
 #### 上下文工程&整体流程
 
 
-![[self-rag流程图.svg]]
+![[../../📚RAG/images/self-rag流程图.svg]]
 Self-RAG的四个核心阶段：
 ##### **1. Retrieve (检索)**
 - 初始向量检索获得候选文档
