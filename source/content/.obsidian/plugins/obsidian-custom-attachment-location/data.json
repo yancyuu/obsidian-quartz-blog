@@ -1,5 +1,5 @@
 {
-  "attachmentFolderPath": "./assets/${noteFileName}",
+  "attachmentFolderPath": "./images/${noteFileName}",
   "attachmentRenameMode": "All",
   "collectAttachmentUsedByMultipleNotesMode": "Skip",
   "customTokensStr": "",
@@ -12,7 +12,7 @@
   "generatedAttachmentFileName": "file-${date:YYYYMMDDHHmmssSSS}",
   "includePaths": [],
   "jpegQuality": 0.8,
-  "markdownUrlFormat": "assets/${noteFileName}/${generatedAttachmentFileName}",
+  "markdownUrlFormat": "images/${noteFileName}/${generatedAttachmentFileName}",
   "shouldConvertPastedImagesToJpeg": false,
   "shouldDeleteOrphanAttachments": false,
   "shouldRenameAttachmentFiles": true,
@@ -24,5 +24,5 @@
   "treatAsAttachmentExtensions": [
     ".excalidraw.md"
   ],
-  "version": ""
+  "version": "9.17.14"
 }

@@ -54,7 +54,7 @@ Agentic RAG
 ### 技术实现路径
 
 #### 意图识别架构设计
-![[../images/意图识别流程.svg]]
+![[images/意图识别流程.svg]]
   
 #### Self-RAG核心流程(伪代码)
 
