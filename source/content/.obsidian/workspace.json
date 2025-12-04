@@ -11,10 +11,14 @@
             "id": "ddb57129db840a84",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "type": "markdown",
+              "state": {
+                "file": "🤖Agent/爆品智能体/选品方法论.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "选品方法论"
             }
           },
           {
@@ -102,6 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "🤖Agent/爆品智能体/选品方法论.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +116,7 @@
                 "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "选品方法论 的反向链接列表"
             }
           },
           {
@@ -149,12 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "🤖Agent/爆品智能体/选品方法论.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "选品方法论 的大纲"
             }
           },
           {
@@ -190,6 +196,20 @@
   },
   "active": "ddb57129db840a84",
   "lastOpenFiles": [
+    "🤖Agent/爆品智能体/images/选品方法论/file-20251204102606119.pptx",
+    "🤖Agent/爆品智能体/images/选品方法论",
+    "🤖Agent/爆品智能体/【找产品】爆品技术文档.md",
+    "🤖Agent/爆品智能体/选品方法论.md",
+    "🤖Agent/客服类智能体落地/从传统 KBQA 到现代企业级 RAG 的演进.md",
+    "🤖Agent/客服类智能体落地/images/客服智能客服应用.md",
+    "🤖Agent/客服类智能体落地/images/客服智能客服应用.svg",
+    "🤖Agent/客服类智能体落地/images/自建知识库流程图.svg",
+    "🤖Agent/excalid/基于【飞书】的AI化存量改造架构图.svg",
+    "🤖Agent/Agent框架/CAMEL-AI：多智能体系统的开源模块化框架.md",
+    "🤖Agent/资源/学习资源.md",
+    "🤖Agent/资源/开源工具项目.md",
+    "🤖Agent/资源/资源.md",
+    "🤖Agent/资源",
     "🤖Agent/从hello-world到真正能用的agent/2025-0305🐰 Agentic-RAG架构选型指南.md",
     "📚RAG/images/self-rag流程图.svg",
     "📚RAG/excalid/反思型rag流程图.md",
@@ -200,41 +220,28 @@
     "📚RAG/2025-0729 📊 构建知识图谱.md",
     "📚RAG/2025-0105 📚 RAG技术进化路线.md",
     "🤖Agent/excalid/基于【飞书】的AI化存量改造架构图.md",
-    "🤖Agent/excalid/基于【飞书】的AI化存量改造架构图.svg",
     "未命名.base",
     "📚RAG/2025-0625 🏗️ RAG系统重构笔记.md",
     "📚RAG/2025-0919 🤖 RAG 设计模式.md",
     "👩‍💻 个人笔记/fastbuilding 配置.md",
-    "🤖Agent/客服类智能体落地/从传统 KBQA 到现代企业级 RAG 的演进.md",
     "!自建.md",
-    "🤖Agent/客服类智能体落地/images/自建知识库流程图.svg",
     "🤖Agent/客服类智能体落地/images/自建知识库流程图.md",
     "2025-0919 🤖RAG 设计模式.md",
     "👩‍💻 个人笔记/excalid/简化开发流程.md",
     "🤖Agent/从hello-world到真正能用的agent/2023-1001 个人电脑上部署的 ChatGLM-6B 体验.md",
     "📚RAG/2025-0813 🏗️ 我的RAG系统重构笔记.md",
-    "📚RAG/2025-0701 📖 AI知识增强实现方案.md",
-    "📚RAG/2025-0425 📚 RAG技术学习笔记.md",
-    "🤖Agent/💆Copilot和Agent的区别.md",
-    "🤖Agent/excalid/意图识别流程.md",
-    "🤖Agent/从hello-world到真正能用的agent/2025-1002🧘Agent企业落地架构.md",
     "🤖Agent/excalid/AI-runtime架构.png",
     "🤖Agent/从hello-world到真正能用的agent/images/2025-1002🧘Agent企业落地架构/file-20251201153019594.png",
     "🤖Agent/从hello-world到真正能用的agent/images/2025-1002🧘Agent企业落地架构/file-20251201152958695.png",
     "🤖Agent/从hello-world到真正能用的agent/images/2025-1002🧘Agent企业落地架构",
     "🤖Agent/excalid/AI-Agent应用基础架构.png",
-    "🤖Agent/excalid/绝智 2.0AI应用层架构图(SOA+DDD).md",
-    "🤖Agent/excalid/基于【飞书】的FastAI中台.md",
     "🤖Agent/从hello-world到真正能用的agent/images/2023-1001 个人电脑上部署的 ChatGLM-6B 体验/file-20251201152912170.png",
-    "🤖Agent/images/Pasted image 20250720173359.png",
     "🤖Agent/从hello-world到真正能用的agent/images/2023-1001 个人电脑上部署的 ChatGLM-6B 体验",
     "🤖Agent/从hello-world到真正能用的agent/assets/2023-1001 个人电脑上部署的 ChatGLM-6B 体验",
     "🤖Agent/从hello-world到真正能用的agent/assets",
     "🤖Agent/从hello-world到真正能用的agent/未命名",
     "🤖Agent/从hello-world到真正能用的agent/images/2025-0426🧘以人为中心的Agent",
     "🤖Agent/从hello-world到真正能用的agent/images",
-    "🤖Agent/爆品智能体/images",
-    "🤖Agent/客服类智能体落地/images",
     "🤖Agent/excalid/未命名.canvas",
     "agent/未命名.canvas"
   ]
