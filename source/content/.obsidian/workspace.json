@@ -60,6 +60,19 @@
             }
           },
           {
+            "id": "35c135bac70f3191",
+            "type": "leaf",
+            "state": {
+              "type": "diff-view",
+              "state": {
+                "file": "source/content/.obsidian/workspace.json",
+                "staged": false
+              },
+              "icon": "git-pull-request",
+              "title": "Diff View (workspace.json)"
+            }
+          },
+          {
             "id": "0a04b2f1123625eb",
             "type": "leaf",
             "state": {
@@ -86,7 +99,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -247,10 +260,30 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2c03d161829630d4",
+  "active": "35c135bac70f3191",
   "lastOpenFiles": [
-    "👩‍💻 个人笔记/工作/week01-todo.md",
+    "conflict-files-obsidian-git.md",
     "👩‍💻 个人笔记/工作/AI 业务“可逃逸架构”设计规范 (V1.0).md",
+    "🤖Agent/爆品智能体/爆品智能体产品文档.md",
+    "🤖Agent/客服类智能体落地/智能知识问答Agent服务设计.md",
+    "🤖Agent/客服类智能体落地/微信小程序AI智能点餐.md",
+    "🤖Agent/从hello-world到真正能用的agent/images/2026-0108 🧘 Agent 企业落地架构变革：从工具治理到人治契约/file-20260108121540082.png",
+    "🤖Agent/从hello-world到真正能用的agent/images/2026-0108 🧘 Agent 企业落地架构变革：从工具治理到人治契约/file-20260108121540023.png",
+    "🤖Agent/从hello-world到真正能用的agent/images/2026-0108 🧘 Agent 企业落地架构变革：从工具治理到人治契约",
+    "🤖Agent/从hello-world到真正能用的agent/2026-0108 🧘 Agent 企业落地架构变革：从工具治理到人治契约.md",
+    "📚RAG/企业级知识库管理与检索服务设计文档.md",
+    "👩‍💻 个人笔记/公众号/images/08.  代码已死，系统永生：如何从“码农”进化为 “Agent 架构师”/file-20251229113819348.png",
+    "👩‍💻 个人笔记/公众号/images/08.  代码已死，系统永生：如何从“码农”进化为 “Agent 架构师”",
+    "👩‍💻 个人笔记/公众号/08.  代码已死，系统永生：如何从“码农”进化为 “Agent 架构师”.md",
+    "架构/应用开发规范/版本控制（用rebase取代merge）.md",
+    "架构/应用开发规范/应用开发规范.md",
+    "架构/应用开发规范/分支管理.md",
+    "架构/应用开发规范/cursor提示词.md",
+    "架构/应用开发规范",
+    "架构/基于 IAM 的网关鉴权系统设计文档.md",
+    "架构",
+    "2025-0628 🍖如何构建可演化的智能体系统架构.md",
+    "👩‍💻 个人笔记/工作/week01-todo.md",
     "👩‍💻 个人笔记/工作",
     "未命名",
     "面试题/面试-高级运维.md",
@@ -264,12 +297,6 @@
     "👩‍💻 个人笔记/2023-0410 🐷AI时代来临普通人如何破局.md",
     "👩‍💻 个人笔记/每年个人需投入的费用.md",
     "👩‍💻 个人笔记/fastbuilding 配置.md",
-    "👩‍💻 个人笔记/2024-0611 📈voc舆情分析系统.md",
-    "👩‍💻 个人笔记/2025-1222🚀 Agent 底层能力补全计划.md",
-    "👩‍💻 个人笔记/2025-1219 📘Micro-Sniper 矩阵 （个人商业计划）.md",
-    "👩‍💻 个人笔记/2025-1014 mumu安卓模拟器破解.md",
-    "💻基础知识/运维/docker/部署we-wp-rss.md",
-    "💻基础知识/运维/docker/Docker Swarm 正确加入 Worker 节点完整指南.md",
     "💻基础知识/运维/docker",
     "👩‍💻 个人笔记/公众号/images/07.我如何用 Agent 砍掉团队30的“垃圾时间”/file-20251217120525424.png",
     "👩‍💻 个人笔记/公众号/images/07.我如何用 Agent 砍掉团队30的“垃圾时间”/file-20251217120512735.png",
@@ -279,22 +306,8 @@
     "👩‍💻 个人笔记/公众号/images/02. 我们将企业级 Agent 降低85%的血泪重构史/file-20251216171324261.png",
     "👩‍💻 个人笔记/公众号/images/02. 我们将企业级 Agent 降低85%的血泪重构史/file-20251216171316115.png",
     "👩‍💻 个人笔记/公众号/images/02. 我们将企业级 Agent 降低85%的血泪重构史",
-    "👩‍💻 个人笔记/公众号/Drawing 2025-12-16 16.29.09.excalidraw.md",
-    "👩‍💻 个人笔记/公众号/07.我如何用 Agent 砍掉团队30的“垃圾时间”.md",
-    "👩‍💻 个人笔记/公众号/06. 🚨 小扎深夜“拔管”元宇宙：烧了700亿，最后发现还是墨镜香？.md",
-    "👩‍💻 个人笔记/公众号/05. 喂再多 Skills 也没用：Agent 的上下文绝症，今天依然没治好.md",
-    "👩‍💻 个人笔记/公众号/04. GPT-5.2 史诗级翻车？谷歌这次居然赢麻了！.md",
-    "👩‍💻 个人笔记/公众号/02. 我们将企业级 Agent 降低85%的血泪重构史.md",
-    "面试题/面试评分记录表.md",
-    "🤖Agent/资源",
-    "🤖Agent/爆品智能体/images/选品方法论/file-20251204102606119.pptx",
-    "🤖Agent/爆品智能体/images/选品方法论",
     "🤖Agent/爆品智能体/images/爆品流程图.svg",
     "🤖Agent/爆品智能体/images/数据流闭环.svg",
-    "🤖Agent/爆品智能体/images",
-    "🤖Agent/客服类智能体落地/images/自建知识库流程图.svg",
-    "🤖Agent/客服类智能体落地/images/客服智能客服应用.svg",
-    "🤖Agent/从hello-world到真正能用的agent/images/2025-1002🧘Agent企业落地架构/file-20251201153019594.png",
     "agent/未命名.canvas"
   ]
 }
