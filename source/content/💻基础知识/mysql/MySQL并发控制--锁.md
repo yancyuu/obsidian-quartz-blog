@@ -1,3 +1,11 @@
+---
+tags:
+  - basic-knowledge
+  - backend
+  - database
+  - learning-note
+  - mysql
+---
 
 ## 面试问题：
 

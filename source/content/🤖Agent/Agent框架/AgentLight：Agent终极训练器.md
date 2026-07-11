@@ -1,3 +1,12 @@
+---
+tags:
+  - ai
+  - ai-agent
+  - llm
+  - gpt
+  - langchain
+---
+
 ## 开源地址：
 https://github.com/microsoft/agent-lightning
 

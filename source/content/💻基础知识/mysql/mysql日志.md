@@ -1,101 +1,170 @@
+---
+tags:
+  - basic-knowledge
+  - backend
+  - database
+  - learning-note
+  - mysql
+---
 
+MySQL 日志可以分成两类：
 
-- **mysql服务层日志**
+1. **Server 层日志**：binlog、慢查询日志、通用日志
+2. **InnoDB 存储引擎日志**：redo log、undo log
 
-## 1. 二进制日志
+不同日志解决的问题不同：
 
-记录了所有对mysql的修改的时间(执行失败和回滚不生成日志)
+- **binlog**：复制、数据恢复、审计变更
+- **redo log**：崩溃恢复，保证已提交事务不丢
+- **undo log**：事务回滚、MVCC 版本链
+- **slow log**：定位慢 SQL
+- **general log**：记录客户端所有请求，通常只在排查问题时临时开启
 
-binlog可以查看
+## 1. binlog（二进制日志）
 
-格式：
+binlog 记录对 MySQL 数据产生修改的事件，主要用于：
 
-**基于段的格式  binlog_format=STATEMENT:记录sql**
+- 主从复制
+- 数据恢复
+- 审计数据变更
 
-**基于段的格式  binlog_format=ROW：记录数据的更改(更安全，可恢复数据)**
+执行失败和回滚的语句通常不会生成最终有效的变更日志。
 
-**混合日志格式  binlog_fo,rmat=MIXED:记录sql**
+常用命令：
 
-数据库语句
+```sql
+show variables like 'binlog_format';
+show binary logs;
+flush logs;
+```
 
-:set session binlog_format=row:设置二进制日志的格式
+查看日志内容：
 
-show variables like ‘binlog_format’:查看二进制日志格式
+```bash
+mysqlbinlog <日志文件名>
+```
 
-:show binary logs:查看当前日志文件
+设置当前 session 的 binlog 格式：
 
-flush logs:会生出新的log文件
+```sql
+set session binlog_format = row;
+```
 
-mysqlbinlog   日志文件名  :查看日志文件内容
+## 2. binlog 格式
 
-binlog_row_image:修改row格式日志写入模式
+### STATEMENT
 
-### mysql二进制日志格式对复制的影响
+记录 SQL 语句。
 
-- 基于sql语名的复制（SBR）
-    - 二进制日志格式使用的是statement
-        - 触发器，自定义函数进行修改数据时可能造成数据不一致
-        - 对于非确定性时间，无法保证主从一致
-        - 相比起基于行的复制方式在执行上需要更多的行锁
-- 基于行的复制（RBR）
-    - 二进制日志格式使用的是基于行的日志格式
-        - 无法用触发器
-        - 表结构一定要一致
-- 混合模式
-    - 自动切换
+优点：日志量较小。
 
-## 2.慢查日志
+缺点：遇到非确定性函数、触发器、自定义函数时，主从可能不一致。
 
-## 3. 通用日志
+### ROW
 
-- **mysql存储引擎日志**
+记录每一行数据的实际变更。
 
-1.重做日志
+优点：更安全，主从一致性更好，也更适合恢复数据。
 
-2.回滚日志
+缺点：日志量更大，并且要求表结构保持一致。
 
-## 日志总结：
+### MIXED
 
-**MySQL的redo日志**
+混合模式，MySQL 根据语句风险自动在 statement 和 row 之间切换。
 
-用于系统故障发生后的崩溃恢复。
+## 3. binlog 对复制的影响
 
-修改数据时，会先修改内存的page，然后才同步到磁盘，如果在此期间发生异常，就恢复不了了，所以修改内存page后会写redo log（顺序写入，所以很快，对性能影响较小）
+### SBR：Statement-Based Replication
 
-当数据库意外重启时，会根据 redo log 进行数据恢复，如果 redo log 中有事务提交，则进行事务提交修改数据。
+基于 SQL 语句复制。
 
-**MySQL的undo日志**
+风险：
 
-用于故障恢复，方便执行撤销操作。
+- 非确定性时间函数可能导致主从不一致
+- 触发器、自定义函数修改数据时可能不一致
+- 某些场景需要更多行锁
 
-与 redo log 不同，undo log 一般是逻辑日志，根据每行记录进行记录。例如当 DELETE 一条记录时，undo log 中会记录一条对应的 INSERT 记录，反之亦然当 UPDTAE 一条记录时，它记录一条对应反向 UPDATE 记录。
+### RBR：Row-Based Replication
 
-通过 undo log 一方面可以实现事务回滚，另一方面可以根据 undo log 回溯到某个特定的版本的数据，InnoDB实现 MVCC 的功能时就会用到undo log。
+基于行变更复制。
 
-**Mysql的二进制日志:主要用来主从复制**
+特点：
 
-记录了所有对mysql的修改的时间(执行失败和回滚不生成日志)
+- 复制结果更确定
+- 对数据恢复更友好
+- 日志量更大
+- 主从表结构必须一致
 
-binlog可以查看
+## 4. redo log（重做日志）
 
-格式：
+redo log 是 InnoDB 的崩溃恢复日志，用于保证已提交事务在数据库异常重启后仍然能够恢复。
 
-**基于段的格式  binlog_format=STATEMENT:记录sql**
+修改数据时，InnoDB 通常先修改内存中的 page，再刷盘。如果此时数据库崩溃，内存中的修改可能还没有落盘。
 
-**基于段的格式  binlog_format=ROW：记录数据的更改(更安全，可恢复数据)**
+redo log 记录“已经做过的修改”，数据库重启后可以根据 redo log 重新应用这些修改。
 
-**混合日志格式  binlog_fo,rmat=MIXED:记录sql**
+特点：
 
-数据库语句
+- 顺序写入，性能较好
+- 用于 crash recovery
+- 保证事务持久性
 
-:set session binlog_format=row:设置二进制日志的格式
+## 5. undo log（回滚日志）
 
-show variables like ‘binlog_format’:查看二进制日志格式
+undo log 记录数据修改前的旧版本，用于：
 
-:show binary logs:查看当前日志文件
+- 事务回滚
+- MVCC 一致性读
 
-flush logs:会生出新的log文件
+例如：
 
-mysqlbinlog   日志文件名  :查看日志文件内容
+- `DELETE` 一行时，undo log 中记录对应的 `INSERT`
+- `INSERT` 一行时，undo log 中记录对应的 `DELETE`
+- `UPDATE` 一行时，undo log 中记录反向 `UPDATE`
 
-binlog_row_image:修改row格式日志写入模式
+InnoDB 的 MVCC 会基于 undo log 形成版本链，让不同事务在不同隔离级别下读到合适的数据版本。
+
+## 6. 回滚段与 undo log
+
+“回滚段”这个概念更常见于 Oracle。它用于保存事务修改前的旧版本数据，支持事务回滚、一致性读和并发控制。
+
+在 MySQL InnoDB 中，对应能力主要由 undo log 实现。
+
+可以简单理解为：
+
+- Oracle 常说 rollback segment
+- InnoDB 常说 undo log / undo segment
+
+## 7. 慢查询日志
+
+慢查询日志用于记录执行时间超过阈值的 SQL，是定位性能问题的重要入口。
+
+常见用途：
+
+- 发现慢 SQL
+- 分析索引是否命中
+- 结合 `EXPLAIN` 做查询优化
+
+相关笔记：[[EXPLAIN]]
+
+## 8. 通用日志
+
+通用日志会记录客户端发送给 MySQL 的所有请求。
+
+它的信息非常全，但开销也大，一般只在临时排查问题时开启，不建议生产环境长期打开。
+
+## 总结
+
+| 日志 | 所属层 | 主要用途 |
+| --- | --- | --- |
+| binlog | Server 层 | 主从复制、数据恢复、审计 |
+| redo log | InnoDB | 崩溃恢复、保证持久性 |
+| undo log | InnoDB | 事务回滚、MVCC |
+| slow log | Server 层 | 慢 SQL 分析 |
+| general log | Server 层 | 请求排查 |
+
+记忆方式：
+
+- **binlog**：给别人看，主从复制/恢复用
+- **redo log**：崩了以后重做
+- **undo log**：错了以后回滚，也支撑 MVCC

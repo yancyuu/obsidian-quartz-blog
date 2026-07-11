@@ -1,3 +1,9 @@
+---
+tags:
+  - basic-knowledge
+  - devops
+  - learning-note
+---
 
 
 Dapr的全称是 “Distributed Application Runtime”，即 “分布式应用运行时”。Dapr 是一个开源项目，由微软发起，目前已加入CNCF孵化器项目。

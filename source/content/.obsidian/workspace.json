@@ -4,171 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "54f3892236a82791",
+        "id": "774760f0f7350760",
         "type": "tabs",
         "children": [
           {
-            "id": "2c2bf17ce08a90c0",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
-            }
-          },
-          {
-            "id": "25da9c42f0a2702e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "👩‍💻 个人笔记/公众号/🚀 爆款 AI Agent 公众号文章写作指南.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "🚀 爆款 AI Agent 公众号文章写作指南"
-            }
-          },
-          {
-            "id": "0e311dd13fb011d1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🤖Agent/从hello-world到真正能用的agent/2023-1102 LangChain里的多轮对话.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2023-1102 LangChain里的多轮对话"
-            }
-          },
-          {
-            "id": "2c03d161829630d4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "👩‍💻 个人笔记/工作/AI 业务“可逃逸架构”设计规范 (V1.0).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "AI 业务“可逃逸架构”设计规范 (V1.0)"
-            }
-          },
-          {
-            "id": "525a31652313dafa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "架构/应用开发规范/“可逃逸架构”设计模式.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "“可逃逸架构”设计模式"
-            }
-          },
-          {
-            "id": "0aae9bd9aec5c929",
+            "id": "cb56619fbe430dc0",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "架构/应用开发规范/excalid/渐进式披露架构.md"
+                "file": "👩‍💻 个人笔记/公众号/Drawing 2025-12-16 16.29.09.excalidraw.md"
               },
               "icon": "excalidraw-icon",
-              "title": "渐进式披露架构"
-            }
-          },
-          {
-            "id": "32a5b3b7092e3ad4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "架构/应用开发规范/“可逃逸架构”设计模式.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "“可逃逸架构”设计模式"
-            }
-          },
-          {
-            "id": "a7dd2a278217340c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "架构/应用开发规范/“可逃逸架构”设计模式.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "“可逃逸架构”设计模式"
-            }
-          },
-          {
-            "id": "fdf102157557e72b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "架构/应用开发规范/“可逃逸架构”设计模式.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "“可逃逸架构”设计模式"
-            }
-          },
-          {
-            "id": "bc5ff5beca291651",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "架构/应用开发规范/“可逃逸架构”设计模式.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "“可逃逸架构”设计模式"
-            }
-          },
-          {
-            "id": "0a04b2f1123625eb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "面试题/AI应用面试.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "AI应用面试"
-            }
-          },
-          {
-            "id": "9540cdfc267e98d5",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "🤖Agent/爆品流程图.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "爆品流程图"
+              "title": "Drawing 2025-12-16 16.29.09.excalidraw"
             }
           }
-        ],
-        "currentTab": 9
+        ]
       }
     ],
     "direction": "vertical"
@@ -200,7 +51,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "拒绝被",
+                "query": "tag:#learning-note",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -317,6 +168,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "karpathywiki:摄入当前文件": false,
       "bases:新建数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
@@ -324,56 +176,58 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
       "excalidraw-cn:Create New Excalidraw File": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bc5ff5beca291651",
+  "active": "cb56619fbe430dc0",
   "lastOpenFiles": [
+    "👩‍💻 个人笔记/公众号/Drawing 2025-12-16 16.29.09.excalidraw.md",
+    "wiki/concepts/调用与返回数据流.md",
+    "wiki/concepts/外星神器的触手.md",
+    "wiki/concepts/历史上下文检索.md",
+    "wiki/concepts/信息检索agent.md",
+    "wiki/concepts/代码文本生成agent.md",
+    "wiki/concepts/用户层.md",
+    "wiki/concepts/工具层.md",
+    "wiki/concepts/质量校验闭环.md",
+    "wiki/concepts/专家agent集群.md",
+    "wiki/concepts/意图识别与路由.md",
+    "wiki/entities/生成草稿.md",
+    "wiki/entities/用户指令.md",
+    "wiki/entities/企业erp系统.md",
+    "wiki/entities/web-search.md",
+    "wiki/entities/karpathy的新ide.md",
+    "wiki/entities/python解释器.md",
+    "wiki/sources/drawing-2025-12-16-16-29-09-excalidraw_826da0.md",
+    "👩‍💻 个人笔记/公众号/08.  代码已死，系统永生：如何从“码农”进化为 “Agent 架构师”.md",
+    "wiki/concepts/10倍增益.md",
+    "wiki/concepts/任务拆解.md",
+    "wiki/concepts/概率性编程.md",
+    "wiki/concepts/确定性与概率性博弈.md",
+    "wiki/concepts/容错设计.md",
+    "wiki/concepts/评估体系.md",
+    "wiki/concepts/critic-校验机制.md",
+    "未命名.base",
+    "wiki/contradictions",
+    "未命名.canvas",
+    "wiki/schema",
+    "wiki/sources",
+    "wiki/concepts",
+    "wiki/entities",
+    "wiki",
+    "未命名 1.base",
     "架构/应用开发规范/excalid/agent-app代码结构.svg",
-    "架构/应用开发规范/“可逃逸架构”设计模式.md",
     "架构/应用开发规范/excalid/渐进式披露架构.svg",
-    "agent.md",
-    "架构/应用开发规范/excalid/渐进式披露架构.md",
-    "架构/应用开发规范/excalid/agent-app代码结构.md",
-    "架构/应用开发规范/版本控制（用rebase取代merge）.md",
-    "架构/应用开发规范/cursor提示词.md",
-    "架构/应用开发规范/分支管理.md",
-    "📚RAG/2025-0919 🤖 RAG 设计模式.md",
-    "👩‍💻 个人笔记/工作/week01-todo.md",
-    "架构/应用开发规范/AI 业务“可逃逸架构”设计规范 (V1.0).md",
-    "架构/应用开发规范/应用开发规范.md",
     "架构/应用开发规范/excalid",
-    "📚RAG/2025-0105 📚 RAG技术进化路线.md",
-    "👩‍💻 个人笔记/2023-0410 🐷AI时代来临普通人如何破局.md",
-    "👩‍💻 个人笔记/2023-1001 🍗体验了数字游民生活俩月后，我决定放弃了.md",
-    "👩‍💻 个人笔记/2023-0403 🕷️爬取大众点评实战.md",
-    "👩‍💻 个人笔记/2025-1014 mumu安卓模拟器破解.md",
     "未命名",
-    "conflict-files-obsidian-git.md",
-    "🤖Agent/爆品智能体/爆品智能体产品文档.md",
-    "🤖Agent/客服类智能体落地/智能知识问答Agent服务设计.md",
-    "🤖Agent/客服类智能体落地/微信小程序AI智能点餐.md",
     "🤖Agent/从hello-world到真正能用的agent/images/2026-0108 🧘 Agent 企业落地架构变革：从工具治理到人治契约/file-20260108121540082.png",
     "🤖Agent/从hello-world到真正能用的agent/images/2026-0108 🧘 Agent 企业落地架构变革：从工具治理到人治契约/file-20260108121540023.png",
-    "🤖Agent/从hello-world到真正能用的agent/images/2026-0108 🧘 Agent 企业落地架构变革：从工具治理到人治契约",
-    "🤖Agent/从hello-world到真正能用的agent/2026-0108 🧘 Agent 企业落地架构变革：从工具治理到人治契约.md",
-    "📚RAG/企业级知识库管理与检索服务设计文档.md",
     "👩‍💻 个人笔记/公众号/images/08.  代码已死，系统永生：如何从“码农”进化为 “Agent 架构师”/file-20251229113819348.png",
-    "👩‍💻 个人笔记/公众号/images/08.  代码已死，系统永生：如何从“码农”进化为 “Agent 架构师”",
-    "👩‍💻 个人笔记/公众号/08.  代码已死，系统永生：如何从“码农”进化为 “Agent 架构师”.md",
-    "架构/应用开发规范",
-    "架构/基于 IAM 的网关鉴权系统设计文档.md",
-    "架构",
-    "2025-0628 🍖如何构建可演化的智能体系统架构.md",
-    "👩‍💻 个人笔记/工作",
-    "💻基础知识/运维/docker",
     "👩‍💻 个人笔记/公众号/images/07.我如何用 Agent 砍掉团队30的“垃圾时间”/file-20251217120525424.png",
     "👩‍💻 个人笔记/公众号/images/07.我如何用 Agent 砍掉团队30的“垃圾时间”/file-20251217120512735.png",
-    "👩‍💻 个人笔记/公众号/images/07.我如何用 Agent 砍掉团队30的“垃圾时间”",
     "👩‍💻 个人笔记/公众号/images/05. 喂再多 Skills 也没用：Agent 的上下文绝症，今天依然没治好/file-20251216163132119.png",
-    "👩‍💻 个人笔记/公众号/images/05. 喂再多 Skills 也没用：Agent 的上下文绝症，今天依然没治好",
     "👩‍💻 个人笔记/公众号/images/02. 我们将企业级 Agent 降低85%的血泪重构史/file-20251216171324261.png",
     "👩‍💻 个人笔记/公众号/images/02. 我们将企业级 Agent 降低85%的血泪重构史/file-20251216171316115.png",
     "agent/未命名.canvas"

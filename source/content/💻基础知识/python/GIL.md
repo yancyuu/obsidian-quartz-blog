@@ -1,3 +1,12 @@
+---
+tags:
+  - basic-knowledge
+  - backend
+  - python
+  - concurrency
+  - gil
+  - learning-note
+---
 
 
 ## GIL存在的原因

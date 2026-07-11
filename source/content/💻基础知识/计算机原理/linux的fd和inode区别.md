@@ -1,3 +1,10 @@
+---
+tags:
+  - basic-knowledge
+  - computer-science
+  - learning-note
+  - linux
+---
 
 
 **fd简介：**

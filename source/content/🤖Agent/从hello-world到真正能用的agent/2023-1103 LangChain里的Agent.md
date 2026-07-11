@@ -1,4 +1,12 @@
-#LangChain #agent 
+---
+tags:
+  - ai
+  - ai-agent
+  - llm
+  - agent-framework
+  - gpt
+  - langchain
+---
 
 在第 11 讲里，我为你讲解了如何把各种资料的内容向量化，然后通过 llama-index 建立对应的索引，实现对我们自己的文本资料的问答。而在过去的 3 讲里面，我们又深入了解了如何使用 Langchain。Langchain 能够便于我们把 AI 对语言的理解和组织能力、外部各种资料或者 SaaS 的 API，以及你自己撰写的代码整合到一起来。通过对这些能力的整合，我们就可以通过自然语言完成更加复杂的任务了，而不仅仅只是能闲聊。
 

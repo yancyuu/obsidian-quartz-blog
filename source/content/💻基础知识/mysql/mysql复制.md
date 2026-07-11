@@ -1,3 +1,11 @@
+---
+tags:
+  - basic-knowledge
+  - backend
+  - database
+  - learning-note
+  - mysql
+---
 
 
 Owner: yancy yu

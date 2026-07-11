@@ -1,3 +1,13 @@
+---
+tags:
+  - ai
+  - ai-agent
+  - rag
+  - architecture
+  - agentic-rag
+  - knowledge-base
+---
+
 ### 引用：[[../../📚RAG/2025-0625 🏗️ RAG系统重构笔记]]
 
 ## 1. 架构演进路径

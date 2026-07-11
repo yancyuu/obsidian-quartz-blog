@@ -1,3 +1,12 @@
+---
+tags:
+  - basic-knowledge
+  - backend
+  - database
+  - cache
+  - learning-note
+  - redis
+---
 
 Redis是一个高性能的开源键值存储系统，它的底层原理和数据结构非常精巧，以下是一些关键概念和原理：
 

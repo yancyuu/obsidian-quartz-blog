@@ -1,3 +1,11 @@
+---
+tags:
+  - ai
+  - ai-agent
+  - agent-framework
+  - langgraph
+---
+
 在 LangGraph 的设计里，**图（Graph）本身是一个有向无环图（DAG）**，所以节点之间不允许形成真正的“环路”（loop）。也就是说，你不能在定义时就让节点 A→B→C→A 这样直接闭环，否则在拓扑排序时框架会报“循环依赖”错误。
 
 ---

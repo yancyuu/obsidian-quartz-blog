@@ -1,3 +1,11 @@
+---
+tags:
+  - basic-knowledge
+  - devops
+  - learning-note
+  - oauth2
+  - security
+---
 
 OAuth2.0 的授权码（Authorization Code）模式多了一个步骤，即先返回一个授权码，然后用这个授权码去换取 `access_token`。这看似多此一举，实则有几个重要的安全和功能性考虑：
 

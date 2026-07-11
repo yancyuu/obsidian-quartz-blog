@@ -1,3 +1,12 @@
+---
+tags:
+  - basic-knowledge
+  - backend
+  - distributed-system
+  - high-concurrency
+  - kafka
+  - learning-note
+---
 
 
 ## Kafka中发送消息之前做了什么

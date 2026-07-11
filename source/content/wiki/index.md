@@ -1,0 +1,315 @@
+# Wiki Index
+
+> 自动生成的知识库目录
+
+> Note: Text in backticks after page names shows aliases — alternative names, abbreviations, or translations.
+
+## 实体
+
+- [[entities/生成草稿|生成草稿]] `aliases: Draft Generation, 草稿输出` - type: entity
+- [[entities/用户指令|用户指令]] `aliases: User Command, 用户输入` - type: entity
+- [[entities/企业erp系统|企业erp系统]] `aliases: Enterprise ERP, ERP系统, 企业ERP` - type: entity
+- [[entities/web-search|web-search]] `aliases: 网络搜索, 网页搜索工具, Web搜索` - type: entity
+- [[entities/karpathy的新ide|karpathy的新ide]] `aliases: 中控大脑, Karpathy IDE` - type: entity
+- [[entities/python解释器|python解释器]] `aliases: Python Interpreter, 代码执行环境` - type: entity
+- [[entities/andrej-karpathy|andrej-karpathy]] `aliases: Karpathy` - type: entity
+- [[entities/subagent|subagent]] `aliases: 子代理, 子Agent` - type: entity
+- [[entities/标签选择agent|标签选择agent]] `aliases: The Classifier, 分类Agent` - type: entity
+- [[entities/标签分析agent|标签分析agent]] `aliases: 标签体系动态生长Agent, 标签分析智能体` - type: entity
+- [[entities/excel|excel]] `aliases: Microsoft Excel, Excel表格` - type: entity
+- [[entities/飞书|飞书]] `aliases: 飞书多维表格, 飞书API, Lark` - type: entity
+- [[entities/gptcache|gptcache]] `aliases: GPT Cache, GPT缓存` - type: entity
+- [[entities/twitter|twitter]] `aliases: X, 推特` - type: entity
+- [[entities/business-insider|business-insider]] `aliases: Business Insider, BI, 商业内幕` - type: entity
+- [[entities/meta-quest|meta-quest]] `aliases: Quest头显, Quest, Meta Quest 系列` - type: entity
+- [[entities/alan-dye|alan-dye]] `aliases: 前苹果设计师, Alan Dye` - type: entity
+- [[entities/ray-ban-meta-智能眼镜|ray-ban-meta-智能眼镜]] `aliases: Ray-Ban智能眼镜, Meta智能眼镜` - type: entity
+- [[entities/apple-vision-pro|apple-vision-pro]] `aliases: Vision Pro` - type: entity
+- [[entities/meta|meta]] `aliases: Facebook, Meta公司, 原Facebook` - type: entity
+- [[entities/reality-labs|reality-labs]] `aliases: 现实实验室, Meta Reality Labs` - type: entity
+- [[entities/anthropic|anthropic]] `aliases: Anthropic AI, Anthropic 公司` - type: entity
+- [[entities/claude-skills|claude-skills]] `aliases: Skills, Claude Skills 功能` - type: entity
+- [[entities/neurips-2025|neurips-2025]] `aliases: NeurIPS2025, Neural Information Processing Systems 2025` - type: entity
+- [[entities/奥特曼|奥特曼]] `aliases: Sam Altman, 山姆·奥特曼` - type: entity
+- [[entities/raptor|raptor]] `aliases: Raptor项目, Raptor RAG` - type: entity
+- [[entities/claude-4-5|claude-4-5]] `aliases: Claude 4.5, Anthropic Claude 4.5` - type: entity
+- [[entities/cursor|cursor]] `aliases: Cursor IDE, Cursor Editor, Cursor AI` - type: entity
+- [[entities/powershell|powershell]] `aliases: Windows PowerShell, PowerShell 命令行` - type: entity
+- [[entities/gpt-5-2|gpt-5-2]] `aliases: GPT5.2, OpenAI GPT-5.2` - type: entity
+- [[entities/gemini-3-pro|gemini-3-pro]] `aliases: Google Gemini 3 Pro, Gemini 3 Pro` - type: entity
+- [[entities/google|google]] `aliases: 谷歌, Google LLC, Alphabet` - type: entity
+- [[entities/bert|bert]] `aliases: BERT模型, Bidirectional Encoder Representations from Transformers, BERT预训练模型` - type: entity
+- [[entities/智能店长|智能店长]] `aliases: AI店长助手, 智能店长项目` - type: entity
+- [[entities/野生想法实验室|野生想法实验室]] `aliases: 野生想法, Wild Ideas Lab` - type: entity
+- [[entities/版式识别|版式识别]] `aliases: Layout Analysis, 版面分析, 文档版式识别` - type: entity
+- [[entities/fastgpt|fastgpt]] `aliases: FastGPT, FastGPT RAG引擎` - type: entity
+- [[entities/bge-small-zh-v1-5|bge-small-zh-v1-5]] `aliases: BGE-small-zh, BGE small zh v1.5, BAAI bge-small-zh-v1.5` - type: entity
+- [[entities/gpt-4|gpt-4]] `aliases: GPT-4, OpenAI GPT-4` - type: entity
+- [[entities/redis|redis]] `aliases: Redis, Redis数据库, Remote Dictionary Server` - type: entity
+- [[entities/信仰咨询agent|信仰咨询agent]] `aliases: 信仰咨询智能体, 宗教咨询Agent` - type: entity
+- [[entities/订餐agent|订餐agent]] `aliases: 订餐智能体, 订餐Agent项目` - type: entity
+- [[entities/企业问答agent|企业问答agent]] `aliases: 企业问答智能体, IT流程问答Agent` - type: entity
+- [[entities/客服agent|客服agent]] `aliases: 客服智能体, 客户服务Agent` - type: entity
+- [[entities/飞书智能助理|飞书智能助理]] `aliases: 飞书助手, Lark Assistant` - type: entity
+- [[entities/阿尔法狗|阿尔法狗]] `aliases: AlphaGo` - type: entity
+- [[entities/通义千问|通义千问]] `aliases: 阿里AI产品, 通义, Qwen` - type: entity
+- [[entities/李世石|李世石]] `aliases: Lee Sedol, 이세돌` - type: entity
+- [[entities/拼多多|拼多多]] `aliases: PDD, Pinduoduo` - type: entity
+- [[entities/智脑|智脑]] `aliases: 360 AI产品, 360智脑` - type: entity
+- [[entities/深蓝|深蓝]] `aliases: IBM深蓝, Deep Blue` - type: entity
+- [[entities/微信公众号|微信公众号]] `aliases: 公众号, 微信公众号爆文项目` - type: entity
+- [[entities/taskweaver|taskweaver]] `aliases: TaskWeaver, TaskWeaver 项目` - type: entity
+- [[entities/小红书|小红书]] `aliases: RED, 小红书App` - type: entity
+- [[entities/小火鸭|小火鸭]] `aliases: 小火鸭AGENT, 小火鸭 Agent` - type: entity
+- [[entities/reka-ai|reka-ai]] `aliases: Reka, Reka Artificial Intelligence` - type: entity
+- [[entities/wps-ai|wps-ai]] `aliases: 金山WPS AI, WPS智能助手` - type: entity
+- [[entities/pydantic-ai|pydantic-ai]] `aliases: Pydantic-AI, PydanticAI` - type: entity
+- [[entities/sora|sora]] `aliases: OpenAI Sora, Sora 视频` - type: entity
+- [[entities/playwright|playwright]] `aliases: Playwright, Playwright自动化框架, 微软Playwright` - type: entity
+- [[entities/rpa|rpa]] `aliases: 机器人流程自动化, Robotic Process Automation` - type: entity
+- [[entities/notion-ai|notion-ai]] `aliases: Notion AI, Notion 写作助手` - type: entity
+- [[entities/openai|openai]] `aliases: OpenAI, openai` - type: entity
+- [[entities/openagents|openagents]] `aliases: OpenAgents, Open Agents` - type: entity
+- [[entities/mermaid|mermaid]] `aliases: Mermaid图表, Mermaid流程图` - type: entity
+- [[entities/nacos|nacos]] `aliases: MSE Nacos, Nacos服务注册中心` - type: entity
+- [[entities/magentic-ui|magentic-ui]] `aliases: Magentic One, Magentic-One, Magentic UI` - type: entity
+- [[entities/langgraph|langgraph]] `aliases: LangGraph, LangGraph Framework` - type: entity
+- [[entities/dify|dify]] `aliases: Dify平台, Dify.AI` - type: entity
+- [[entities/langchain|langchain]] `aliases: LangChain, LangChain AI` - type: entity
+- [[entities/langgraph-agent|langgraph-agent]] `aliases: LangGraph 智能体, LangGraph Agent` - type: entity
+- [[entities/higress|higress]] `aliases: AI网关, Higress AI网关` - type: entity
+- [[entities/lamini|lamini]] `aliases: Lamini AI, Lamini平台` - type: entity
+- [[entities/k8s|k8s]] `aliases: Kubernetes, K8s + Knative` - type: entity
+- [[entities/granola-ai|granola-ai]] `aliases: Granola, Granola AI` - type: entity
+- [[entities/fastmcp|fastmcp]] `aliases: FastMCP轻量框架, FastMCP框架` - type: entity
+- [[entities/deerflow|deerflow]] `aliases: Deerflow智能体框架, Deerflow Framework` - type: entity
+- [[entities/glean|glean]] `aliases: Glean, Glean企业搜索, Glean AI` - type: entity
+- [[entities/github-copilot|github-copilot]] `aliases: Copilot 编程助手, GitHub Copilot` - type: entity
+- [[entities/garry-kasparov|garry-kasparov]] `aliases: 卡斯帕罗夫, 加里·卡斯帕罗夫` - type: entity
+- [[entities/fc|fc]] `aliases: 阿里云函数计算, Function Compute, 阿里云FC` - type: entity
+- [[entities/autogpt|autogpt]] `aliases: Auto-GPT, AutoGPT 项目` - type: entity
+- [[entities/devin|devin]] `aliases: Devin AI, Cognition Devin` - type: entity
+- [[entities/deepseek|deepseek]] `aliases: 深度求索, DeepSeek AI` - type: entity
+- [[entities/codewhisperer|codewhisperer]] `aliases: Amazon CodeWhisperer, 亚马逊 CodeWhisperer` - type: entity
+- [[entities/cognition-labs|cognition-labs]] `aliases: Cognition AI, Cognition, Cognition Labs` - type: entity
+- [[entities/chatgpt账号交易|chatgpt账号交易]] `aliases: ChatGPT账号买卖, AI账号套利` - type: entity
+- [[entities/agentbay|agentbay]] `aliases: Agentbay RPA, Agentbay 容器化RPA通道` - type: entity
+- [[entities/chatgpt谷歌插件|chatgpt谷歌插件]] `aliases: ChatGPT浏览器插件, ChatGPT Chrome扩展` - type: entity
+- [[entities/chatgpt|chatgpt]] `aliases: GPT, ChatGPT对话机器人` - type: entity
+- [[entities/autogen|autogen]] `aliases: AutoGen, Magentic-One, 微软AutoGen` - type: entity
+- [[entities/agntcy|agntcy]] `aliases: AGNTCY联盟, AGNTCY Consortium` - type: entity
+- [[entities/ai懒人星球|ai懒人星球]] `aliases: 知识星球, AI懒人星球知识社群` - type: entity
+- [[entities/agenticseek|agenticseek]] `aliases: agenticSeek, Agentic Seek` - type: entity
+
+## 概念
+
+- [[concepts/调用与返回数据流|调用与返回数据流]] `aliases: Call and Return Data Flow, 工具调用数据流` - type: concept
+- [[concepts/外星神器的触手|外星神器的触手]] `aliases: Alien Artifact Tentacles, 工具层隐喻` - type: concept
+- [[concepts/历史上下文检索|历史上下文检索]] `aliases: Historical Context Retrieval, 上下文历史查询` - type: concept
+- [[concepts/信息检索agent|信息检索agent]] `aliases: Agent A, Information Retrieval Agent, 信息检索智能体` - type: concept
+- [[concepts/代码文本生成agent|代码文本生成agent]] `aliases: Agent B, Code/Text Generation Agent` - type: concept
+- [[concepts/用户层|用户层]] `aliases: User Layer, 用户交互层` - type: concept
+- [[concepts/工具层|工具层]] `aliases: Tool Layer, 工具增强层` - type: concept
+- [[concepts/质量校验闭环|质量校验闭环]] `aliases: 质量校验循环, Quality Check Loop` - type: concept
+- [[concepts/专家agent集群|专家agent集群]] `aliases: Expert Agent Cluster, 专家Agent集群` - type: concept
+- [[concepts/意图识别与路由|意图识别与路由]] `aliases: 意图识别 & 路由, 意图识别与路由, Intent Recognition & Routing` - type: concept
+- [[concepts/10倍增益|10倍增益]] `aliases: 10x增益, 10x程序员` - type: concept
+- [[concepts/任务拆解|任务拆解]] `aliases: Decomposition, 原子任务拆解, 原子化拆解` - type: concept
+- [[concepts/概率性编程|概率性编程]] `aliases: Probabilistic Programming, 概率性工程` - type: concept
+- [[concepts/确定性与概率性博弈|确定性与概率性博弈]] `aliases: 从确定性到概率性, 确定性失效, Deterministic vs Probabilistic Engineering` - type: concept
+- [[concepts/容错设计|容错设计]] `aliases: Fault Tolerance Design, 防呆机制, 容错机制` - type: concept
+- [[concepts/评估体系|评估体系]] `aliases: Evals, 自动化评估测试` - type: concept
+- [[concepts/critic-校验机制|critic-校验机制]] `aliases: Critic, 校验Agent, 批评家角色, 逻辑校验Agent` - type: concept
+- [[concepts/智能路由|智能路由]] `aliases: Router, 意图路由, 智能路由分发` - type: concept
+- [[concepts/确定性工程|确定性工程]] `aliases: Deterministic Engineering, Classic Engineering, 旧软件工程` - type: concept
+- [[concepts/置信度阈值|置信度阈值]] `aliases: 置信度过滤, 低置信度转人工, Confidence Threshold` - type: concept
+- [[concepts/人形接口|人形接口]] `aliases: 人力慢查询, 人形API` - type: concept
+- [[concepts/文本切块-+-rag|文本切块-+-rag]] `aliases: 文本切块, Context Window处理, Chunking + RAG` - type: concept
+- [[concepts/分级策略|分级策略]] `aliases: 成本分级策略, 分级处理策略` - type: concept
+- [[concepts/rpa-手-+-agent-脑-+-im-嘴|rpa-手-+-agent-脑-+-im-嘴]] `aliases: RPA+Agent+IM组合架构, RPA手+Agent脑+IM嘴` - type: concept
+- [[concepts/幻觉控制|幻觉控制]] `aliases: Agent幻觉抑制, 限制输出空间` - type: concept
+- [[concepts/few-shot-prompting|few-shot-prompting]] `aliases: 少样本提示, Few-Shot, 少样本学习` - type: concept
+- [[concepts/voc重构|voc重构]] `aliases: Voice of Customer重构, 舆情分析系统重构, VOC舆情系统重构` - type: concept
+- [[concepts/战略转向|战略转向]] `aliases: 战略调整, Strategic Pivot` - type: concept
+- [[concepts/ai眼镜|ai眼镜]] `aliases: AI Glasses, 智能眼镜` - type: concept
+- [[concepts/元宇宙|元宇宙]] `aliases: Metaverse, 虚拟世界` - type: concept
+- [[concepts/vr头显|vr头显]] `aliases: VR Headset, VR设备, 虚拟现实头显` - type: concept
+- [[concepts/非transformer架构|非transformer架构]] `aliases: Non-Transformer Architecture, 非Transformer模型架构, 革命派架构` - type: concept
+- [[concepts/进程调度|进程调度]] `aliases: Process Scheduling, Skill优先级调度, Agent任务调度` - type: concept
+- [[concepts/io阻塞|io阻塞]] `aliases: I/O Blocking, 输入输出阻塞` - type: concept
+- [[concepts/上下文窗口|上下文窗口]] `aliases: Context Window, 上下文窗口限制` - type: concept
+- [[concepts/transformer|transformer]] `aliases: Transformer架构, Transformer模型, Transformers` - type: concept
+- [[concepts/kv-cache|kv-cache]] `aliases: KV Cache, 键值缓存, Key-Value Cache` - type: concept
+- [[concepts/上下文欺骗循环|上下文欺骗循环]] `aliases: Context Deception Loop, 上下文欺骗陷阱` - type: concept
+- [[concepts/progressive-disclosure|progressive-disclosure]] `aliases: 渐进式披露, Progressive Disclosure 方法` - type: concept
+- [[concepts/手动分页|手动分页]] `aliases: Manual Paging, 手工分页` - type: concept
+- [[concepts/模型实测对比|模型实测对比]] `aliases: 模型评测, 实测对比` - type: concept
+- [[concepts/代码执行环境|代码执行环境]] `aliases: 执行环境, 代码运行环境` - type: concept
+- [[concepts/数据分析|数据分析]] `aliases: 批量数据分析, Data Analysis, 数据统计分析` - type: concept
+- [[concepts/降智时刻|降智时刻]] `aliases: AI降智, 模型智力下降, 智能退化` - type: concept
+- [[concepts/模块解耦|模块解耦]] `aliases: 解耦, Decoupling, Module Decoupling` - type: concept
+- [[concepts/前端特效开发|前端特效开发]] `aliases: 前端开发, 前端编码, 前端特效` - type: concept
+- [[concepts/代码重构|代码重构]] `aliases: 重构, Code Refactoring` - type: concept
+- [[concepts/swe-bench-pro|swe-bench-pro]] `aliases: SWE-bench, SWE bench Pro` - type: concept
+- [[concepts/sparql|sparql]] `aliases: SPARQL, SPARQL查询语言` - type: concept
+- [[concepts/mvp路线图|mvp路线图]] `aliases: 落地路线图, 三阶段落地方案` - type: concept
+- [[concepts/填槽模板|填槽模板]] `aliases: 槽位填充, Slot Filling Template` - type: concept
+- [[concepts/chain-of-thought|chain-of-thought]] `aliases: CoT, 思维链` - type: concept
+- [[concepts/意图泛化层|意图泛化层]] `aliases: 土话映射, 意图泛化` - type: concept
+- [[concepts/三元组|三元组]] `aliases: 知识图谱三元组, 千万级三元组, Triple` - type: concept
+- [[concepts/rag架构|rag架构]] `aliases: 检索增强生成, RAG, Retrieval-Augmented Generation` - type: concept
+- [[concepts/断舍离|断舍离]] `aliases: 架构断舍离, 架构减法哲学` - type: concept
+- [[concepts/引用溯源|引用溯源]] `aliases: 溯源机制, 引用溯源机制` - type: concept
+- [[concepts/small2big|small2big]] `aliases: Small-to-Big, 父子文档切分, 小切片大上下文` - type: concept
+- [[concepts/权限物理隔离|权限物理隔离]] `aliases: Metadata权限过滤, 数据分层隔离` - type: concept
+- [[concepts/意图路由|意图路由]] `aliases: Query Router, 意图分类打标, 分类器` - type: concept
+- [[concepts/知识图谱问答|知识图谱问答]] `aliases: KBQA, 知识图谱, Knowledge Base Question Answering` - type: concept
+- [[concepts/三级分流|三级分流]] `aliases: L1-L2-L3分层设计, 三级分流架构` - type: concept
+- [[concepts/流式输出|流式输出]] `aliases: Streaming Output, 流式响应, 流式返回` - type: concept
+- [[concepts/转人工|转人工]] `aliases: ESCALATE_TO_HUMAN, 转接人工客服` - type: concept
+- [[concepts/异步并发检索|异步并发检索]] `aliases: 异步并发检索, Asynchronous Concurrent Retrieval, 并行检索, 并行处理` - type: concept
+- [[concepts/api速率限制|api速率限制]] `aliases: Rate Limit, API限流, API Rate Limit` - type: concept
+- [[concepts/p99延迟|p99延迟]] `aliases: P99, P99 Latency, P99响应时间` - type: concept
+- [[concepts/recall@5|recall@5]] `aliases: 召回准确率, Recall at 5` - type: concept
+- [[concepts/状态丢失|状态丢失]] `aliases: Context断裂, 上下文丢失, Context Loss` - type: concept
+- [[concepts/bm25|bm25]] `aliases: 关键词匹配, Best Match 25, Okapi BM25` - type: concept
+- [[concepts/rerank|rerank]] `aliases: 精排模型, Rerank模型, 重排序` - type: concept
+- [[concepts/确定性边界|确定性边界]] `aliases: 确定性边界梳理, Deterministic Boundary` - type: concept
+- [[concepts/prompt-engineering|prompt-engineering]] `aliases: 提示工程, Prompt 优化` - type: concept
+- [[concepts/算力错配|算力错配]] `aliases: 算力错配, Compute Misallocation, AI算力浪费` - type: concept
+- [[concepts/数据飞轮|数据飞轮]] `aliases: Data Flywheel, 数据闭环, T+0数据闭环` - type: concept
+- [[concepts/语义漂移|语义漂移]] `aliases: Semantic Drift, 语义偏移` - type: concept
+- [[concepts/概率性失效|概率性失效]] `aliases: 概率性模型的工程困境, Probabilistic Failure` - type: concept
+- [[concepts/混合检索|混合检索]] `aliases: Hybrid Search, 双路召回策略` - type: concept
+- [[concepts/语义缓存|语义缓存]] `aliases: Semantic Caching, 向量化缓存` - type: concept
+- [[concepts/验证链cove|验证链cove]] `aliases: Chain of Verification, CoVe验证链, 验证链` - type: concept
+- [[concepts/上下文窗口压力|上下文窗口压力]] `aliases: Context Window压力, 上下文溢出, Agent内存管理` - type: concept
+- [[concepts/对抗样例|对抗样例]] `aliases: 对抗测试集, 对抗样本, 对抗集` - type: concept
+- [[concepts/工具重放|工具重放]] `aliases: 可重放机制, 工具调用回放, Tool Replay` - type: concept
+- [[concepts/补偿链|补偿链]] `aliases: 补偿闭环, 事务补偿机制` - type: concept
+- [[concepts/4+1核心指标|4+1核心指标]] `aliases: Agent核心指标, 4+1指标体系` - type: concept
+- [[concepts/阶段机|阶段机]] `aliases: 有限状态机控制, 流程阶段机` - type: concept
+- [[concepts/不答策略|不答策略]] `aliases: 三段式兜底, 拒答/澄清/转人工策略` - type: concept
+- [[concepts/结构化检索|结构化检索]] `aliases: 结构化索引, 混合召回检索` - type: concept
+- [[concepts/订单原子化|订单原子化]] `aliases: 事务原子化, 价格计算与库存校验原子化` - type: concept
+- [[concepts/双层白名单|双层白名单]] `aliases: 白名单策略, 敏感策略白名单` - type: concept
+- [[concepts/sla定义|sla定义]] `aliases: 服务级别协议定义, SLA阈值, SLA定义` - type: concept
+- [[concepts/灰度与回滚|灰度与回滚]] `aliases: 灰度发布, 灰度回滚机制` - type: concept
+- [[concepts/数据分层隔离|数据分层隔离]] `aliases: 知识库分层, 数据分层管理` - type: concept
+- [[concepts/幂等键|幂等键]] `aliases: 幂等性机制, idempotency key` - type: concept
+- [[concepts/显式节点图|显式节点图]] `aliases: 显式流程图, 节点图控制` - type: concept
+- [[concepts/集成化思维|集成化思维]] `aliases: 集成思维, AI时代思维方式` - type: concept
+- [[concepts/隐藏kpi|隐藏kpi]] `aliases: Hidden KPI, 隐性KPI` - type: concept
+- [[concepts/长时记忆|长时记忆]] `aliases: 长期记忆, Long-term Memory, 长期记忆与VectorDB` - type: concept
+- [[concepts/配置驱动|配置驱动]] `aliases: 配置化驱动, 配置化理念, Configuration-Driven` - type: concept
+- [[concepts/输入增强|输入增强]] `aliases: 上下文感知Query构建, Input Enhancement, Context-Aware Query Construction` - type: concept
+- [[concepts/软件开发自动化|软件开发自动化]] `aliases: 软件自动化, Software Development Automation` - type: concept
+- [[concepts/超级产品|超级产品]] `aliases: AI超级应用, 颠覆性AI产品` - type: concept
+- [[concepts/语音缓冲|语音缓冲]] `aliases: 语音延迟填充, Voice Buffering` - type: concept
+- [[concepts/语音交互|语音交互]] `aliases: 语音Agent, Voice Interaction, 语音交互` - type: concept
+- [[concepts/语义规则树|语义规则树]] `aliases: 规则树推荐, 语义规则树推荐` - type: concept
+- [[concepts/评估机制|评估机制]] `aliases: 失败检测器, 错误归因机制, 可持续评估机制` - type: concept
+- [[concepts/计划学习与重用|计划学习与重用]] `aliases: 经验学习, 计划重用, Plan Learning and Reuse` - type: concept
+- [[concepts/自然语言理解与生成|自然语言理解与生成]] `aliases: NLU与NLG, 自然语言理解, 自然语言生成` - type: concept
+- [[concepts/自媒体运营|自媒体运营]] `aliases: 自媒体, 独立运营` - type: concept
+- [[concepts/自媒体双轨战略|自媒体双轨战略]] `aliases: 双轨战略, Dual-Track Strategy` - type: concept
+- [[concepts/自主性光谱|自主性光谱]] `aliases: 自主性划分, Autonomy Spectrum` - type: concept
+- [[concepts/组织效能|组织效能]] `aliases: Organizational Efficacy, 组织效率` - type: concept
+- [[concepts/百花齐放|百花齐放]] `aliases: 百花齐放阶段, AI百花齐放` - type: concept
+- [[concepts/状态持久化|状态持久化]] `aliases: 状态管理, State Persistence` - type: concept
+- [[concepts/意图识别|意图识别]] `aliases: Intent Recognition, 意图检测, Intent Detection` - type: concept
+- [[concepts/混合工具路由|混合工具路由]] `aliases: 原生工具路由, 混合工具调度, Hybrid Tool Routing` - type: concept
+- [[concepts/深度学习|深度学习]] `aliases: Deep Learning, DL` - type: concept
+- [[concepts/洞察力|洞察力]] `aliases: know-why, 深度洞察力` - type: concept
+- [[concepts/套壳公司|套壳公司]] `aliases: Wrapper公司, API套壳` - type: concept
+- [[concepts/模型路由|模型路由]] `aliases: Model Routing, 模型切换` - type: concept
+- [[concepts/模块化先于服务化|模块化先于服务化]] `aliases: Agent模块化, 模块化优先, Modularize Before Service-ize` - type: concept
+- [[concepts/权限过滤|权限过滤]] `aliases: Permission Filtering, 访问控制过滤` - type: concept
+- [[concepts/有限状态机|有限状态机]] `aliases: FSM, 手工状态机, 自定义状态机` - type: concept
+- [[concepts/新的摩尔定律|新的摩尔定律]] `aliases: AI摩尔定律, 新摩尔定律` - type: concept
+- [[concepts/数字游民|数字游民]] `aliases: 数字游民生活方式, Digital Nomad` - type: concept
+- [[concepts/收入多元化|收入多元化]] `aliases: 多元化收入, 多渠道收入` - type: concept
+- [[concepts/成本管理|成本管理]] `aliases: Cost Management, Token额度管理` - type: concept
+- [[concepts/平台争夺|平台争夺]] `aliases: 平台争夺时期, 生态位争夺` - type: concept
+- [[concepts/工具图谱|工具图谱]] `aliases: Tool Map, 工具地图` - type: concept
+- [[concepts/强化学习|强化学习]] `aliases: Reinforcement Learning, RL` - type: concept
+- [[concepts/实时协同执行|实时协同执行]] `aliases: 实时透明执行, 用户控制执行过程` - type: concept
+- [[concepts/安全防护机制|安全防护机制]] `aliases: 安全机制, 批准/拒绝机制, Approval Mechanism` - type: concept
+- [[concepts/存量改造|存量改造]] `aliases: Legacy Modernization, 遗留系统改造` - type: concept
+- [[concepts/多智能体协作|多智能体协作]] `aliases: 多Agent协同, 多智能体系统, Multi-Agent Collaboration` - type: concept
+- [[concepts/向量检索|向量检索]] `aliases: 向量召回, Vector Retrieval, Embedding向量召回` - type: concept
+- [[concepts/双模执行架构|双模执行架构]] `aliases: 双模执行, 快慢双模, 双模执行架构` - type: concept
+- [[concepts/协调器|协调器]] `aliases: Orchestrator, 领导智能体, 调度器` - type: concept
+- [[concepts/去技术化表达|去技术化表达]] `aliases: 去技术化, 业务化表达, 说人话` - type: concept
+- [[concepts/self-rag|self-rag]] `aliases: Self-Reflective Retrieval-Augmented Generation, 自反思检索增强生成` - type: concept
+- [[concepts/协同规划|协同规划]] `aliases: 用户主导计划制定, Co-Planning, 协同式规划` - type: concept
+- [[concepts/判断力|判断力]] `aliases: know-what, 决策判断力` - type: concept
+- [[concepts/r-o-i-叙事流|r-o-i-叙事流]] `aliases: ROI叙事流, R.O.I.叙事结构` - type: concept
+- [[concepts/meme叙事流|meme叙事流]] `aliases: Meme 叙事流, Meme叙事结构, The Meme 叙事流` - type: concept
+- [[concepts/全链路追踪|全链路追踪]] `aliases: MessageID全链路追踪, 调用链追踪, Distributed Tracing` - type: concept
+- [[concepts/全新开发|全新开发]] `aliases: Greenfield, 绿地开发` - type: concept
+- [[concepts/以人为中心的agent|以人为中心的agent]] `aliases: 以用户为中心的Agent, Human-Centered Agent` - type: concept
+- [[concepts/人治|人治]] `aliases: 人治契约, 组织治理` - type: concept
+- [[concepts/人机协同|人机协同]] `aliases: 人机协作, Human-AI Collaboration` - type: concept
+- [[concepts/人工智能发展阶段|人工智能发展阶段]] `aliases: AI发展四阶段, AI发展阶段, AI发展四个阶段, AI意识时代` - type: concept
+- [[concepts/业务验收标准|业务验收标准]] `aliases: Acceptance Criteria, 验收标准` - type: concept
+- [[concepts/业务痛点锚定|业务痛点锚定]] `aliases: 痛点锚定, 流血点定位` - type: concept
+- [[concepts/上下文工程|上下文工程]] `aliases: Context Engineering, 上下文管理工程` - type: concept
+- [[concepts/一体式工具架构|一体式工具架构]] `aliases: Monolithic Tooling, 单体工具架构` - type: concept
+- [[concepts/websurfer|websurfer]] `aliases: 网络浏览器智能体, WebSurfer智能体, 网页浏览Agent` - type: concept
+- [[concepts/tool-augmented-rag|tool-augmented-rag]] `aliases: 工具增强RAG, Tool-Augmented Retrieval-Augmented Generation` - type: concept
+- [[concepts/sop重构|sop重构]] `aliases: SOP进化, 业务流程重构, SOP Reconstruction` - type: concept
+- [[concepts/soa+ddd架构|soa+ddd架构]] `aliases: SOA服务化+DDD领域驱动, SOA+DD架构` - type: concept
+- [[concepts/self-reflective-rag|self-reflective-rag]] `aliases: 自反思RAG, 反思型RAG, Self-Reflective Retrieval-Augmented Generation, 反思式 RAG` - type: concept
+- [[concepts/human-in-the-loop|human-in-the-loop]] `aliases: 人在环, 人在回路, HITL` - type: concept
+- [[concepts/react|react]] `aliases: ReAct框架, Reasoning and Acting` - type: concept
+- [[concepts/planner|planner]] `aliases: 规划器, 任务规划器, Task Planner, 执行计划` - type: concept
+- [[concepts/multi-agent-rag|multi-agent-rag]] `aliases: 多智能体RAG, Multi-Agent RAG` - type: concept
+- [[concepts/mcp|mcp]] `aliases: Model Context Protocol, 模型上下文协议` - type: concept
+- [[concepts/copilot-+-agent-融合架构|copilot-+-agent-融合架构]] `aliases: 混合智能体架构, Copilot-Agent 混合模式` - type: concept
+- [[concepts/function-call|function-call]] `aliases: 函数调用, Function Calling` - type: concept
+- [[concepts/mcp-registry|mcp-registry]] `aliases: MCP注册中心, MCP服务注册` - type: concept
+- [[concepts/lora|lora]] `aliases: Low-Rank Adaptation, 低秩适应, 低秩自适应` - type: concept
+- [[concepts/ai垄断|ai垄断]] `aliases: AI市场垄断, 人工智能垄断` - type: concept
+- [[concepts/functioncall与chat解耦|functioncall与chat解耦]] `aliases: 感知-意图-决策-调用-渲染分层, 工具调用与对话生成解耦, Function-Chat Decoupling` - type: concept
+- [[concepts/filesurfer|filesurfer]] `aliases: 文件浏览器智能体, 文件浏览器` - type: concept
+- [[concepts/copilot|copilot]] `aliases: 副驾, 编程助手` - type: concept
+- [[concepts/coder|coder]] `aliases: 编码器, 编码器智能体, Coder Agent` - type: concept
+- [[concepts/artifact|artifact]] `aliases: A2A工件, 智能体工件, Artifact` - type: concept
+- [[concepts/ai基础设施化|ai基础设施化]] `aliases: AI成为基础设施, AI基础设施` - type: concept
+- [[concepts/aigc|aigc]] `aliases: AI生成内容, 人工智能生成内容, AI-Generated Content` - type: concept
+- [[concepts/ai-native架构|ai-native架构]] `aliases: AI原生架构, AI-Native Architecture, AI 原生工程` - type: concept
+- [[concepts/ai变现|ai变现]] `aliases: AI商业化, AI赚钱` - type: concept
+- [[concepts/agent观测平台|agent观测平台]] `aliases: Observability, 可观测平台, Agent Observability, Agent观测体系` - type: concept
+- [[concepts/ai-2-0时代|ai-2-0时代]] `aliases: AI2.0, AI 2.0, 人工智能2.0时代` - type: concept
+- [[concepts/ai-1-0时代|ai-1-0时代]] `aliases: AI 1.0, AI第一阶段` - type: concept
+- [[concepts/agent-sandbox|agent-sandbox]] `aliases: 智能体沙箱, Agent沙箱` - type: concept
+- [[concepts/agent运行时|agent运行时]] `aliases: Agent Runtime, 运行时, 智能体运行时` - type: concept
+- [[concepts/agent编排框架|agent编排框架]] `aliases: Agent编排, Brain, Agent Orchestration Framework, Agent 编排` - type: concept
+- [[concepts/a2a|a2a]] `aliases: Agent-to-Agent, Agent2Agent` - type: concept
+- [[concepts/agentic-workflow|agentic-workflow]] `aliases: 智能体工作流, Agent Workflow` - type: concept
+- [[concepts/agentic-rag|agentic-rag]] `aliases: 智能体RAG, Agentic Retrieval-Augmented Generation` - type: concept
+- [[concepts/agentcard|agentcard]] `aliases: Agent能力描述卡, Agent能力卡片` - type: concept
+- [[concepts/agent|agent]] `aliases: 智能体, 自治智能体` - type: concept
+- [[concepts/agent-protocol|agent-protocol]] `aliases: 智能体协议, Agent通信协议` - type: concept
+- [[concepts/3秒原则|3秒原则]] `aliases: Hook原则, 三秒钩子, 3秒Hook` - type: concept
+
+## 来源
+
+- [[sources/drawing-2025-12-16-16-29-09-excalidraw_826da0|drawing-2025-12-16-16-29-09-excalidraw_826da0]] `aliases: Agent中控大脑架构图, Agent中枢与工具层协作流程图`
+- [[sources/08-代码已死系统永生如何从“码农”进化为-“agent-架构师”_e804b7|08-代码已死系统永生如何从“码农”进化为-“agent-架构师”_e804b7]] `aliases: 从码农到Agent架构师, 代码已死系统永生`
+- [[sources/07-我如何用-agent-砍掉团队30的“垃圾时间”_d98060|07-我如何用-agent-砍掉团队30的“垃圾时间”_d98060]] `aliases: 用 Agent 砍掉团队垃圾时间, VOC舆情分析Agent实战复盘`
+- [[sources/06-🚨-小扎深夜“拔管”元宇宙烧了700亿最后发现还是墨镜香_fc0e48|06-🚨-小扎深夜“拔管”元宇宙烧了700亿最后发现还是墨镜香_fc0e48]] `aliases: Meta元宇宙裁员分析, 小扎拔管元宇宙, Meta战略转向智能眼镜`
+- [[sources/05-喂再多-skills-也没用agent-的上下文绝症今天依然没治好_e5b5c2|05-喂再多-skills-也没用agent-的上下文绝症今天依然没治好_e5b5c2]] `aliases: Agent 的上下文绝症, Claude Skills 批判, Agent 上下文问题深度分析`
+- [[sources/04-gpt-5-2-史诗级翻车谷歌这次居然赢麻了_e3bee2|04-gpt-5-2-史诗级翻车谷歌这次居然赢麻了_e3bee2]] `aliases: GPT-5.2 史诗级翻车？谷歌这次居然赢麻了！, GPT-5.2 vs Gemini 3 Pro 实测对比`
+- [[sources/03-💥别被大厂架构忽悠了撕掉百万预算我们用-rag-重构了零售巨头的“智障”客服_f598e2|03-💥别被大厂架构忽悠了撕掉百万预算我们用-rag-重构了零售巨头的“智障”客服_f598e2]] `aliases: 别被大厂架构忽悠了, 卤味零售RAG重构指南`
+- [[sources/02-我们将企业级-agent-降低85%的血泪重构史_7c4bc7|02-我们将企业级-agent-降低85%的血泪重构史_7c4bc7]] `aliases: 企业级Agent架构重构实战, 高并发客服Agent降本85%重构笔记`
+- [[sources/01-把信仰交给-ai-的血泪教训_558fff|01-把信仰交给-ai-的血泪教训_558fff]] `aliases: Agent落地五个致命大坑, 把信仰交给AI的血泪教训, Agent工程化避坑指南`
+- [[sources/🚀-爆款-ai-agent-公众号文章写作指南_44ecbb|🚀-爆款-ai-agent-公众号文章写作指南_44ecbb]] `aliases: 爆款 AI Agent 公众号文章写作指南, AI Agent 写作指南`
+- [[sources/2025-0305🐰-agentic-rag架构选型指南_425bac|2025-0305🐰-agentic-rag架构选型指南_425bac]] `aliases: Agentic-RAG架构选型指南, RAG系统重构笔记`
+- [[sources/2026-0108-🧘-agent-企业落地架构变革从工具治理到人治契约_938fea|2026-0108-🧘-agent-企业落地架构变革从工具治理到人治契约_938fea]] `aliases: Agent企业落地架构变革, 从工具治理到人治契约`
+- [[sources/2025-0426🧘以人为中心的agent_d84722|2025-0426🧘以人为中心的agent_d84722]] `aliases: Human-Centered Agent, 以人为中心的智能体`
+- [[sources/2025-0415-🍖构建可演化的智能体系统架构_00194f|2025-0415-🍖构建可演化的智能体系统架构_00194f]] `aliases: 构建可演化的智能体系统架构, 从单个Agent到多智能体协同治理的工程实践`
+- [[sources/2025-0312-💆copilot和agent的区别_750b52|2025-0312-💆copilot和agent的区别_750b52]] `aliases: Copilot 和 Agent 的区别, Copilot vs Agent 对比分析`
+- [[sources/2023-1001-🍗体验了数字游民生活俩月后我决定放弃了_ffd2e9|2023-1001-🍗体验了数字游民生活俩月后我决定放弃了_ffd2e9]] `aliases: 数字游民生活体验与反思, yancy辞职后的AI探索之路`
+- [[sources/2023-0410-🐷ai时代来临普通人如何破局_0b9a5e|2023-0410-🐷ai时代来临普通人如何破局_0b9a5e]] `aliases: AI时代普通人破局指南, 2023-0410 AI时代来临普通人如何破局`

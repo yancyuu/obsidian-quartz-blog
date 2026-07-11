@@ -1,3 +1,9 @@
+---
+tags:
+  - ai
+  - ai-agent
+  - notebook
+---
 
 
 灵感来源：

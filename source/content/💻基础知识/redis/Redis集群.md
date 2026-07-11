@@ -1,3 +1,12 @@
+---
+tags:
+  - basic-knowledge
+  - backend
+  - database
+  - cache
+  - learning-note
+  - redis
+---
 
 
 ## 1. 主从复制（Master-Slave Replication）

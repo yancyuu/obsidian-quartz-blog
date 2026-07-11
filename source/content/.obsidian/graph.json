@@ -1,12 +1,83 @@
 {
   "collapse-filter": true,
   "search": "",
-  "showTags": false,
+  "showTags": true,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
-  "colorGroups": [],
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "tag:#ai OR tag:#AI OR tag:#ai-agent OR tag:#llm OR tag:#gpt OR tag:#deepseek OR tag:#mcp OR tag:#agent-framework OR tag:#langchain OR tag:#langgraph OR tag:#rag OR tag:#RAG OR tag:#retrieval OR tag:#agentic-rag OR tag:#llamaindex OR tag:#prompt-engineering OR tag:#agno OR tag:#knowledge-base",
+      "color": {
+        "a": 1,
+        "rgb": 9137398
+      }
+    },
+    {
+      "query": "tag:#backend OR tag:#architecture OR tag:#architecture-refactoring OR tag:#distributed-system OR tag:#high-concurrency OR tag:#devops OR tag:#docker OR tag:#engineering-practice OR tag:#coding-standard OR tag:#standard OR tag:#design-doc OR tag:#project",
+      "color": {
+        "a": 1,
+        "rgb": 2561452
+      }
+    },
+    {
+      "query": "tag:#database OR tag:#mysql OR tag:#redis OR tag:#cache OR tag:#transaction OR tag:#PostgreSQL OR tag:#JSONB OR tag:#元数据管理",
+      "color": {
+        "a": 1,
+        "rgb": 57578
+      }
+    },
+    {
+      "query": "tag:#computer-science OR tag:#algorithm OR tag:#data-structure OR tag:#sorting OR tag:#theory OR tag:#method OR tag:#term OR tag:#field",
+      "color": {
+        "a": 1,
+        "rgb": 15844367
+      }
+    },
+    {
+      "query": "tag:#python OR tag:#asyncio OR tag:#gil OR tag:#concurrency OR tag:#coding OR tag:#git OR tag:#linux",
+      "color": {
+        "a": 1,
+        "rgb": 2763429
+      }
+    },
+    {
+      "query": "tag:#product OR tag:#feishu OR tag:#organization OR tag:#wechat-article OR tag:#writing OR tag:#personal-note OR tag:#person OR tag:#self",
+      "color": {
+        "a": 1,
+        "rgb": 15997722
+      }
+    },
+    {
+      "query": "tag:#interview OR tag:#interview-prep",
+      "color": {
+        "a": 1,
+        "rgb": 15105570
+      }
+    },
+    {
+      "query": "tag:#security OR tag:#networking OR tag:#oauth2",
+      "color": {
+        "a": 1,
+        "rgb": 14948892
+      }
+    },
+    {
+      "query": "tag:#excalidraw",
+      "color": {
+        "a": 1,
+        "rgb": 16067839
+      }
+    },
+    {
+      "query": "tag:#learning-note OR tag:#basic-knowledge",
+      "color": {
+        "a": 1,
+        "rgb": 8421504
+      }
+    }
+  ],
   "collapse-display": true,
   "showArrow": false,
   "textFadeMultiplier": 0,
@@ -17,6 +88,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.5654292125949859,
+  "scale": 0.4032561719127665,
   "close": true
 }

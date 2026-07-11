@@ -1,3 +1,11 @@
+---
+tags:
+  - basic-knowledge
+  - backend
+  - python
+  - gil
+  - learning-note
+---
 
 ## Python 面试准备教程
 
@@ -151,11 +159,11 @@ s[::-1]
 
 这个教程只是一个大致的框架，每个主题都可以深入学习。希望这能帮助你成功通过 Python 面试！祝你好运！
 
-[GC垃圾回收](GC垃圾回收.md)
+[python垃圾回收](python垃圾回收.md)
 
 [内建属性&函数](内建属性&函数.md)
 
-[pdb调试](pdb调试.md)
+[pdb调试](../计算机原理/pdb调试.md)
 
 [闭包](闭包.md)
 

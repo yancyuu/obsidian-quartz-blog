@@ -1,3 +1,10 @@
+---
+tags:
+  - basic-knowledge
+  - computer-science
+  - learning-note
+  - networking
+---
 
 ## HTTP1.1和HTTP1.0区别
 

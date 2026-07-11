@@ -1,3 +1,9 @@
+---
+tags:
+  - basic-knowledge
+  - computer-science
+  - learning-note
+---
 
 > pdb是基于命令⾏的调试⼯具，⾮常类似gnu的gdb（调试c/c++）。
 > 

@@ -1,3 +1,13 @@
+---
+tags:
+  - ai-agent
+  - architecture
+  - python
+  - coding-standard
+  - engineering-practice
+  - prompt-engineering
+---
+
 ### 参考路径：[Cursor Directory](https://cursor.directory/)
 
 **下面agent都需要配置外部搜索的mcp服务/工具：web research**

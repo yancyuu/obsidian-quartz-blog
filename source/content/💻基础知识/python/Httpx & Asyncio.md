@@ -1,3 +1,13 @@
+---
+tags:
+  - basic-knowledge
+  - backend
+  - python
+  - asyncio
+  - concurrency
+  - httpx
+---
+
 `httpx` 和 `asyncio` 的 `client`（通常指的是 `asyncio` 与 `aiohttp` 的组合）在异步HTTP请求的场景下有一些关键的区别。这些区别会影响到它们的性能表现、易用性和适用场景。我们可以从几个方面对比这两个库，帮助分析哪种性能可能有问题。
 
 ### 1. **基本概念和背景**

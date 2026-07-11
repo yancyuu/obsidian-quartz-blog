@@ -1,3 +1,10 @@
+---
+tags:
+  - basic-knowledge
+  - devops
+  - kafka
+  - learning-note
+---
 
 ### ZooKeeper 是什么
 

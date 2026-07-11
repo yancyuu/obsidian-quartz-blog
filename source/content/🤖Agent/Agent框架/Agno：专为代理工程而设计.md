@@ -1,3 +1,13 @@
+---
+tags:
+  - ai
+  - ai-agent
+  - python
+  - agent-framework
+  - agno
+  - fastapi
+---
+
 发现了一个宝藏多Agent框架，也是我做多Agent系统的首选框架。
 
 - 开源项目地址：https://github.com/agno-agi/agno

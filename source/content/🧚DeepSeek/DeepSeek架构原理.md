@@ -1,3 +1,12 @@
+---
+tags:
+  - ai
+  - llm
+  - architecture
+  - deepseek
+  - feishu
+---
+
 ## **Deepseek论文链接：**
 
 https://github.com/deepseek-ai/DeepSeek-V3/blob/main/DeepSeek_V3.pdf

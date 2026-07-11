@@ -1,3 +1,12 @@
+---
+tags:
+  - basic-knowledge
+  - backend
+  - database
+  - cache
+  - learning-note
+  - redis
+---
 
 ### 动态字符串
 

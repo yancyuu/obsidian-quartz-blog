@@ -1,3 +1,12 @@
+---
+tags:
+  - ai
+  - llm
+  - deepseek
+  - feishu
+  - gpt
+---
+
 # 学习常用链接：
 
 1. deepseek官网：https://chat.deepseek.com/

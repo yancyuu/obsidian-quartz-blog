@@ -1,4 +1,12 @@
-#agent #LangChain 
+---
+tags:
+  - ai
+  - ai-agent
+  - llm
+  - agent-framework
+  - gpt
+  - langchain
+---
 
 LLMChain 能够帮助我们链式地调用一系列命令，这里面既包含直接调用 OpenAI 的 API，也包括调用其他外部接口，或者自己实现的 Python 代码。但是这一连串的调用，还只是完成一个小任务。我们很多时候还是希望用一个互动聊天的过程，来完成整个任务。
 

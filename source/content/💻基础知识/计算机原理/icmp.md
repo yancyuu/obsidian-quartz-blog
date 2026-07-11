@@ -1,3 +1,9 @@
+---
+tags:
+  - basic-knowledge
+  - computer-science
+  - learning-note
+---
 
 
 icmp是Internet控制报文协议。它是TCP/IP协议簇的一个子协议，用于在IP主机、路由器之间传递控制消息。控制消息是指网络通不通、主机是否可达、路由是否可用等网络本身的消息。

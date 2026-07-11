@@ -1,3 +1,13 @@
+---
+tags:
+  - basic-knowledge
+  - backend
+  - python
+  - interview
+  - interview-prep
+  - learning-note
+---
+
 ## 1️⃣ `type` 与元类（Metaclass）
 
 **问题**：Python 中 `type` 与 `object` 是什么关系？如何使用元类自定义类的创建行为？为什么这样设计？

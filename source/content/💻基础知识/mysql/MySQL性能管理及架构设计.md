@@ -1,3 +1,12 @@
+---
+tags:
+  - basic-knowledge
+  - architecture
+  - backend
+  - database
+  - learning-note
+  - mysql
+---
 
 
 主服务器→从服务器*n

@@ -1,3 +1,12 @@
+---
+tags:
+  - architecture
+  - coding-standard
+  - engineering-practice
+  - feishu
+  - git
+---
+
 > 想象你和同事在写同一份文档，merge 会产生"小张修改了这里" -> "小李修改了那里" 的混乱记录，而 rebase 就像把你们的修改按时间顺序整齐抄写到最新版本上
 
 ## 📌 基本原则

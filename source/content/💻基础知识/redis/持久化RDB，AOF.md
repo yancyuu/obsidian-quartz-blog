@@ -1,3 +1,12 @@
+---
+tags:
+  - basic-knowledge
+  - backend
+  - database
+  - cache
+  - learning-note
+  - redis
+---
 
 
 Owner: yancy yu

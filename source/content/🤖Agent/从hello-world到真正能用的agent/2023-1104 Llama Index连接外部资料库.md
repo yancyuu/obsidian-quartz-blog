@@ -1,5 +1,13 @@
+---
+tags:
+  - ai
+  - ai-agent
+  - llm
+  - agent-framework
+  - gpt
+  - llamaindex
+---
 
-#Llama #agent #LangChain #Bing
 # **大型语言模型的不足之处**
 
 我们先来尝试问 ChatGPT 一个人尽皆知的常识，“鲁迅先生去日本学习医学的老师是谁”，结果它给出的答案是鲁迅的好友，内山书店的老板内山完造，而不是大家都学习过的藤野先生。

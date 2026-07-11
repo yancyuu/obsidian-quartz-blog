@@ -1,3 +1,10 @@
+---
+tags:
+  - basic-knowledge
+  - devops
+  - docker
+  - learning-note
+---
 
 
 **一句话总结：** 要成功加入 Worker 节点，必须在 Manager 节点获取 Join Token 并在 Worker 节点执行加入命令，**关键步骤是加入后必须重启 Docker 服务**以确保新证书生效，最后验证节点状态。

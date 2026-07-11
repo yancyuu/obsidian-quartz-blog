@@ -1,3 +1,12 @@
+---
+tags:
+  - basic-knowledge
+  - backend
+  - database
+  - learning-note
+  - mysql
+  - transaction
+---
 
 ## 事务的隔离级别
 

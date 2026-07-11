@@ -1,3 +1,12 @@
+---
+tags:
+  - ai
+  - ai-agent
+  - agent-framework
+  - camel-ai
+  - multi-agent
+---
+
 ## 开源地址：
 https://github.com/camel-ai/camel
 ## 介绍

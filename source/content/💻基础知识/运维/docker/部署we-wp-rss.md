@@ -1,3 +1,12 @@
+---
+tags:
+  - basic-knowledge
+  - database
+  - devops
+  - docker
+  - learning-note
+  - postgresql
+---
 
 ghcr.io/rachelos/we-mp-rss:latest
 nodeId:51tpa3a8a998lcfv6ldkowigi
