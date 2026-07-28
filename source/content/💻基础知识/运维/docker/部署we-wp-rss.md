@@ -1,13 +1,11 @@
 ---
 tags:
   - basic-knowledge
-  - database
-  - devops
+  - kb/devops
+  - kb/devops/docker
   - docker
-  - learning-note
-  - postgresql
+  - deployment
 ---
-
 ghcr.io/rachelos/we-mp-rss:latest
 nodeId:51tpa3a8a998lcfv6ldkowigi
 

@@ -1,12 +1,11 @@
 ---
 tags:
   - basic-knowledge
-  - backend
-  - python
-  - learning-note
+  - kb/programming/python
+  - kb/programming/python/oop
+  - oop
+  - class
 ---
-
-
 在 Python 中使用类（Class）时，你可能会遇到一系列问题或挑战，以下是一些常见的情况。
 
 相关基础：[面向对象编程](面向对象编程.md)，动态类创建：[动态创建类](../设计模式/动态创建类.md)。

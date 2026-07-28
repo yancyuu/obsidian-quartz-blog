@@ -1,11 +1,10 @@
 ---
 tags:
   - basic-knowledge
-  - devops
-  - kafka
-  - learning-note
+  - kb/devops
+  - kb/distributed
+  - zookeeper
 ---
-
 ### ZooKeeper 是什么
 
 ZooKeeper 是一个开源的分布式协调服务，由 Apache 软件基金会管理。它主要用于构建高可用、高性能和可靠的分布式应用。ZooKeeper 提供了一系列简单的原语（如数据存储、命名服务、分布式锁等），让分布式应用能更容易地实现诸如数据一致性、配置管理、同步和分组服务等复杂功能。

@@ -1,11 +1,11 @@
 ---
 tags:
   - basic-knowledge
-  - computer-science
-  - learning-note
-  - networking
+  - kb/network
+  - kb/network/socket
+  - socket
+  - tcp
 ---
-
 Socket断点续传是一种网络编程技术，用于在文件传输过程中出现中断时能够从中断点继续传输，而不是重新开始。这在传输大文件或网络不稳定的环境中特别有用。
 
 ### 基本思路

@@ -1,170 +1,170 @@
 ---
 tags:
   - basic-knowledge
-  - backend
-  - database
-  - learning-note
-  - mysql
+  - kb/database/mysql
+  - kb/database/mysql/log
+  - binlog
+  - redo-log
+  - undo-log
+  - two-phase-commit
 ---
 
-MySQL 日志可以分成两类：
+# MySQL 日志
 
-1. **Server 层日志**：binlog、慢查询日志、通用日志
-2. **InnoDB 存储引擎日志**：redo log、undo log
+> MySQL 的日志体系是理解**崩溃恢复、主从复制、事务回滚、MVCC** 的关键。核心是 **binlog / redo log / undo log** 三大日志 + **两阶段提交**保证一致。
 
-不同日志解决的问题不同：
+## 相关笔记
 
-- **binlog**：复制、数据恢复、审计变更
-- **redo log**：崩溃恢复，保证已提交事务不丢
-- **undo log**：事务回滚、MVCC 版本链
-- **slow log**：定位慢 SQL
-- **general log**：记录客户端所有请求，通常只在排查问题时临时开启
+- [事务](事务.md)：ACID 靠这些日志落地
+- [MVCC（多版本并发控制）](MVCC（多版本并发控制）.md)：undo log 版本链
+- [mysql复制](mysql复制.md)：主从复制靠 binlog
+- [MySQL索引原理与优化](MySQL索引原理与优化.md)：更新 SQL 的两阶段提交
 
-## 1. binlog（二进制日志）
+---
 
-binlog 记录对 MySQL 数据产生修改的事件，主要用于：
+## 一、日志总览
 
-- 主从复制
-- 数据恢复
-- 审计数据变更
+| 日志         | 所属层    | 主要用途                      |
+| ------------ | --------- | ----------------------------- |
+| **binlog**   | Server 层 | 主从复制、数据恢复、审计      |
+| **redo log** | InnoDB    | 崩溃恢复、保证**持久性（D）** |
+| **undo log** | InnoDB    | 事务回滚、**MVCC** 版本链     |
+| slow log     | Server 层 | 慢 SQL 定位                   |
+| general log  | Server 层 | 全量请求排查（临时开）        |
 
-执行失败和回滚的语句通常不会生成最终有效的变更日志。
+记忆：**binlog 给别人看（复制/恢复）；redo log 崩了重做（持久性）；undo log 错了回滚（原子性 + MVCC）**。
 
-常用命令：
+---
+
+## 二、binlog（二进制日志，Server 层）
+
+记录所有**已提交**的、修改数据的操作。用途：主从复制、数据恢复、审计。
+
+### 三种格式
+
+| 格式          | 记录内容       | 优点                           | 缺点                                                         |
+| ------------- | -------------- | ------------------------------ | ------------------------------------------------------------ |
+| **STATEMENT** | SQL 语句       | 日志小                         | 非确定性函数（`NOW()`/`UUID()`）、触发器、UDF 可能主从不一致 |
+| **ROW** ⭐    | 每行的实际变更 | **最安全**，主从一致，利于恢复 | 日志大、要求表结构一致                                       |
+| **MIXED**     | 自动切换       | 折中                           | —                                                            |
+
+> 生产推荐 **ROW**（MySQL 5.7+ 默认）。基于行的复制（RBR）一致性最好。
 
 ```sql
-show variables like 'binlog_format';
-show binary logs;
-flush logs;
+SHOW VARIABLES LIKE 'binlog_format';
+SHOW BINARY LOGS;
+-- 查看内容：mysqlbinlog <文件名>
 ```
 
-查看日志内容：
+---
 
-```bash
-mysqlbinlog <日志文件名>
+## 三、redo log（重做日志，InnoDB）
+
+保证事务**持久性**：已提交的事务，即使宕机重启也不丢。
+
+### WAL（Write-Ahead Logging）机制
+
+修改数据时，InnoDB **先写 redo log（顺序写，快），再改内存 Buffer Pool 的 page，最后异步刷盘到数据文件**。
+
+```mermaid
+flowchart LR
+    W[事务修改] --> R[① 写 redo log<br/>顺序写,快]
+    W --> M[② 改 Buffer Pool 内存页]
+    M -->|③ 异步刷盘| D[(数据文件.ibd)]
+    style R fill:#fef3c7
 ```
 
-设置当前 session 的 binlog 格式：
+- **先写日志再改数据**（WAL），把随机写变顺序写，性能大幅提升
+- redo log 是**循环写**（固定大小，环形覆盖），靠 **checkpoint** 推进
+- 宕机后重启，用 redo log 重做已提交但未落盘的修改 → **crash recovery**
 
-```sql
-set session binlog_format = row;
+---
+
+## 四、undo log（回滚日志，InnoDB）
+
+记录修改前的旧版本，保证事务**原子性**和 **MVCC**：
+
+| 操作   | undo log 记录 |
+| ------ | ------------- |
+| INSERT | 对应的 DELETE |
+| DELETE | 对应的 INSERT |
+| UPDATE | 反向 UPDATE   |
+
+- **事务回滚**：用 undo log 撤销未提交的修改
+- **MVCC**：undo log 串成**版本链**，让快照读读到历史版本（详见 [MVCC](MVCC（多版本并发控制）.md)）
+
+---
+
+## 五、⭐ 两阶段提交（核心考点）
+
+redo log（InnoDB）和 binlog（Server）是两个独立的日志。如何保证**主从数据一致**（即两者要么都写成功，要么都不生效）？靠**两阶段提交（2PC）**。
+
+```mermaid
+sequenceDiagram
+    participant T as 事务提交
+    participant I as InnoDB
+    participant R as Redo Log
+    participant B as Binlog
+    T->>I: 提交
+    I->>R: ① 写 redo log（prepare 状态）
+    I->>B: ② 写 binlog
+    I->>R: ③ 写 redo log（commit 状态）
 ```
 
-## 2. binlog 格式
+### 崩溃恢复规则（关键）
 
-### STATEMENT
+重启时扫描 redo log：
 
-记录 SQL 语句。
+| redo log 状态 | binlog 是否完整          | 处理                       |
+| ------------- | ------------------------ | -------------------------- |
+| **prepare**   | binlog **已完整写入**    | **提交**（事务其实成功了） |
+| **prepare**   | binlog **未写入/不完整** | **回滚**（事务实际没成功） |
+| commit        | —                        | 已完成，正常               |
 
-优点：日志量较小。
+### 为什么必须两阶段？
 
-缺点：遇到非确定性函数、触发器、自定义函数时，主从可能不一致。
+若不用 2PC，可能出现「redo log 写了、binlog 没写」→ 主库恢复后认为提交了，但从库没收到 binlog → **主从不一致**。2PC 以 **binlog 是否完整**作为提交依据，保证主从一致。
 
-### ROW
+---
 
-记录每一行数据的实际变更。
+## 六、binlog vs redo log（高频对比）
 
-优点：更安全，主从一致性更好，也更适合恢复数据。
+| 维度     | redo log             | binlog                        |
+| -------- | -------------------- | ----------------------------- |
+| 层级     | InnoDB 引擎          | Server 层（所有引擎）         |
+| 作用     | 崩溃恢复（持久性）   | 复制、恢复                    |
+| 内容     | 物理日志（页的修改） | 逻辑/物理日志（SQL 或行变更） |
+| 写入方式 | **循环写**（覆盖）   | **追加写**（永久）            |
+| 由谁写   | InnoDB               | Server                        |
 
-缺点：日志量更大，并且要求表结构保持一致。
+---
 
-### MIXED
+## 七、slow log / general log
 
-混合模式，MySQL 根据语句风险自动在 statement 和 row 之间切换。
+- **slow log**：记录超过 `long_query_time` 的 SQL，是慢查询优化入口，配合 [EXPLAIN](EXPLAIN.md)。**建议生产开启**。
+- **general log**：记录所有客户端请求，开销大，**仅临时排查开启**。
 
-## 3. binlog 对复制的影响
+---
 
-### SBR：Statement-Based Replication
+## 八、面试速答
 
-基于 SQL 语句复制。
+> **Q：MySQL 有哪些日志？分别什么用？**
+> A：binlog（复制/恢复）、redo log（崩溃恢复，持久性）、undo log（回滚/MVCC，原子性）、slow log（慢SQL）、general log（排查）。
 
-风险：
+> **Q：redo log 和 binlog 区别？**
+> A：redo log 是 InnoDB 物理日志、循环写、用于崩溃恢复；binlog 是 Server 逻辑日志、追加写、用于复制和恢复。
 
-- 非确定性时间函数可能导致主从不一致
-- 触发器、自定义函数修改数据时可能不一致
-- 某些场景需要更多行锁
+> **Q：什么是两阶段提交？为什么需要？**
+> A：事务提交时先写 redo log（prepare）→ 写 binlog → 写 redo log（commit）。崩溃恢复时，若 redo 是 prepare 且 binlog 已完整则提交，否则回滚。**保证 redo log 与 binlog 一致，避免主从数据不一致**。
 
-### RBR：Row-Based Replication
+> **Q：WAL 是什么？**
+> A：Write-Ahead Logging，先写日志（redo log）再改数据。把随机写变顺序写，提升性能，且保证崩溃可恢复。
 
-基于行变更复制。
+---
 
-特点：
+## 参考
 
-- 复制结果更确定
-- 对数据恢复更友好
-- 日志量更大
-- 主从表结构必须一致
-
-## 4. redo log（重做日志）
-
-redo log 是 InnoDB 的崩溃恢复日志，用于保证已提交事务在数据库异常重启后仍然能够恢复。
-
-修改数据时，InnoDB 通常先修改内存中的 page，再刷盘。如果此时数据库崩溃，内存中的修改可能还没有落盘。
-
-redo log 记录“已经做过的修改”，数据库重启后可以根据 redo log 重新应用这些修改。
-
-特点：
-
-- 顺序写入，性能较好
-- 用于 crash recovery
-- 保证事务持久性
-
-## 5. undo log（回滚日志）
-
-undo log 记录数据修改前的旧版本，用于：
-
-- 事务回滚
-- MVCC 一致性读
-
-例如：
-
-- `DELETE` 一行时，undo log 中记录对应的 `INSERT`
-- `INSERT` 一行时，undo log 中记录对应的 `DELETE`
-- `UPDATE` 一行时，undo log 中记录反向 `UPDATE`
-
-InnoDB 的 MVCC 会基于 undo log 形成版本链，让不同事务在不同隔离级别下读到合适的数据版本。
-
-## 6. 回滚段与 undo log
-
-“回滚段”这个概念更常见于 Oracle。它用于保存事务修改前的旧版本数据，支持事务回滚、一致性读和并发控制。
-
-在 MySQL InnoDB 中，对应能力主要由 undo log 实现。
-
-可以简单理解为：
-
-- Oracle 常说 rollback segment
-- InnoDB 常说 undo log / undo segment
-
-## 7. 慢查询日志
-
-慢查询日志用于记录执行时间超过阈值的 SQL，是定位性能问题的重要入口。
-
-常见用途：
-
-- 发现慢 SQL
-- 分析索引是否命中
-- 结合 `EXPLAIN` 做查询优化
-
-相关笔记：[[EXPLAIN]]
-
-## 8. 通用日志
-
-通用日志会记录客户端发送给 MySQL 的所有请求。
-
-它的信息非常全，但开销也大，一般只在临时排查问题时开启，不建议生产环境长期打开。
-
-## 总结
-
-| 日志 | 所属层 | 主要用途 |
-| --- | --- | --- |
-| binlog | Server 层 | 主从复制、数据恢复、审计 |
-| redo log | InnoDB | 崩溃恢复、保证持久性 |
-| undo log | InnoDB | 事务回滚、MVCC |
-| slow log | Server 层 | 慢 SQL 分析 |
-| general log | Server 层 | 请求排查 |
-
-记忆方式：
-
-- **binlog**：给别人看，主从复制/恢复用
-- **redo log**：崩了以后重做
-- **undo log**：错了以后回滚，也支撑 MVCC
+- [MySQL 官方 · The Binary Log](https://dev.mysql.com/doc/refman/8.0/en/binary-log.html)
+- [MySQL 官方 · Redo Log](https://dev.mysql.com/doc/refman/8.0/en/innodb-redo-log.html)
+- 丁奇《MySQL 实战 45 讲》第 15 讲（redo log）、第 23 讲（两阶段提交）
+- 《高性能 MySQL》第 1 章

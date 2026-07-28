@@ -1,12 +1,11 @@
 ---
 tags:
   - basic-knowledge
-  - backend
-  - python
-  - learning-note
+  - kb/programming/python
+  - kb/design-pattern
+  - mvc
+  - architecture
 ---
-
-
 在Python中，MVC（Model-View-Controller）模式通常在Web开发框架（如Django、Flask等）中实现。以下是这几个组件通常如何工作：
 
 ### Model（模型）

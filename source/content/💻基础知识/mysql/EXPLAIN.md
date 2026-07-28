@@ -1,13 +1,11 @@
 ---
 tags:
   - basic-knowledge
-  - backend
-  - database
-  - learning-note
-  - mysql
+  - kb/database/mysql
+  - kb/database/mysql/optimization
+  - explain
+  - execution-plan
 ---
-
-
 在MySQL中，`EXPLAIN`语句用于分析和优化查询语句的性能执行计划。它可以告诉您查询将如何执行，哪些索引将被使用，以及查询的执行步骤。以下是如何使用`EXPLAIN`语句的示例：
 
 假设您有一个查询语句如下：

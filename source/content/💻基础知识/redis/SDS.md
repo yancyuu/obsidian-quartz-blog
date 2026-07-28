@@ -1,13 +1,11 @@
 ---
 tags:
   - basic-knowledge
-  - backend
-  - database
-  - cache
-  - learning-note
-  - redis
+  - kb/database/redis
+  - kb/database/redis/internals
+  - sds
+  - string
 ---
-
 ### 动态字符串
 
 Redis的字符串底层实现确实使用了简单动态字符串（Simple Dynamic String，SDS）结构。SDS是一种动态字符串实现，它允许字符串长度动态变化，并且在某些操作上比C语言中的传统字符串更高效。Redis选择使用SDS作为字符串的底层实现主要出于性能和灵活性的考虑。

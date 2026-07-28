@@ -1,12 +1,12 @@
 ---
 tags:
   - basic-knowledge
-  - computer-science
-  - learning-note
+  - kb/os
+  - kb/os/linux
   - linux
+  - fd
+  - inode
 ---
-
-
 **fd简介：**
 
 文件描述符可以理解为进程文件描述表这个表的索引。当需要进行I/O操作的时候，会传入fd作为参数，先从进程文件描述符表查找该fd对应的那个条目，取出对应的那个已经打开的文件的句柄，根据文件句柄指向，去系统fd表中查找到该文件指向的inode，从而定位到该文件的真正位置，从而进行I/O操作。

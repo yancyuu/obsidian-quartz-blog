@@ -1,12 +1,12 @@
 ---
 tags:
   - basic-knowledge
-  - backend
-  - python
-  - learning-note
+  - kb/programming/python
+  - kb/programming/python/oop
+  - oop
+  - init
+  - new
 ---
-
-Owner: yancy yu
 
 `__new__` 和 `__init__` 都是 Python 类的特殊方法，但它们有不同的用途和调用时机。
 

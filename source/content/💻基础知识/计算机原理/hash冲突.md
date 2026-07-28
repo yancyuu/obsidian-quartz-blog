@@ -1,10 +1,11 @@
 ---
 tags:
   - basic-knowledge
-  - computer-science
-  - learning-note
+  - kb/cs-fundamentals
+  - kb/algorithm/data-structure
+  - hash
+  - hash-collision
 ---
-
 ## 什么是hash冲突
 
 假设我们有一个非常简单的哈希函数，它只是将输入数字除以10，并取余数作为哈希值。也就是：

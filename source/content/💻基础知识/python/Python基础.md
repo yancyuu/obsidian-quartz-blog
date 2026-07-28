@@ -1,184 +1,109 @@
 ---
 tags:
   - basic-knowledge
-  - backend
-  - python
-  - gil
-  - learning-note
+  - kb/programming/python
+  - basics
 ---
 
-## Python 面试准备教程
+# Python 基础
 
-### 1. 基础知识
+> 本篇是 Python 领域入口，只讲**语言核心基础**（解释器、数据类型与可变性、作用域、类型注解），深入主题在各专题页。Python 面试汇总见 [Python面试题集](Python面试题集.md)。
 
-### 1.1 Python 的解释器
+## 专题导航
 
-- CPython: 官方版本，用 C 语言编写。
-- Jython: 运行在 Java 平台。
-- IronPython: 针对 .NET 和 C#。
-- PyPy: 使用 JIT 编译器，执行速度更快。
+| 主题       | 笔记                                                                                                                                                                                                                |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 内存与回收 | [python垃圾回收](python垃圾回收.md)、[GIL](GIL.md)                                                                                                                                                                  |
+| 面向对象   | [面向对象编程](面向对象编程.md)、[类Class常用的问题](类Class常用的问题.md)、[__init__和__new__的区别](__init__和__new__的区别.md)、[多类继承规则](多类继承规则.md)、[属性property的优缺点](属性property的优缺点.md) |
+| 函数式     | [闭包](闭包.md)、[迭代器](迭代器.md)、[生成器](生成器.md)                                                                                                                                                           |
+| 异步       | [Httpx与Asyncio](Httpx与Asyncio.md)、[异步如何实现的](../计算机原理/异步如何实现的.md)                                                                                                                              |
+| 调试       | [pdb调试](../计算机原理/pdb调试.md)、[内建属性&函数](内建属性&函数.md)                                                                                                                                              |
+| 进阶合集   | [python核心编程](python核心编程.md)（元类/装饰器/拷贝/位运算）                                                                                                                                                      |
 
-### 1.2 Python 2 和 Python 3 的区别
+---
+
+## 一、解释器
+
+| 解释器      | 说明                                         |
+| ----------- | -------------------------------------------- |
+| **CPython** | 官方实现（C 语言），最主流，**有 GIL**       |
+| **PyPy**    | JIT 编译，**执行更快**（适合纯 Python 计算） |
+| Jython      | 跑在 JVM，可调用 Java                        |
+| IronPython  | 跑在 .NET                                    |
+
+> 默认 `python` 即 CPython。GIL、引用计数 GC 都是 CPython 的实现细节（见 [GIL](GIL.md)、[python垃圾回收](python垃圾回收.md)）。
+
+---
+
+## 二、数据类型与可变性（高频考点）
+
+| 不可变                                         | 可变                |
+| ---------------------------------------------- | ------------------- |
+| `int` `float` `bool` `str` `tuple` `frozenset` | `list` `dict` `set` |
+
+**可变性是面试高频**，直接影响：
+
+- 函数默认参数陷阱：`def f(x=[])` 的 `[]` 只创建一次，多次调用共享！应用 `None` 兜底
+- 拷贝深浅：`copy.copy`（浅，只复制第一层）vs `copy.deepcopy`（深，递归复制）。详见 [python核心编程](python核心编程.md) 的深浅拷贝
+- 字典/集合的 key 必须可哈希（即不可变）
 
 ```python
-print 语句 vs print() 函数。
-`range` 和 `xrange`。
-整数除法。
-```
-
-### 1.3 GIL（全局解释器锁）
-
-- 限制多线程并发执行，影响性能。
-- 可以使用多进程或其他方法绕过。
-
-### 1.4 单例模式
-
-```python
-class Singleton:
-    _instance = None
-    def __new__(cls):
-        if cls._instance is None:
-            cls._instance = super(Singleton, cls).__new__(cls)
-        return cls._instance
-
-```
-
-### 1.5 装饰器
-
-- 用于修改函数或类的行为。
-
-```python
-def my_decorator(func):
-    def wrapper():
-        print("Something is happening before the function is called.")
-        func()
-        print("Something is happening after the function is called.")
-    return wrapper
-
+def add(item, lst=None):   # ✅ 正确
+    lst = lst or []
+    lst.append(item)
+    return lst
 ```
 
 ---
 
-### 2. 数据结构
+## 三、作用域：LEGB
 
-### 2.1 列表和元组
+查找变量的顺序：
 
-- 列表可变，元组不可变。
-
-### 2.2 栈/队列的实现
-
-- 使用 `list` 或 `collections.deque`。
-
-### 2.3 字典推导
-
-```python
-{x: x**2 for x in (2, 4, 6)}
-
+```mermaid
+flowchart LR
+    L[L Local<br/>函数内] --> E[E Enclosing<br/>外层嵌套函数]
+    E --> G[G Global<br/>模块级]
+    G --> B[B Built-in<br/>内置]
 ```
 
-### 2.4 合并两个有序列表
-
-- 使用 `merge` 方法。
+- 闭包正是利用 **Enclosing** 作用域（见 [闭包](闭包.md)）
+- `global` / `nonlocal` 声明修改外层变量
 
 ---
 
-### 3. 算法
+## 四、类型注解（Type Hints，3.5+）
 
-### 3.1 反转字符串
+现代 Python 几乎都用类型注解，配合 `mypy` 静态检查：
 
 ```python
-s[::-1]
+from typing import Optional
 
+def greet(name: str, times: int = 1) -> list[str]:
+    return [f"hello {name}"] * times
+
+def find(uid: int) -> Optional[dict]:   # 可能返回 None
+    ...
 ```
 
-### 3.2 找出列表中的最大/最小元素
-
-- 使用 `max()` 和 `min()`。
-
-### 3.3 二分查找
-
-- 使用递归或循环。
-
-### 3.4 找出数组中重复的元素
-
-- 使用 `set` 或者排序。
+> 3.9+ 可直接用 `list[str]`、`dict[str, int]`（无需 `typing.List`）。3.10+ 有 `int | str` 联合类型语法。
 
 ---
 
-### 4. Web 开发
+## 五、常用魔法方法速查
 
-### 4.1 WSGI
-
-- Web Server Gateway Interface，连接 Web 服务器和应用程序的接口。
-
-### 4.2 Flask 和 Django
-
-- Flask 更轻量级，Django 更全面。
-
-### 4.3 表单处理
-
-- 使用 `request.form`。
-
-### 4.4 ORM
-
-- Object-Relational Mapping，如 SQLAlchemy。
+| 方法                                   | 触发                                                               |
+| -------------------------------------- | ------------------------------------------------------------------ |
+| `__init__` / `__new__`                 | 实例化（见 [__init__和__new__的区别](__init__和__new__的区别.md)） |
+| `__str__` / `__repr__`                 | 打印/调试表示                                                      |
+| `__len__` / `__getitem__` / `__iter__` | 容器协议、迭代（见 [迭代器](迭代器.md)）                           |
+| `__enter__` / `__exit__`               | 上下文管理器（`with`）                                             |
+| `__call__`                             | 对象可像函数一样调用                                               |
 
 ---
 
-### 5. 数据库
+## 参考
 
-### 5.1 连接数据库
-
-- 使用 `pymysql` 或 `pymongo`。
-
-### 5.2 SQL 注入
-
-- 使用参数化查询。
-
-### 5.3 数据库迁移
-
-- 使用 Alembic 或 Django 的 migration。
-
----
-
-### 6. 测试
-
-### 6.1 单元测试
-
-- 使用 `unittest`。
-
-### 6.2 Mock 对象
-
-- 使用 `unittest.mock`。
-
-### 6.3 TDD（测试驱动开发）
-
-- 先写测试，再写代码。
-
----
-
-这个教程只是一个大致的框架，每个主题都可以深入学习。希望这能帮助你成功通过 Python 面试！祝你好运！
-
-[python垃圾回收](python垃圾回收.md)
-
-[内建属性&函数](内建属性&函数.md)
-
-[pdb调试](../计算机原理/pdb调试.md)
-
-[闭包](闭包.md)
-
-[类Class常用的问题](类Class常用的问题.md)
-
-[属性property的优缺点](属性property的优缺点.md)
-
-[__init__和__new__的区别](__init__和__new__的区别.md)
-
-[GIL](GIL.md)
-
-[迭代器](迭代器.md)
-
-[MVC](MVC.md)
-
-[生成器](生成器.md)
-
-[^1]: 
+- [Python 官方文档](https://docs.python.org/3/)
+- [PEP 484 · Type Hints](https://peps.python.org/pep-0484/)
+- [Real Python](https://realpython.com/)

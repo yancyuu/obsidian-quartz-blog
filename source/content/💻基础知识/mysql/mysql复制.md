@@ -1,167 +1,129 @@
 ---
 tags:
   - basic-knowledge
-  - backend
-  - database
-  - learning-note
-  - mysql
+  - kb/database/mysql
+  - kb/database/mysql/replication
+  - replication
+  - master-slave
+  - binlog
+  - gtid
 ---
 
+# MySQL 主从复制
 
-Owner: yancy yu
+> 主从复制是 MySQL **读写分离、高可用、备份** 的基础。核心是 binlog + 三个线程。注意 **GTID（5.6+）** 是现代复制的主流。
 
-## mysql复制功能介绍
+## 相关笔记
 
-1. 实现在不同服务器上的数据分布
-    1. 利用二进制日志增量进行
-    2. 不需要太多带宽
-    3. 但是使用基于行的复制在进行大批量的更改时会对带宽带来一定的压力，特别时跨IDC(互联网数据中心)环境下进行复制，应该分批进行。
-2. 实现读取的负载均衡
-    1. 需要其他主键配合完成
-    2. 利用DNS轮询的方式把程序的读连接到不同的备份数据库
-    3. 使用[LVS](https://www.cnblogs.com/vycz/p/12917932.html)，[haproxy](https://baike.baidu.com/item/haproxy/5825820?fr=aladdin)这样得代理方式
-3. 增强了数据的安全性
-    1. 非数据共享
-    2. 利用备库的备份来减少主库的负载
-    3. 复制不能代替备份
-    4. 避免单点失败
-4. 实现数据库高可用和故障切换
-5. 实现数据库在线升级
+- [mysql日志](mysql日志.md)：复制依赖 binlog
+- [事务](事务.md)：复制保证主从一致性
+- [分库分表与读写分离](../分布式&高并发/分库分表与读写分离.md)：复制的应用场景
+- [Redis集群](../redis/Redis集群.md)：对比 Redis 主从
 
-## mysql的复制工作方式
+---
 
-1. 主将变更写入二进制文件
-2. 从将读取主的二进制日志变更写入到relay_log中
-3. 在从上重放relay_log中得日志
+## 一、复制的作用
 
-![Untitled](Untitled%2015.png)
+| 作用     | 说明                       |
+| -------- | -------------------------- |
+| 读写分离 | 主写从读，分担压力         |
+| 数据分布 | 跨地域/机房数据同步        |
+| 高可用   | 主挂可切从（配合哨兵/MHA） |
+| 备份     | 从库备份不影响主库         |
 
-## 基于日志点的复制配置步骤
+> 复制**不能代替备份**（误操作也会被复制），也**不分担写负载**（写都在主）。
 
-1. 设置权限
-    
-    在主DB服务器建立账号 create user ‘repl’ @‘ip段’ identified by ‘PassWord’ //建议网段最好是从服务器的网段
-    
-    授权 GRANT
-    
+---
 
-**配置日志点的复制配置步骤如下**
+## 二、复制原理（三个线程）
 
-1. 配置主数据库服务器
-    
-    bin_log = mysql-bin
-    
-    sever_id = 100
-    
-2. 从服务器配置
-    
-    relay_log = mysql-relay-bin
-    
-    read_only = on[可选建议]
-    
-3. 初始化从服务器数据
-    
-    mysqldump   – master-data =2 -single-transaction (会加锁)
-    
-    xtrabackup --slave-info（纯innodb的话不阻塞）
-    
-4. 启动复制链路
-    
-    创建完链路后启动链路
-    
-    ![Untitled](Untitled%2016.png)
-    
-    start  slaver；
-    
-    优点：
-    
-    - 相对成熟，bug少
-    - 对sql查询没有任何限制
-    
-    缺点:
-    
-    - 故障转移时重新获取新主的日志点的节点信息很难获取到
+```mermaid
+flowchart LR
+    M[主库 Primary] -->|① binlog dump 线程<br/>推送 binlog| IO
+    subgraph 从库[从库 Replica]
+        IO[② IO 线程<br/>写 relay log] --> RL[(relay log<br/>中继日志)]
+        RL --> SQL[③ SQL 线程<br/>重放 relay log]
+        SQL --> D[从库数据]
+    end
+    style M fill:#fecaca
+    style IO fill:#dbeafe
+    style SQL fill:#dcfce7
+```
 
-## 基于GTID的复制
+1. 主库 **binlog dump 线程**：将 binlog 发给从库
+2. 从库 **IO 线程**：接收并写入 **relay log（中继日志）**
+3. 从库 **SQL 线程**：读取 relay log 重放，更新从库数据
 
-**从mysql5.6开始**
+> 复制本质：**主库把变更写 binlog → 从库拉取并重放**。是**异步**的，所以有延迟。
 
-![Untitled](Untitled%2017.png)
+---
 
-GTID：全局事务ID，其保证为每一个在主上提交的事务在复制集群中可以生成一个唯一的ID
+## 三、复制形式
 
-1. 设置用户
-    
-    在主DB服务器建立账号 create user ‘repl’ @‘ip段’ identified by ‘PassWord’ //建议网段最好是从服务器的网段
-    
-    授权 GRANT
-    
+| 形式                 | 机制                 | 特点                         |
+| -------------------- | -------------------- | ---------------------------- |
+| **异步复制（默认）** | 主不等从确认         | 性能高，主挂可能丢未同步数据 |
+| **半同步复制**       | 主等至少一个从 ack   | 性能与安全的折中，生产常用   |
+| **组复制（MGR）**    | Paxos 变体多节点一致 | 强一致、多主，但复杂         |
 
- **配置日志点的复制配置步骤**
+---
 
-1. 配置主数据库服务器
-    
-    bin_log = mysql-bin
-    
-    sever_id = 100
-    
-    gtid_mode = on (启动gtid的方式)
-    
-    enforce-gtid-consistency 强制gtid一致性
-    
-    log-slave-updates = on 从记录主的修改日志[mysql≤5.6 一定要设置]
-    
-2. 从服务器配置
-    
-    sever_id = 101
-    
-    relay_log = mysql-relay-bin
-    
-    gtid_mode = on (启动gtid的方式)
-    
-    enforce-gtid-consistency 强制gtid一致性
-    
-    read_only = on[可选建议]
-    
-3. 初始化从服务器数据：记录的备份的最后的事务值
-    
-    mysqldump   – master-data =2 -single-transaction (会加锁)
-    
-    xtrabackup --slave-info（纯innodb的话不阻塞）
-    
-4. 启动复制链路
-    
-    缺点：
-    
-    - 故障处理比较复杂
-    - 对执行的sql有一定的限制
+## 四、基于日志点 vs 基于 GTID
 
-## 复制性能优化
+| 维度     | 基于日志点（传统）                     | 基于 GTID（5.6+）⭐       |
+| -------- | -------------------------------------- | ------------------------- |
+| 定位     | `binlog文件 + 偏移量`                  | 全局事务 ID               |
+| 故障切换 | 难（要找新主的日志点）                 | **简单**（GTID 全局唯一） |
+| 配置     | `CHANGE MASTER TO MASTER_LOG_FILE/POS` | `AUTO_POSITION=1`         |
+| 推荐     | 旧系统                                 | **新系统首选**            |
 
-### 影响主从延迟的因素:
+> **GTID = server_uuid + 事务序号**，全局唯一，从库自动从主库未同步的 GTID 开始拉取，故障切换简单。
 
-- 主库写入二进制日志的时间 ------→ 控制主库的事务大小，分割大事务
-- 二进制日志传输的时间 ------→ 使用MINED日志格式或设置set binlog_row_image=minimal
-- 默认情况下从只有一个sql线程，主上并发修改变成了串行------→5.6以上可以多线程复制，5.7可以配置逻辑时钟
-    
-    ![Untitled](Untitled%2018.png)
-    
-    ## mysql复制常见问题
-    
-    ### 数据损坏或丢失
-    
-    - 主或者从意外宕机
-        - 使用跳过二进制日志事件
-        - 注入空事务的方式先恢复中断的复制链路
-        - 在使用其他方法来对比主从服务器上的数据
-    - 主库上的二进制文件损害
-    - 备库上的中继日志损坏
-    - 在从库上进行数据修改造成主从复制错误
-    - 不唯一的server_id或server_uuid
-    - max_allow_packer设置引起的主从复制错误
-    
-    ### 主从复制无法解决的问题
-    
-    - 分担主数据库的写负载
-    - 自动进行故障转移以及主从切换(需要组件)
-    - 提供读写分离功能(需要组件)
+---
+
+## 五、主从延迟（高频）
+
+**延迟来源**：
+
+| 环节        | 延迟原因                           | 优化                            |
+| ----------- | ---------------------------------- | ------------------------------- |
+| 主写 binlog | 大事务                             | 拆分大事务                      |
+| 传输 binlog | 带宽、ROW 格式数据量大             | `binlog_row_image=MINIMAL`      |
+| 从重放      | **SQL 线程单线程**重放（最大瓶颈） | **多线程复制**（5.7+ 逻辑时钟） |
+
+> 从库 SQL 线程**单线程重放**主库的并发操作，是延迟主因。5.7+ 用**基于逻辑时钟的并行复制**（同一组提交的事务可并行重放）缓解。
+
+---
+
+## 六、常见问题
+
+| 问题                  | 处理                              |
+| --------------------- | --------------------------------- |
+| 主/从宕机导致复制中断 | 跳过错误事件 / 注入空事务恢复链路 |
+| binlog/relay log 损坏 | 用备份重建从库                    |
+| 在从库写数据导致错误  | 从库设 `read_only=on`             |
+| server_id 重复        | 确保全局唯一                      |
+
+---
+
+## 七、面试速答
+
+> **Q：MySQL 主从复制原理？**
+> A：三个线程——主库 binlog dump 线程推送 binlog，从库 IO 线程写 relay log，SQL 线程重放 relay log。本质是主写 binlog、从拉取重放，异步进行。
+
+> **Q：主从延迟怎么解决？**
+> A：根因是从库 SQL 线程单线程重放。优化：拆大事务、`binlog_row_image=MINIMAL`、开启多线程复制（5.7+ 逻辑时钟并行）。强一致读要走主库。
+
+> **Q：异步、半同步、组复制区别？**
+> A：异步主不等从（快、可能丢）；半同步主等至少一个从 ack（折中，生产常用）；组复制多节点强一致（复杂）。
+
+> **Q：GTID 比传统复制好在哪？**
+> A：全局事务 ID 定位，故障切换时从库自动从未同步点继续，比传统「日志文件+偏移量」简单可靠，是 5.6+ 推荐。
+
+---
+
+## 参考
+
+- [MySQL 官方 · Replication](https://dev.mysql.com/doc/refman/8.0/en/replication.html)
+- [MySQL 官方 · GTID](https://dev.mysql.com/doc/refman/8.0/en/replication-gtids.html)
+- 丁奇《MySQL 实战 45 讲》第 24/25 讲（主从复制）

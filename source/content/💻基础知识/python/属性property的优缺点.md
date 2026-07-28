@@ -1,12 +1,11 @@
 ---
 tags:
   - basic-knowledge
-  - backend
-  - python
-  - learning-note
+  - kb/programming/python
+  - kb/programming/python/oop
+  - property
+  - descriptor
 ---
-
-
 1. 私有属性添加getter和setter⽅法
 2. 使⽤property升级getter和setter⽅法
 

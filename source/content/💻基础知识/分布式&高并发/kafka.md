@@ -1,14 +1,11 @@
 ---
 tags:
   - basic-knowledge
-  - backend
-  - distributed-system
-  - high-concurrency
+  - kb/distributed
+  - kb/distributed/mq
   - kafka
-  - learning-note
+  - message-queue
 ---
-
-
 ## Kafka中发送消息之前做了什么
 
 在Apache Kafka中，生产者（Producer）负责将消息发送到指定的主题（Topic）中。发送消息之前，生产者一般会执行以下几个步骤：

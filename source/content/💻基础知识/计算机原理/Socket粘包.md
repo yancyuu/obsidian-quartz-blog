@@ -1,11 +1,11 @@
 ---
 tags:
   - basic-knowledge
-  - computer-science
-  - learning-note
-  - networking
+  - kb/network
+  - kb/network/socket
+  - socket
+  - tcp
 ---
-
 在网络编程中，"粘包"是一个常见的问题，特别是在使用TCP协议时。粘包是指发送方发送的若干包数据到达接收方时被粘成一包，接收方不易分辨出完整的消息边界。
 
 以下是几种常用的解决粘包问题的方法：
