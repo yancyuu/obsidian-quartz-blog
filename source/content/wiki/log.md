@@ -210,3 +210,27 @@
 
 **更新页面**：[[mcp]], [[agent运行时]], [[可逃逸架构]]
 
+
+
+## [2026-07-28] ingest | Agent App 架构图（Excalidraw）
+
+**创建页面**：[[sources/agent-app代码结构_c030b6.md]], [[entities/fastapi.md]], [[entities/sanic.md]], [[entities/redis.md]], [[entities/langgraph.md]], [[entities/pydantic.md]], [[entities/coding_agent.md]], [[entities/research_agent.md]], [[entities/python.md]], [[entities/state_graph-py.md]], [[entities/modules.md]], [[entities/mcp_server-py.md]], [[entities/core-agent.md]], [[entities/configsettings-py.md]], [[entities/history_manager-py.md]], [[entities/agent_app.md]], [[entities/base_tool-py.md]], [[entities/env.md]], [[entities/router-py.md]], [[entities/prompt_templates.md]], [[entities/schemas.md]], [[entities/agent-py.md]], [[concepts/应用入口与配置.md]], [[concepts/业务闭环.md]], [[concepts/可逃逸架构.md]], [[concepts/agent基类.md]], [[concepts/意图路由.md]], [[concepts/向量库连接.md]], [[concepts/协议封装.md]], [[concepts/专用prompt.md]], [[concepts/核心逻辑.md]], [[concepts/工具绑定.md]], [[concepts/通用schema定义.md]], [[concepts/运维脚本.md]], [[concepts/专用测试.md]], [[concepts/通用prompt库.md]], [[concepts/agent编排框架.md]], [[concepts/tools-actions.md]], [[concepts/继承.md]], [[concepts/agents目录结构.md]], [[concepts/memory-context.md]], [[concepts/接口不动协议可插拔.md]], [[concepts/使用.md]], [[concepts/挂载.md]], [[concepts/路由请求.md]]
+
+**更新页面**：[[sanic]], [[langgraph]], [[redis]], [[pydantic]], [[python]], [[智能路由]]
+
+
+
+## [2026-07-28] ingest | AI Agent 专用 Prompt 与工程实践规范（Cursor Directory）
+
+**创建页面**：[[sources/cursor提示词_bf3f6f.md]], [[entities/tortoise-orm.md]], [[entities/pydantic.md]], [[entities/sanic.md]], [[entities/cursor-directory.md]], [[entities/redis.md]], [[concepts/函数式编程.md]], [[concepts/守卫子句.md]], [[concepts/类型提示.md]], [[concepts/异步io.md]], [[concepts/错误处理.md]], [[concepts/延迟加载.md]], [[concepts/web-research.md]], [[concepts/中间件.md]], [[concepts/专用prompt.md]], [[concepts/roro模式.md]], [[concepts/性能优化.md]], [[concepts/生命周期事件.md]], [[concepts/事务支持.md]]
+
+**更新页面**：[[sanic]], [[tortoise-orm]], [[pydantic]], [[redis]], [[异步io]], [[专用prompt]]
+
+
+
+## [2026-07-28] ingest | 统一网关鉴权架构设计
+
+**创建页面**：[[sources/基于-iam-的网关鉴权系统设计文档_78626b.md]], [[entities/网关.md]], [[entities/业务系统.md]], [[concepts/统一鉴权.md]], [[entities/iam系统.md]], [[concepts/权限计算逻辑.md]], [[concepts/token解析.md]], [[concepts/权限缓存策略.md]], [[concepts/rbac权限模型.md]], [[concepts/权限计算逻辑.md]], [[concepts/权限缓存策略.md]], [[concepts/菜单api映射.md]], [[concepts/403异常处理.md]]
+
+**更新页面**：
+

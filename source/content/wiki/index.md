@@ -6,6 +6,26 @@
 
 ## 实体
 
+- [[entities/iam系统|iam系统]] `aliases: 身份与访问管理系统, Identity and Access Management` - type: entity
+- [[entities/业务系统|业务系统]] `aliases: 后端业务系统, Business System` - type: entity
+- [[entities/网关|网关]] `aliases: API网关, Gateway` - type: entity
+- [[entities/cursor-directory|cursor-directory]] `aliases: Cursor Directory, cursor.directory` - type: entity
+- [[entities/agent-py|agent-py]] `aliases: Agent主文件, agent核心文件` - type: entity
+- [[entities/schemas|schemas]] `aliases: schemas目录, Schema定义目录, 通用Schema定义目录` - type: entity
+- [[entities/prompt_templates|prompt_templates]] `aliases: Prompt模板目录, 通用提示词库目录` - type: entity
+- [[entities/router-py|router-py]] `aliases: 路由文件, 意图路由器, router.py` - type: entity
+- [[entities/env|env]] `aliases: 环境变量文件, env配置` - type: entity
+- [[entities/base_tool-py|base_tool-py]] `aliases: Pydantic基类, 工具基类` - type: entity
+- [[entities/agent_app|agent_app]] `aliases: Agent应用, agent_app项目` - type: entity
+- [[entities/history_manager-py|history_manager-py]] `aliases: 历史管理器, Redis历史` - type: entity
+- [[entities/configsettings-py|configsettings-py]] `aliases: 配置文件, settings.py` - type: entity
+- [[entities/core-agent|core-agent]] `aliases: core-agent模块, core-agent/` - type: entity
+- [[entities/mcp_server-py|mcp_server-py]] `aliases: MCP服务器文件, MCP Server` - type: entity
+- [[entities/modules|modules]] `aliases: modules模块, 通用功能模块` - type: entity
+- [[entities/state_graph-py|state_graph-py]] `aliases: LangGraph封装, 状态图` - type: entity
+- [[entities/research_agent|research_agent]] `aliases: research_agent模块, 研究代理` - type: entity
+- [[entities/coding_agent|coding_agent]] `aliases: coding_agent模块, 代码代理` - type: entity
+- [[entities/fastapi|fastapi]] `aliases: FastAPI框架, Fast API` - type: entity
 - [[entities/management|management]] `aliases: 管理层, Context Management, 技能管理层` - type: entity
 - [[entities/inventory-service|inventory-service]] `aliases: 库存服务, 📦 Inventory Service` - type: entity
 - [[entities/crm-service|crm-service]] `aliases: CRM 服务, 👥 CRM Service, 客户关系管理服务` - type: entity
@@ -137,6 +157,43 @@
 
 ## 概念
 
+- [[concepts/403异常处理|403异常处理]] `aliases: 权限不足处理, 403 Forbidden` - type: concept
+- [[concepts/菜单api映射|菜单api映射]] `aliases: 菜单到API映射, 权限菜单映射, Menu-API Mapping` - type: concept
+- [[concepts/rbac权限模型|rbac权限模型]] `aliases: 基于角色的访问控制, 用户-角色-权限关联关系, Role-Based Access Control` - type: concept
+- [[concepts/权限缓存策略|权限缓存策略]] `aliases: 缓存策略设计, 权限缓存, Permission Cache Strategy, 权限API缓存` - type: concept
+- [[concepts/token解析|token解析]] `aliases: Token验证, Token Parsing, Token解析` - type: concept
+- [[concepts/权限计算逻辑|权限计算逻辑]] `aliases: 权限聚合算法, Permission Calculation Logic, 用户组角色聚合` - type: concept
+- [[concepts/统一鉴权|统一鉴权]] `aliases: 统一API鉴权, 网关层鉴权, Unified Authentication` - type: concept
+- [[concepts/事务支持|事务支持]] `aliases: Transaction Support, 数据库事务` - type: concept
+- [[concepts/生命周期事件|生命周期事件]] `aliases: Lifecycle Events, Server Lifecycle, 生命周期钩子` - type: concept
+- [[concepts/性能优化|性能优化]] `aliases: Performance Optimization, API性能指标` - type: concept
+- [[concepts/roro模式|roro模式]] `aliases: 接收对象、返回对象, Receive Object, Return Object, RORO Pattern` - type: concept
+- [[concepts/中间件|中间件]] `aliases: Middleware, Sanic中间件` - type: concept
+- [[concepts/web-research|web-research]] `aliases: web research工具, Web Research MCP 服务, 外部搜索工具` - type: concept
+- [[concepts/延迟加载|延迟加载]] `aliases: Lazy Loading, 懒加载, 惰性加载` - type: concept
+- [[concepts/错误处理|错误处理]] `aliases: Error Handling, 异常处理, 错误处理策略` - type: concept
+- [[concepts/类型提示|类型提示]] `aliases: Type Hints, 类型注释, Python 类型提示` - type: concept
+- [[concepts/守卫子句|守卫子句]] `aliases: Guard Clause, 提前返回, Early Return` - type: concept
+- [[concepts/函数式编程|函数式编程]] `aliases: 函数式、声明式编程, Functional Programming, FP` - type: concept
+- [[concepts/路由请求|路由请求]] `aliases: 请求路由, request routing` - type: concept
+- [[concepts/挂载|挂载]] `aliases: 工具挂载, Tool Mounting, Mount` - type: concept
+- [[concepts/使用|使用]] `aliases: 模块引用, Module Usage, 模块调用` - type: concept
+- [[concepts/memory-context|memory-context]] `aliases: 记忆上下文模块, memory-context模块` - type: concept
+- [[concepts/agents目录结构|agents目录结构]] `aliases: agents模块, 业务代理目录` - type: concept
+- [[concepts/继承|继承]] `aliases: inheritance, Agent继承机制` - type: concept
+- [[concepts/tools-actions|tools-actions]] `aliases: 工具动作模块, tools-actions模块` - type: concept
+- [[concepts/通用prompt库|通用prompt库]] `aliases: prompt_templates, 通用提示词模板` - type: concept
+- [[concepts/专用测试|专用测试]] `aliases: tests, 测试模块, Dedicated Tests` - type: concept
+- [[concepts/运维脚本|运维脚本]] `aliases: scripts, 部署脚本` - type: concept
+- [[concepts/通用schema定义|通用schema定义]] `aliases: schemas模块, Universal Schema Definition` - type: concept
+- [[concepts/工具绑定|工具绑定]] `aliases: tools.py工具绑定, Tool Binding` - type: concept
+- [[concepts/核心逻辑|核心逻辑]] `aliases: agent.py核心逻辑, Core Logic, Agent主要业务逻辑` - type: concept
+- [[concepts/专用prompt|专用prompt]] `aliases: prompts.py, 专用提示词` - type: concept
+- [[concepts/协议封装|协议封装]] `aliases: MCP协议封装, Protocol Encapsulation, 协议封装层` - type: concept
+- [[concepts/向量库连接|向量库连接]] `aliases: vector_store.py, 向量数据库连接, Vector Store Connection` - type: concept
+- [[concepts/agent基类|agent基类]] `aliases: base_agent.py, Base Agent Class, Agent Base Class` - type: concept
+- [[concepts/业务闭环|业务闭环]] `aliases: Agent业务闭环, Business Closed Loop, 业务闭环设计` - type: concept
+- [[concepts/应用入口与配置|应用入口与配置]] `aliases: 入口配置层, 应用入口与配置层, App Entry & Config` - type: concept
 - [[concepts/技能注册表skill-registry仅包含技能名|技能注册表skill-registry仅包含技能名]] `aliases: 仅含名称的技能注册表, 轻量技能目录, Name-Only Skill Registry` - type: concept
 - [[concepts/protocol-layer|protocol-layer]] `aliases: 协议层, The Escape Hatch - Protocol Layer` - type: concept
 - [[concepts/pure-intent|pure-intent]] `aliases: 纯意图, 纯净意图输入, Pure Intent` - type: concept
@@ -162,7 +219,7 @@
 - [[concepts/生成式界面|生成式界面]] `aliases: Generative UI, 动态生成界面` - type: concept
 - [[concepts/模型无关性|模型无关性]] `aliases: Model Agnostic, 模型无关, 模型无关性原则` - type: concept
 - [[concepts/核心逻辑剥离|核心逻辑剥离]] `aliases: Pure Functions, 核心逻辑与AI框架解耦, 业务逻辑纯函数化` - type: concept
-- [[concepts/可逃逸架构|可逃逸架构]] `aliases: Escapable Architecture, Design for Replacement, 为替换而设计` - type: concept
+- [[concepts/可逃逸架构|可逃逸架构]] `aliases: Escapable Architecture, Design for Replacement, 为替换而设计, 可逃逸设计` - type: concept
 - [[concepts/协议优于框架|协议优于框架]] `aliases: Protocol over Framework, 协议优先于框架, 拒绝框架锁定` - type: concept
 - [[concepts/开发环境|开发环境]] `aliases: dev环境, 独立开发环境, dev` - type: concept
 - [[concepts/修复分支|修复分支]] `aliases: fix分支, bug修复分支` - type: concept
@@ -177,7 +234,7 @@
 - [[concepts/统一异常捕获|统一异常捕获]] `aliases: 异常中间件, 全局异常处理, Unified Exception Handling, 业务异常分类` - type: concept
 - [[concepts/数据结构解析模块独立|数据结构解析模块独立]] `aliases: 统一返回模型, 数据解析层独立` - type: concept
 - [[concepts/rpc风格路由|rpc风格路由]] `aliases: RPC风格命名规范, 模块即命名空间, RPC-style Routing` - type: concept
-- [[concepts/接口不动协议可插拔|接口不动协议可插拔]] `aliases: 协议可插拔, 协议适配层, Protocol-Pluggable Architecture` - type: concept
+- [[concepts/接口不动协议可插拔|接口不动协议可插拔]] `aliases: 协议可插拔, 协议适配层, Protocol-Pluggable Architecture, Tools定义在 modules 中Agent 只引用 Schema` - type: concept
 - [[concepts/单一职责|单一职责]] `aliases: 单一职责原则, Single Responsibility` - type: concept
 - [[concepts/master-分支保护策略|master-分支保护策略]] `aliases: 主分支保护, master 分支管理规范, master分支保护策略` - type: concept
 - [[concepts/频繁-rebase-实践|频繁-rebase-实践]] `aliases: 每日 rebase, 频繁变基` - type: concept
@@ -389,7 +446,7 @@
 - [[concepts/aigc|aigc]] `aliases: AI生成内容, 人工智能生成内容, AI-Generated Content` - type: concept
 - [[concepts/ai-1-0时代|ai-1-0时代]] `aliases: AI 1.0, AI第一阶段` - type: concept
 - [[concepts/agent运行时|agent运行时]] `aliases: Agent Runtime, 运行时, 智能体运行时` - type: concept
-- [[concepts/agent编排框架|agent编排框架]] `aliases: Agent编排, Brain, Agent Orchestration Framework, Agent 编排` - type: concept
+- [[concepts/agent编排框架|agent编排框架]] `aliases: Agent编排, Brain, Agent Orchestration Framework, Agent 编排, orchestration` - type: concept
 - [[concepts/agent观测平台|agent观测平台]] `aliases: Observability, 可观测平台, Agent Observability, Agent观测体系` - type: concept
 - [[concepts/a2a|a2a]] `aliases: Agent-to-Agent, Agent2Agent` - type: concept
 - [[concepts/agentic-workflow|agentic-workflow]] `aliases: 智能体工作流, Agent Workflow` - type: concept
@@ -404,6 +461,9 @@
 
 ## 来源
 
+- [[sources/基于-iam-的网关鉴权系统设计文档_78626b|基于-iam-的网关鉴权系统设计文档_78626b]] `aliases: 基于 IAM 的网关鉴权系统设计文档, 统一网关鉴权设计, API Gateway Auth Architecture`
+- [[sources/cursor提示词_bf3f6f|cursor提示词_bf3f6f]] `aliases: AI Agent 工程实践规范, Cursor 提示词规范`
+- [[sources/agent-app代码结构_c030b6|agent-app代码结构_c030b6]] `aliases: Agent App 代码结构图, agent_app 架构图`
 - [[sources/渐进式披露架构_780a26|渐进式披露架构_780a26]] `aliases: The Escape Hatch Architecture, 渐进式披露架构`
 - [[sources/“可逃逸架构”设计模式_4e2181|“可逃逸架构”设计模式_4e2181]] `aliases: 可逃逸架构设计模式, Escapable Architecture, Design for Replacement`
 - [[sources/分支管理_563fba|分支管理_563fba]] `aliases: 分支管理规范, 业务项目Git分支策略`
