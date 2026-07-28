@@ -185,6 +185,8 @@
   },
   "active": "00ef2ccf6279c871",
   "lastOpenFiles": [
+    "wiki/concepts/业务闭环.md",
+    "wiki/concepts/应用入口与配置.md",
     "wiki/entities/agent-py.md",
     "wiki/entities/schemas.md",
     "wiki/entities/prompt_templates.md",
@@ -209,8 +211,6 @@
     "wiki/concepts/上下文污染.md",
     "wiki/concepts/json-schema.md",
     "wiki/concepts/user-request.md",
-    "wiki/concepts/l1-router.md",
-    "wiki/concepts/skill-registry.md",
     "未命名.base",
     "未命名 1.canvas",
     "未命名 2.base",
