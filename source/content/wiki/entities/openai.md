@@ -1,11 +1,12 @@
 ---
 type: entity
 created: 2026-06-21
-updated: 2026-06-23
+updated: 2026-07-28
 sources:
   - "[[sources/2023-0410-🐷ai时代来临普通人如何破局_0b9a5e]]"
   - "[[sources/🚀-爆款-ai-agent-公众号文章写作指南_44ecbb]]"
   - "[[sources/04-gpt-5-2-史诗级翻车谷歌这次居然赢麻了_e3bee2]]"
+  - "[[sources/大模型推理缓存-kv-cache与prompt-caching_ab1674]]"
 tags:
   - "organization"
 aliases:
@@ -14,16 +15,21 @@ aliases:
 ---
 
 ## 描述
-OpenAI 是全球最著名的人工智能公司之一，也是 [[entities/chatgpt|ChatGPT]] 的开发者。尽管 OpenAI 在人工智能领域处于领先地位，但在 AI 发展的早期阶段仍然面临巨大的财务挑战。2022 年，OpenAI 在算力上的投入高达 4.16 亿美元（约 28 亿元人民币），且每次 ChatGPT 查询的成本约为谷歌传统搜索查询成本的 7 倍。尽管处于亏损状态，OpenAI 作为 [[concepts/人工智能发展阶段|人工智能发展阶段]] 中平台争夺战的核心玩家，正积极抢占关键生态位，其创始人提出了"新的摩尔定律"——每隔 18 个月，人工智能赋能的应用数量将翻一倍。行业长期习惯于"OpenAI 发布 -> 谷歌追赶"的竞争剧本，OpenAI 新模型的发布往往引发全网对其编程能力的盲目吹捧。然而，GPT-5.2 的实测结果打破了 OpenAI 在编程领域的绝对神话，证明竞争对手已经具备了与之抗衡的实力。OpenAI 同时也是 AI 行业最具话题性和流量价值的标杆企业，其产品动态（如 Sora 等新功能发布）频繁成为 [[concepts/自媒体运营|自媒体运营]] 热点狙击型文章的核心素材，官方每一次动作都被视为对行业格局的重大冲击。
+OpenAI 是全球最著名的人工智能公司之一，也是 [[entities/chatgpt|ChatGPT]] 和 GPT 系列模型的开发者。尽管 OpenAI 在人工智能领域处于领先地位，但在 AI 发展的早期阶段仍然面临巨大的财务挑战。2022 年，OpenAI 在算力上的投入高达 4.16 亿美元（约 28 亿元人民币），且每次 ChatGPT 查询的成本约为谷歌传统搜索查询成本的 7 倍。尽管处于亏损状态，OpenAI 作为 [[concepts/人工智能发展阶段|人工智能发展阶段]] 中平台争夺战的核心玩家，正积极抢占关键生态位，其创始人提出了"新的摩尔定律"——每隔 18 个月，人工智能赋能的应用数量将翻一倍。行业长期习惯于"OpenAI 发布 -> 谷歌追赶"的竞争剧本，OpenAI 新模型的发布往往引发全网对其编程能力的盲目吹捧。然而，GPT-5.2 的实测结果打破了 OpenAI 在编程领域的绝对神话，证明竞争对手已经具备了与之抗衡的实力。在推理优化方面，OpenAI 采用自动化的 Prompt Caching 机制，对大于等于 1024 token 的相同前缀自动进行缓存，命中后输入 token 价格打 5 折，且无需开发者修改代码，与 Anthropic 的方案形成差异化。OpenAI 同时也是 AI 行业最具话题性和流量价值的标杆企业，其产品动态（如 Sora 等新功能发布）频繁成为 [[concepts/自媒体运营|自媒体运营]] 热点狙击型文章的核心素材，官方每一次动作都被视为对行业格局的重大冲击。
 
 ## 相关实体
 - [[entities/chatgpt|ChatGPT]]
 - [[entities/sora|Sora]]
 - [[entities/gpt-4|GPT-4]]
+- [[entities/anthropic|Anthropic]]
+- [[entities/google|Google]]
+- [[entities/vllm|vLLM]]
 
 ## 相关概念
 - [[concepts/人工智能发展阶段|人工智能发展阶段]]
 - [[concepts/自媒体运营|自媒体运营]]
+- [[concepts/prompt-caching|Prompt Caching]]
+- [[concepts/kv-cache|KV Cache]]
 
 ## 来源提及
 
@@ -39,3 +45,7 @@ OpenAI 是全球最著名的人工智能公司之一，也是 [[entities/chatgpt
 > **Source: [[sources/04-gpt-5-2-史诗级翻车谷歌这次居然赢麻了_e3bee2|GPT-5.2 史诗级翻车？谷歌这次居然赢麻了！]]**
 > - "全网都在吹：'程序员又要失业了！'、'OpenAI 再次杀死了比赛！'。"
 > - "一直以来，我们都习惯了'OpenAI 发布 -> 谷歌追赶 -> OpenAI 再发布'的剧本。"
+
+> **Source: [[sources/大模型推理缓存-kv-cache与prompt-caching_ab1674|大模型推理缓存-KV-Cache与Prompt-Caching]]**
+> - "OpenAI | 自动缓存 | ≥1024 token 的相同前缀自动缓存；命中 input 价 5 折；无需改代码"
+> - "OpenAI · Caching（自动缓存）"

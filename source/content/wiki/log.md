@@ -146,3 +146,67 @@
 
 **更新页面**：[[planner]]
 
+
+
+## [2026-07-28] ingest | 异步是如何实现的
+
+**创建页面**：[[sources/异步如何实现的_40ec97.md]], [[entities/asyncio.md]], [[entities/python解释器.md]], [[entities/epoll.md]], [[concepts/事件循环.md]], [[concepts/协程.md]], [[concepts/gil.md]], [[concepts/异步io.md]], [[concepts/io多路复用.md]], [[concepts/进程调度.md]], [[concepts/异步并发检索.md]], [[concepts/非抢占式调度.md]], [[concepts/io阻塞.md]]
+
+**更新页面**：[[io阻塞]], [[异步并发检索]], [[进程调度]]
+
+
+
+## [2026-07-28] ingest | 异步是如何实现的
+
+**创建页面**：[[sources/异步如何实现的_40ec97.md]], [[entities/aiohttp.md]], [[entities/asyncio.md]], [[entities/asyncpg.md]], [[entities/python.md]], [[entities/node-js.md]], [[concepts/事件循环.md]], [[concepts/协程.md]], [[concepts/io-多路复用.md]], [[concepts/io-多路复用.md]], [[concepts/gil.md]], [[concepts/生成器.md]], [[concepts/非抢占式调度.md]], [[concepts/asyncawait.md]], [[concepts/io密集与cpu密集的区分.md]], [[concepts/线程池进程池.md]], [[concepts/用户态调度.md]]
+
+**更新页面**：
+
+
+
+## [2026-07-28] ingest | 大模型推理缓存：KV Cache 与 Prompt Caching
+
+**创建页面**：[[sources/大模型推理缓存-kv-cache与prompt-caching_ab1674.md]], [[entities/anthropic.md]], [[entities/vllm.md]], [[entities/google.md]], [[entities/openai.md]], [[entities/sglang.md]], [[entities/gptcache.md]], [[entities/redis.md]], [[entities/tgi.md]], [[concepts/语义缓存.md]], [[concepts/pagedattention.md]], [[concepts/kv-cache.md]], [[concepts/prompt-caching.md]], [[concepts/自回归生成.md]], [[concepts/ttft.md]], [[concepts/continuous-batching.md]], [[concepts/自注意力.md]], [[concepts/因果注意力.md]], [[concepts/cache_control.md]], [[concepts/缓存命中率.md]], [[concepts/内部碎片.md]]
+
+**更新页面**：[[anthropic]], [[openai]], [[google]], [[gptcache]], [[kv-cache]], [[语义缓存]]
+
+
+
+## [2026-07-28] ingest | Git Rebase 工作流规范与最佳实践
+
+**创建页面**：[[sources/版本控制用rebase取代merge_3f7b45.md]], [[entities/common_sdk.md]], [[entities/git.md]], [[entities/ai_sdk.md]], [[concepts/rebase.md]], [[concepts/merge-no-ff.md]], [[concepts/force-with-lease.md]], [[concepts/git-submodule.md]], [[concepts/git-cherry-pick.md]], [[concepts/冲突处理.md]], [[concepts/git-reflog.md]], [[concepts/git-rebase-i.md]], [[concepts/merge-no-ff.md]], [[concepts/频繁-rebase-实践.md]], [[concepts/master-分支保护策略.md]]
+
+**更新页面**：
+
+
+
+## [2026-07-28] ingest | 后端项目代码规范
+
+**创建页面**：[[sources/应用开发规范_3bea14.md]], [[entities/langchain.md]], [[entities/ai_sdk.md]], [[entities/common_sdk.md]], [[entities/langgraph.md]], [[entities/python.md]], [[entities/nacos.md]], [[entities/sanic.md]], [[entities/pydantic.md]], [[entities/gunicorn.md]], [[entities/poetry.md]], [[entities/tortoise-orm.md]], [[entities/sqlalchemy.md]], [[entities/pytest.md]], [[concepts/单一职责.md]], [[concepts/配置驱动.md]], [[concepts/接口不动协议可插拔.md]], [[concepts/rpc风格路由.md]], [[concepts/数据结构解析模块独立.md]], [[concepts/统一异常捕获.md]], [[concepts/模块职责划分规范.md]], [[concepts/测试规范.md]], [[concepts/统一异常捕获.md]], [[concepts/dockerfile配置规范.md]], [[concepts/依赖管理规范.md]], [[concepts/安全与配置管理.md]], [[concepts/按版本号分层.md]]
+
+**更新页面**：[[common_sdk]], [[ai_sdk]], [[langgraph]], [[langchain]], [[python]], [[nacos]], [[配置驱动]]
+
+
+
+## [2026-07-28] ingest | 普通业务项目分支管理规范
+
+**创建页面**：[[sources/分支管理_563fba.md]], [[entities/git.md]], [[entities/release.md]], [[concepts/master-分支保护策略.md]], [[entities/test.md]], [[concepts/rebase.md]], [[concepts/测试规范.md]], [[concepts/灰度与回滚.md]], [[concepts/冲突处理.md]], [[concepts/按版本号分层.md]], [[concepts/预发布环境.md]], [[concepts/开发分支.md]], [[concepts/修复分支.md]], [[concepts/开发环境.md]]
+
+**更新页面**：[[git]], [[灰度与回滚]], [[冲突处理]], [[测试规范]], [[rebase]], [[按版本号分层]]
+
+
+
+## [2026-07-28] ingest | 面向极速迭代的防御性架构标准——可逃逸架构 (Escapable Architecture)
+
+**创建页面**：[[sources/“可逃逸架构”设计模式_4e2181.md]], [[entities/agno.md]], [[entities/deepseek.md]], [[entities/pydantic-ai.md]], [[entities/langgraph.md]], [[entities/oneapi.md]], [[entities/litellm.md]], [[entities/langchain.md]], [[entities/selenium.md]], [[entities/yancyyu.md]], [[entities/ollama.md]], [[entities/影刀.md]], [[entities/azure-openai.md]], [[concepts/协议优于框架.md]], [[concepts/可逃逸架构.md]], [[concepts/核心逻辑剥离.md]], [[concepts/模型无关性.md]], [[concepts/progressive-disclosure.md]], [[concepts/生成式界面.md]], [[concepts/流式优先.md]], [[concepts/client-server物理隔离.md]], [[concepts/临时组件.md]], [[concepts/消防演习.md]], [[concepts/路由架构与按需加载.md]], [[concepts/code-first-rpa.md]], [[concepts/框架奴隶.md]], [[concepts/读写分离.md]], [[concepts/8k挑战.md]], [[concepts/pydantic-first.md]], [[concepts/函数与工具区分.md]], [[concepts/半衰期.md]]
+
+**更新页面**：[[deepseek]], [[pydantic-ai]], [[langgraph]], [[langchain]], [[progressive-disclosure]]
+
+
+
+## [2026-07-28] ingest | 可逃逸架构设计模式（Excalidraw 架构图）
+
+**创建页面**：[[sources/渐进式披露架构_780a26.md]], [[entities/rpa-worker.md]], [[entities/capability-layer.md]], [[entities/crm-service.md]], [[entities/inventory-service.md]], [[entities/management.md]], [[concepts/可逃逸架构.md]], [[concepts/路由架构与按需加载.md]], [[concepts/无状态上下文.md]], [[concepts/skill-registry.md]], [[concepts/l1-router.md]], [[concepts/user-request.md]], [[concepts/路由架构与按需加载.md]], [[concepts/json-schema.md]], [[concepts/上下文污染.md]], [[concepts/on-demand-connection.md]], [[concepts/pure-intent.md]], [[concepts/protocol-layer.md]], [[concepts/路由架构与按需加载.md]], [[concepts/l1-router.md]], [[concepts/路由架构与按需加载.md]], [[concepts/技能注册表skill-registry仅包含技能名.md]]
+
+**更新页面**：[[mcp]], [[agent运行时]], [[可逃逸架构]]
+

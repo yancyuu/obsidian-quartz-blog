@@ -1,0 +1,885 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎬 动画学编程 · 从代码到 CPU</title>
+    <style>
+      :root {
+        --bg: #070a14;
+        --chip: #0e1426;
+        --part: #161e36;
+        --line: #2a3454;
+        --txt: #e6e8f3;
+        --mute: #7a82a0;
+        --gold: #fbbf24;
+        --green: #34d399;
+        --cyan: #22d3ee;
+        --red: #f87171;
+        --purple: #a78bfa;
+        --orange: #fb923c;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        background: var(--bg);
+        color: var(--txt);
+        font-family: -apple-system, "PingFang SC", sans-serif;
+        display: flex;
+        overflow: hidden;
+      }
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: radial-gradient(circle at 50% 0%, rgba(34, 211, 238, 0.08), transparent 50%);
+        z-index: -1;
+      }
+      /* 侧边栏 */
+      .side {
+        width: 208px;
+        border-right: 1px solid var(--line);
+        padding: 16px 11px;
+        overflow-y: auto;
+        background: rgba(8, 10, 22, 0.5);
+        backdrop-filter: blur(10px);
+        flex-shrink: 0;
+      }
+      .logo {
+        font-size: 1em;
+        font-weight: 800;
+        margin-bottom: 2px;
+        background: linear-gradient(90deg, var(--cyan), var(--purple));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      .lsub {
+        font-size: 0.64em;
+        color: var(--mute);
+        margin-bottom: 14px;
+      }
+      .sep {
+        font-size: 0.58em;
+        color: var(--mute);
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        margin: 12px 6px 5px;
+      }
+      .ni {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        padding: 8px 10px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 0.8em;
+        color: var(--mute);
+        transition: 0.18s;
+        margin-bottom: 2px;
+        border: 1px solid transparent;
+      }
+      .ni:hover {
+        background: rgba(34, 211, 238, 0.1);
+        color: var(--txt);
+      }
+      .ni.on {
+        background: linear-gradient(90deg, rgba(34, 211, 238, 0.22), rgba(167, 139, 250, 0.08));
+        color: #fff;
+        border-color: rgba(34, 211, 238, 0.4);
+      }
+      .ni .ic {
+        font-size: 1.05em;
+      }
+      .ni .tg {
+        margin-left: auto;
+        font-size: 0.55em;
+        padding: 1px 5px;
+        border-radius: 5px;
+      }
+      .tg.ok {
+        background: rgba(52, 211, 153, 0.2);
+        color: var(--green);
+      }
+      .tg.soon {
+        background: rgba(122, 130, 160, 0.18);
+        color: var(--mute);
+      }
+      .lg {
+        font-size: 0.66em;
+        color: var(--mute);
+        line-height: 1.85;
+        padding: 0 6px;
+      }
+      /* 主区 */
+      .main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+      }
+      .topbar {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 11px 18px;
+        border-bottom: 1px solid var(--line);
+      }
+      .topbar h1 {
+        font-size: 1em;
+        font-weight: 700;
+      }
+      .topbar .sub {
+        color: var(--mute);
+        font-size: 0.72em;
+      }
+      .ctrl {
+        margin-left: auto;
+        display: flex;
+        gap: 6px;
+      }
+      .btn {
+        background: linear-gradient(135deg, var(--cyan), #0891b2);
+        color: #000;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 0.82em;
+        box-shadow: 0 4px 14px rgba(34, 211, 238, 0.35);
+        transition: 0.2s;
+      }
+      .btn:hover {
+        transform: translateY(-1px);
+      }
+      .btn.ghost {
+        background: rgba(255, 255, 255, 0.07);
+        color: var(--txt);
+        box-shadow: none;
+      }
+      .btn:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+      }
+      .stage-wrap {
+        flex: 1;
+        overflow-y: auto;
+        padding: 14px;
+      }
+      .view {
+        display: none;
+      }
+      .view.on {
+        display: block;
+      }
+      .stage {
+        max-width: 820px;
+        margin: 0 auto;
+      }
+      .narr {
+        background: rgba(14, 20, 38, 0.95);
+        border: 1px solid var(--line);
+        border-left: 4px solid var(--gold);
+        padding: 11px 16px;
+        border-radius: 9px;
+        margin: 8px 0;
+        font-size: 0.88em;
+        text-align: center;
+      }
+      .narr b {
+        color: var(--gold);
+      }
+      .narr code {
+        background: var(--part);
+        padding: 0 5px;
+        border-radius: 3px;
+        color: var(--green);
+      }
+      .prog {
+        height: 3px;
+        background: rgba(255, 255, 255, 0.06);
+        border-radius: 2px;
+        overflow: hidden;
+        margin-bottom: 10px;
+      }
+      .prog div {
+        height: 100%;
+        background: linear-gradient(90deg, var(--cyan), var(--purple));
+        width: 0;
+        transition: width 0.4s;
+      }
+      .pipeline {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 7px;
+        margin-bottom: 12px;
+      }
+      .pbox {
+        background: var(--part);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 9px;
+        font-size: 0.7em;
+        min-height: 68px;
+        transition: 0.3s;
+      }
+      .pbox .pt {
+        color: var(--mute);
+        font-size: 0.85em;
+        margin-bottom: 3px;
+      }
+      .pbox.glow {
+        border-color: var(--cyan);
+        box-shadow: 0 0 14px rgba(34, 211, 238, 0.3);
+      }
+      .pbox .content {
+        font-family: "SF Mono", monospace;
+        color: var(--green);
+        word-break: break-all;
+        min-height: 14px;
+      }
+      .board {
+        position: relative;
+        background: linear-gradient(180deg, #0a1020, #070a14);
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        padding: 16px;
+        margin-bottom: 10px;
+      }
+      .board-t {
+        font-size: 0.62em;
+        color: var(--mute);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+      }
+      .mem {
+        display: flex;
+        gap: 4px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 6px;
+      }
+      .mcell {
+        width: 92px;
+        background: var(--part);
+        border: 1px solid var(--line);
+        border-radius: 5px;
+        padding: 4px;
+        font-size: 0.6em;
+        text-align: center;
+        font-family: monospace;
+        transition: 0.3s;
+      }
+      .mcell .addr {
+        color: var(--mute);
+        font-size: 0.9em;
+      }
+      .mcell .val {
+        color: var(--green);
+        min-height: 13px;
+      }
+      .mcell.fetch {
+        border-color: var(--cyan);
+        box-shadow: 0 0 12px var(--cyan);
+      }
+      .mcell.write {
+        border-color: var(--gold);
+        box-shadow: 0 0 12px var(--gold);
+      }
+      .bus {
+        position: relative;
+        height: 48px;
+        margin: 5px 0;
+      }
+      .bus-line {
+        position: absolute;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .bus-track {
+        width: 7px;
+        height: 12px;
+        border-radius: 2px;
+        background: var(--line);
+      }
+      .bus-label {
+        position: absolute;
+        font-size: 0.55em;
+        color: var(--orange);
+        top: 42%;
+        white-space: nowrap;
+      }
+      .cpu {
+        background: var(--chip);
+        border: 2px solid var(--purple);
+        border-radius: 11px;
+        padding: 13px;
+        position: relative;
+        box-shadow: 0 0 26px rgba(167, 139, 250, 0.15);
+      }
+      .cpu::before {
+        content: "CPU · 中央处理器";
+        position: absolute;
+        top: -8px;
+        left: 13px;
+        background: var(--bg);
+        padding: 0 7px;
+        font-size: 0.58em;
+        color: var(--purple);
+        font-weight: 700;
+      }
+      .cpu-parts {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 9px;
+      }
+      .part {
+        background: var(--part);
+        border: 1px solid var(--line);
+        border-radius: 7px;
+        padding: 7px;
+        text-align: center;
+        font-size: 0.66em;
+        transition: 0.3s;
+        min-height: 56px;
+      }
+      .part .pn {
+        color: var(--mute);
+        font-size: 0.85em;
+        margin-bottom: 2px;
+      }
+      .part .pv {
+        font-family: monospace;
+        color: var(--cyan);
+        font-size: 1em;
+        min-height: 14px;
+      }
+      .part.active {
+        border-color: var(--gold);
+        box-shadow: 0 0 12px rgba(251, 191, 36, 0.4);
+        background: rgba(251, 191, 36, 0.06);
+      }
+      .part.alu.active {
+        border-color: var(--red);
+        box-shadow: 0 0 14px var(--red);
+        background: rgba(248, 113, 113, 0.08);
+      }
+      .regfile {
+        grid-column: span 3;
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+        margin-top: 5px;
+      }
+      .reg {
+        background: var(--part);
+        border: 1px solid var(--line);
+        border-radius: 5px;
+        padding: 4px 8px;
+        font-size: 0.62em;
+        font-family: monospace;
+        min-width: 50px;
+        text-align: center;
+      }
+      .reg .rn {
+        color: var(--mute);
+        font-size: 0.85em;
+      }
+      .reg .rv {
+        color: var(--green);
+        min-height: 12px;
+      }
+      .reg.active {
+        border-color: var(--green);
+        box-shadow: 0 0 8px rgba(52, 211, 153, 0.4);
+      }
+      .photon {
+        position: absolute;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: var(--cyan);
+        box-shadow: 0 0 9px var(--cyan);
+        z-index: 10;
+        opacity: 0;
+        transition:
+          left 0.55s linear,
+          top 0.55s linear,
+          background 0.3s;
+      }
+      .photon.show {
+        opacity: 1;
+      }
+      .cycle {
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+        margin: 8px 0;
+        flex-wrap: wrap;
+      }
+      .cs {
+        padding: 5px 12px;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        font-size: 0.7em;
+        color: var(--mute);
+        transition: 0.3s;
+      }
+      .cs.on {
+        background: var(--gold);
+        color: #000;
+        border-color: var(--gold);
+        box-shadow: 0 0 10px var(--gold);
+      }
+      .placeholder {
+        text-align: center;
+        padding: 70px 20px;
+        color: var(--mute);
+      }
+      .placeholder .big {
+        font-size: 2.8em;
+        margin-bottom: 12px;
+        animation: bob 2.4s infinite;
+      }
+      @keyframes bob {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+      .placeholder h2 {
+        color: var(--txt);
+        font-size: 1.2em;
+        margin-bottom: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <aside class="side">
+      <div class="logo">🎬 动画学编程</div>
+      <div class="lsub">代码到硬件的真实过程</div>
+      <div class="sep">主题</div>
+      <div class="ni on" data-v="cpu">
+        <span class="ic">🔬</span>代码到 CPU<span class="tg ok">✅</span>
+      </div>
+      <div class="ni" data-v="gil">
+        <span class="ic">🔒</span>线程抢 CPU(GIL)<span class="tg soon">soon</span>
+      </div>
+      <div class="ni" data-v="loop">
+        <span class="ic">🔄</span>事件循环<span class="tg soon">soon</span>
+      </div>
+      <div class="ni" data-v="cache">
+        <span class="ic">🗄️</span>CPU 缓存<span class="tg soon">soon</span>
+      </div>
+      <div class="ni" data-v="pipeline">
+        <span class="ic">⚙️</span>流水线<span class="tg soon">soon</span>
+      </div>
+      <div class="ni" data-v="transistor">
+        <span class="ic">💠</span>晶体管/逻辑门<span class="tg soon">soon</span>
+      </div>
+      <div class="sep">部件图例</div>
+      <div class="lg">
+        PC 程序计数器<br />IR 指令寄存器<br />ALU 算术逻辑单元<br />CU 控制单元<br />Reg 寄存器<br />Bus
+        总线（地址/数据）
+      </div>
+    </aside>
+    <main class="main">
+      <div class="topbar">
+        <h1 id="title">🔬 代码到 CPU · 真实发生了什么</h1>
+        <span class="sub" id="tsub">x = 2 + 3 怎么跑进 CPU</span>
+        <div class="ctrl">
+          <button class="btn" id="btnPlay" onclick="toggle()">▶ 播放</button>
+          <button class="btn ghost" onclick="stepOnce()">⏭ 单条指令</button>
+          <button class="btn ghost" onclick="doReset()">↺ 重置</button>
+        </div>
+      </div>
+      <div class="stage-wrap">
+        <!-- 代码到CPU 视图 -->
+        <div class="view on" id="v-cpu">
+          <div class="stage">
+            <div class="prog"><div id="bar"></div></div>
+            <div class="narr" id="narr">点 ▶ 播放，看一行代码怎么跑进 CPU 👇</div>
+            <div class="pipeline">
+              <div class="pbox" id="p-src">
+                <div class="pt">① 源代码</div>
+                <div class="content">x = 2 + 3</div>
+              </div>
+              <div class="pbox" id="p-token">
+                <div class="pt">② 词法 Token</div>
+                <div class="content" id="tok"></div>
+              </div>
+              <div class="pbox" id="p-ast">
+                <div class="pt">③ 语法树 AST</div>
+                <div class="content" id="ast"></div>
+              </div>
+              <div class="pbox" id="p-asm">
+                <div class="pt">④ 机器码</div>
+                <div class="content" id="asm"></div>
+              </div>
+            </div>
+            <div class="board">
+              <div class="board-t">主板 · 内存与 CPU 通过总线相连</div>
+              <div class="mem" id="mem">
+                <div class="mcell" id="m0">
+                  <div class="addr">0x1000</div>
+                  <div class="val" data-asm="LOAD #2 → R1"></div>
+                </div>
+                <div class="mcell" id="m1">
+                  <div class="addr">0x1001</div>
+                  <div class="val" data-asm="LOAD #3 → R2"></div>
+                </div>
+                <div class="mcell" id="m2">
+                  <div class="addr">0x1002</div>
+                  <div class="val" data-asm="ADD R1+R2 → R3"></div>
+                </div>
+                <div class="mcell" id="m3">
+                  <div class="addr">0x1003</div>
+                  <div class="val" data-asm="STORE R3 → [x]"></div>
+                </div>
+                <div class="mcell" id="mx">
+                  <div class="addr">[x] 0x2000</div>
+                  <div class="val" id="xval">?</div>
+                </div>
+              </div>
+              <div class="bus">
+                <div class="bus-line addr-bus" style="left: 38%; transform: translateX(-50%)">
+                  <div class="bus-track"></div>
+                  <div class="bus-track"></div>
+                  <div class="bus-track"></div>
+                </div>
+                <div class="bus-line data-bus" style="left: 62%; transform: translateX(-50%)">
+                  <div class="bus-track" style="background: var(--gold)"></div>
+                  <div class="bus-track" style="background: var(--gold)"></div>
+                  <div class="bus-track" style="background: var(--gold)"></div>
+                </div>
+                <div class="bus-label" style="left: 30%">⇅ 地址总线</div>
+                <div class="bus-label" style="right: 24%">⇅ 数据总线</div>
+                <div class="photon" id="photon"></div>
+              </div>
+              <div class="cpu">
+                <div class="cpu-parts">
+                  <div class="part" id="pc">
+                    <div class="pn">PC 程序计数器</div>
+                    <div class="pv" id="pcval">0x1000</div>
+                  </div>
+                  <div class="part" id="ir">
+                    <div class="pn">IR 指令寄存器</div>
+                    <div class="pv" id="irval">—</div>
+                  </div>
+                  <div class="part" id="dec">
+                    <div class="pn">译码器 Decoder</div>
+                    <div class="pv" id="decval">—</div>
+                  </div>
+                  <div class="part alu" id="alu" style="grid-column: span 2">
+                    <div class="pn">ALU 算术逻辑单元（真正运算的地方）</div>
+                    <div class="pv" id="aluval">—</div>
+                  </div>
+                  <div class="part" id="cu">
+                    <div class="pn">CU 控制单元</div>
+                    <div class="pv" id="cuval">—</div>
+                  </div>
+                </div>
+                <div class="regfile">
+                  <div class="reg" id="r1">
+                    <div class="rn">R1</div>
+                    <div class="rv">?</div>
+                  </div>
+                  <div class="reg" id="r2">
+                    <div class="rn">R2</div>
+                    <div class="rv">?</div>
+                  </div>
+                  <div class="reg" id="r3">
+                    <div class="rn">R3</div>
+                    <div class="rv">?</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cycle">
+              <span class="cs" id="c-fetch">①取指</span><span class="cs" id="c-decode">②译码</span
+              ><span class="cs" id="c-exec">③执行</span><span class="cs" id="c-wb">④写回</span>
+            </div>
+          </div>
+        </div>
+        <!-- 占位 -->
+        <div class="view" id="v-ph">
+          <div class="placeholder">
+            <div class="big" id="ph-ic">🎬</div>
+            <h2 id="ph-title">制作中</h2>
+            <p id="ph-desc" style="color: var(--mute)"></p>
+            <p style="font-size: 0.85em; margin-top: 12px">
+              想优先看哪个？告诉我，用同样的"真实硬件"风格做。
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      const TOPICS = {
+        cpu: { t: "🔬 代码到 CPU · 真实发生了什么", d: "x = 2 + 3 怎么跑进 CPU", ic: "🔬" },
+        gil: { t: "🔒 线程抢 CPU（GIL）", d: "多个线程怎么争一个 CPU", ic: "🔒" },
+        loop: { t: "🔄 事件循环", d: "CPU 怎么轮转处理任务", ic: "🔄" },
+        cache: { t: "🗄️ CPU 缓存", d: "L1/L2 命中与未命中", ic: "🗄️" },
+        pipeline: { t: "⚙️ 流水线", d: "取指/译码/执行重叠", ic: "⚙️" },
+        transistor: { t: "💠 晶体管/逻辑门", d: "硅片层面怎么算 1+1", ic: "💠" },
+      }
+      document.querySelectorAll(".ni").forEach(
+        (n) =>
+          (n.onclick = () => {
+            document.querySelectorAll(".ni").forEach((x) => x.classList.remove("on"))
+            n.classList.add("on")
+            const v = n.dataset.v,
+              T = TOPICS[v]
+            $("title").textContent = T.t
+            $("tsub").textContent = T.d
+            $("v-cpu").classList.toggle("on", v === "cpu")
+            $("v-ph").classList.toggle("on", v !== "cpu")
+            if (v !== "cpu") {
+              $("ph-ic").textContent = T.ic
+              $("ph-title").textContent = T.t
+              $("ph-desc").textContent = T.d
+            }
+            doReset()
+          }),
+      )
+      const $ = (id) => document.getElementById(id)
+      const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
+      let playing = false,
+        aborted = false
+      function say(t) {
+        $("narr").innerHTML = t
+      }
+      function setBar(p) {
+        $("bar").style.width = p + "%"
+      }
+      function glow(id, on = true) {
+        if ($(id)) $(id).classList.toggle("active", on)
+      }
+      function pglo(id) {
+        $("p-" + id).classList.add("glow")
+        setTimeout(() => $("p-" + id).classList.remove("glow"), 1200)
+      }
+      function cycleOn(s) {
+        ;["fetch", "decode", "exec", "wb"].forEach((x) =>
+          $("c-" + x).classList.toggle("on", x === s),
+        )
+      }
+      async function wait(p, t, ms = 1300) {
+        if (aborted) throw 0
+        setBar(p)
+        say(t)
+        await sleep(ms)
+      }
+      async function fly(fromId, toId, color) {
+        const p = $("photon"),
+          board = $(".board")
+        const fr = $(fromId).getBoundingClientRect(),
+          tr = $(toId).getBoundingClientRect(),
+          br = board.getBoundingClientRect()
+        p.style.background = color || "var(--cyan)"
+        p.style.boxShadow = "0 0 9px " + (color || "var(--cyan)")
+        p.style.left = fr.left - br.left + fr.width / 2 - 4.5 + "px"
+        p.style.top = fr.top - br.top + fr.height / 2 - 4.5 + "px"
+        p.classList.add("show")
+        await sleep(80)
+        p.style.left = tr.left - br.left + tr.width / 2 - 4.5 + "px"
+        p.style.top = tr.top - br.top + tr.height / 2 - 4.5 + "px"
+        await sleep(580)
+        p.classList.remove("show")
+      }
+      async function compilePhase() {
+        await wait(4, "① 程序员写下 <code>x = 2 + 3</code>。这是给人看的，CPU 不认识。")
+        pglo("src")
+        await wait(12, "② <b>词法分析</b>：切成 token（单词）")
+        $("tok").textContent = "x  =  2  +  3"
+        pglo("token")
+        await sleep(800)
+        await wait(20, "③ <b>语法分析</b>：建出 AST 语法树")
+        $("ast").textContent = "赋值(x)=加法(2,3)"
+        pglo("ast")
+        await sleep(900)
+        await wait(28, "④ <b>编译成机器码</b>：翻译成 CPU 能懂的指令（二进制）")
+        $("asm").textContent = "LOAD #2,R1; LOAD #3,R2; ADD R1,R2,R3; STORE R3,[x]"
+        pglo("asm")
+        await sleep(900)
+        await wait(36, "⑤ 机器码被<b>加载进内存</b>，排好地址。CPU 要来取了…")
+        ;["m0", "m1", "m2", "m3"].forEach((m, i) =>
+          setTimeout(() => {
+            $(m).querySelector(".val").textContent = $(m).querySelector(".val").dataset.asm
+            $(m).classList.add("fetch")
+            setTimeout(() => $(m).classList.remove("fetch"), 400)
+          }, i * 200),
+        )
+        await sleep(1100)
+      }
+      async function execInstr(idx) {
+        const cmds = [
+          {
+            addr: "0x1000",
+            cell: "m0",
+            ir: "LOAD #2 → R1",
+            dec: "取立即数2,存R1",
+            act: () => {
+              $("r1").querySelector(".rv").textContent = "2"
+              glow("r1", true)
+            },
+          },
+          {
+            addr: "0x1001",
+            cell: "m1",
+            ir: "LOAD #3 → R2",
+            dec: "取立即数3,存R2",
+            act: () => {
+              $("r2").querySelector(".rv").textContent = "3"
+              glow("r2", true)
+            },
+          },
+          {
+            addr: "0x1002",
+            cell: "m2",
+            ir: "ADD R1,R2 → R3",
+            dec: "R1+R2送ALU",
+            act: async () => {
+              glow("alu", true)
+              $("aluval").textContent = "2 + 3"
+              await sleep(600)
+              $("aluval").textContent = "= 5"
+              $("r3").querySelector(".rv").textContent = "5"
+              glow("r3", true)
+            },
+          },
+          {
+            addr: "0x1003",
+            cell: "m3",
+            ir: "STORE R3 → [x]",
+            dec: "把R3写回内存x",
+            act: async () => {
+              await fly("r3", "mx", "var(--gold)")
+              $("xval").textContent = "5"
+              $("mx").classList.add("write")
+            },
+          },
+        ]
+        const c = cmds[idx]
+        $("pcval").textContent = c.addr
+        cycleOn("fetch")
+        say(`▶ 取指：PC=${c.addr}，CPU 经<b>地址总线</b>告诉内存"我要这条"`)
+        $("irval").textContent = "…"
+        await fly(c.cell, "ir")
+        $(c.cell).classList.add("fetch")
+        $("irval").textContent = c.ir
+        await wait(42 + idx * 13, "取到了！指令经<b>数据总线</b>回到 CPU，进 IR", 900)
+        $(c.cell).classList.remove("fetch")
+        cycleOn("decode")
+        $("decval").textContent = c.dec
+        glow("dec", true)
+        await wait(48 + idx * 13, `▶ 译码：<b>译码器</b>解析：${c.dec}`, 850)
+        glow("dec", false)
+        cycleOn("exec")
+        await wait(54 + idx * 13, "▶ 执行：<b>控制单元 CU</b> 发信号，各部件协同", 650)
+        if (idx === 2) {
+          glow("cu", true)
+          await sleep(350)
+          glow("cu", false)
+        }
+        await c.act()
+        await sleep(650)
+        glow("alu", false)
+        cycleOn("wb")
+        $("pcval").textContent = "0x100" + (idx + 1)
+        await wait(60 + idx * 13, "▶ PC 自增，指向下一条指令", 550)
+        cycleOn("")
+      }
+      async function journey() {
+        doReset()
+        aborted = false
+        playing = true
+        $("btnPlay").textContent = "⏸ 暂停"
+        try {
+          await compilePhase()
+          for (let i = 0; i < 4; i++) {
+            if (aborted) return
+            await execInstr(i)
+            await sleep(250)
+            ;["r1", "r2", "r3"].forEach((r) => glow(r, false))
+          }
+          cycleOn("")
+          setBar(100)
+          say(
+            "🎉 <b>x = 5 已写入内存！</b> 一行代码：编译→机器码→内存→(取指/译码/执行/写回)×4。真正算 2+3 的是 ALU，PC 控顺序，总线搬运一切。",
+          )
+        } catch (e) {}
+        playing = false
+        $("btnPlay").textContent = "▶ 再放一遍"
+      }
+      let stepIdx = 0
+      async function stepOnce() {
+        if (playing) return
+        if (stepIdx === 0) {
+          doReset()
+          aborted = false
+          await compilePhase()
+        }
+        if (stepIdx <= 3) {
+          await execInstr(stepIdx)
+          ;["r1", "r2", "r3"].forEach((r) => glow(r, false))
+          stepIdx++
+        }
+        if (stepIdx > 3) {
+          setBar(100)
+          say("✅ 全部执行完！点重置再来。")
+        }
+      }
+      function toggle() {
+        if (playing) {
+          aborted = true
+          playing = false
+          $("btnPlay").textContent = "▶ 继续"
+          return
+        }
+        journey()
+      }
+      function doReset() {
+        aborted = true
+        playing = false
+        stepIdx = 0
+        $("btnPlay").textContent = "▶ 播放"
+        setBar(0)
+        cycleOn("")
+        $("tok").textContent = ""
+        $("ast").textContent = ""
+        $("asm").textContent = ""
+        ;["m0", "m1", "m2", "m3"].forEach((m) => ($(m).querySelector(".val").textContent = ""))
+        $("xval").textContent = "?"
+        $("mx").classList.remove("write")
+        $("pcval").textContent = "0x1000"
+        $("irval").textContent = "—"
+        $("decval").textContent = "—"
+        $("aluval").textContent = "—"
+        $("cuval").textContent = "—"
+        ;["r1", "r2", "r3"].forEach((r) => {
+          r.querySelector(".rv").textContent = "?"
+          glow(r, false)
+        })
+        ;["pc", "ir", "dec", "alu", "cu"].forEach((p) => glow(p, false))
+        say("点 ▶ 播放，看一行代码怎么跑进 CPU 👇")
+      }
+    </script>
+  </body>
+</html>
