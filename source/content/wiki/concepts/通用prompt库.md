@@ -34,5 +34,5 @@ aliases:
 - [[entities/core-agent|core-agent]]
 
 ## 来源提及
-- "prompt_templates/ — [[架构/应用开发规范/excalid/agent-app代码结构|agent-app代码结构]]" — [[sources/agent-app代码结构_c030b6|agent-app代码结构_c030b6]]
-- "通用Prompt库 ^bjozBd9K — [[架构/应用开发规范/excalid/agent-app代码结构|agent-app代码结构]]" — [[sources/agent-app代码结构_c030b6|agent-app代码结构_c030b6]]
+- "prompt_templates/ — [[../../架构/应用开发规范/excalid/agent-app代码结构|agent-app代码结构]]" — [[sources/agent-app代码结构_c030b6|agent-app代码结构_c030b6]]
+- "通用Prompt库 ^bjozBd9K — [[../../架构/应用开发规范/excalid/agent-app代码结构|agent-app代码结构]]" — [[sources/agent-app代码结构_c030b6|agent-app代码结构_c030b6]]

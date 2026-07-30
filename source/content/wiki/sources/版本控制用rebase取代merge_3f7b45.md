@@ -2,15 +2,22 @@
 type: source
 created: 2026-07-28
 updated: 2026-07-28
-source_file: "[[架构/应用开发规范/版本控制（用rebase取代merge）.md]]"
-tags: [architecture, coding-standard, engineering-practice, feishu, git]
-aliases: ["Git Rebase 规范", "版本控制规范：用 rebase 取代 merge"]
+source_file: "[[../../架构/应用开发规范/版本控制（用rebase取代merge）]]"
+tags:
+  - architecture
+  - coding-standard
+  - engineering-practice
+  - feishu
+  - git
+aliases:
+  - Git Rebase 规范
+  - 版本控制规范：用 rebase 取代 merge
 ---
 
 # Git Rebase 工作流规范与最佳实践 - Summary
 
 ## 来源
-- 原始文件：[[架构/应用开发规范/版本控制（用rebase取代merge）.md]]
+- 原始文件：[[../../架构/应用开发规范/版本控制（用rebase取代merge）]]
 - 收录时间：2026-07-28
 
 ## 核心内容

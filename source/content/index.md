@@ -12,10 +12,10 @@ cssclasses:
 这是我的个人学习笔记，主要记录在AI Agent开发和Python后端开发中的各种折腾。用Obsidian写，Quartz发布，偶尔画个图解释复杂概念。
 
 ## 推荐：
-[[📚RAG/2025-0425 📚 RAG技术学习笔记]]
-[[📚RAG/2025-0813 🏗️ 我的RAG系统重构笔记]]
-[[🤖Agent/从hello-world到真正能用的agent/2025-0426🧘以人为中心的Agent]]
-[[🤖Agent/从hello-world到真正能用的agent/2025-0415 🍖构建可演化的智能体系统架构]]
+[[🤖AI应用/RAG/2025-0425 📚 RAG技术学习笔记]]
+[[🤖AI应用/RAG/2025-0813 🏗️ 我的RAG系统重构笔记]]
+[[🤖AI应用/Agent/从hello-world到真正能用的agent/2025-0426🧘以人为中心的Agent]]
+[[🤖AI应用/Agent/从hello-world到真正能用的agent/2025-0415 🍖构建可演化的智能体系统架构]]
 ## 👋 关于我在搞什么
 
 最近主要在玩AI Agent开发，经常被各种框架搞得头大，所以决定把学到的东西都记下来，免得过两天又忘了。

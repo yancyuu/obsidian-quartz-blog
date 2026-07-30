@@ -8,7 +8,7 @@ tags:
   - knowledge-base
 ---
 
-### 引用：[[../../📚RAG/2025-0625 🏗️ RAG系统重构笔记]]
+### 引用：[[../../🤖AI应用/RAG/2025-0625 🏗️ RAG系统重构笔记]]
 
 ## 1. 架构演进路径
 
@@ -61,7 +61,7 @@ Agentic RAG
 
 ### ① 意图识别流程
 #### 上下文工程&整体流程
-![[../../📚RAG/images/反思型rag流程图.svg]]
+![[../../🤖AI应用/RAG/images/反思型rag流程图.svg]]
 
 
 ### ② 反思式 RAG 核心伪代码（Self-Reflective 分支示例）

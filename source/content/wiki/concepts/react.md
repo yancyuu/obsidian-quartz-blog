@@ -37,4 +37,4 @@ ReAct 是一种将推理（Reasoning）与行动（Acting）相结合的范式�
 *暂无相关实体*
 
 ## 来源提及
-- "│   └── 动态工具选择 (ReAct / Function-Call)" — [[🤖Agent/从hello-world到真正能用的agent/2025-0305🐰 Agentic-RAG架构选型指南|2025-0305🐰 Agentic-RAG架构选型指南]]
+- "│   └── 动态工具选择 (ReAct / Function-Call)" — [[🤖AI应用/Agent/从hello-world到真正能用的agent/2025-0305🐰 Agentic-RAG架构选型指南|2025-0305🐰 Agentic-RAG架构选型指南]]

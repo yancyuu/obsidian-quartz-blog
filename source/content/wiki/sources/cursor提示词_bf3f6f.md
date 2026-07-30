@@ -2,15 +2,23 @@
 type: source
 created: 2026-07-28
 updated: 2026-07-28
-source_file: "[[架构/应用开发规范/cursor提示词.md]]"
-tags: [ai-agent, architecture, python, coding-standard, engineering-practice, prompt-engineering]
-aliases: ["AI Agent 工程实践规范", "Cursor 提示词规范"]
+source_file: "[[../../架构/应用开发规范/cursor提示词]]"
+tags:
+  - ai-agent
+  - architecture
+  - python
+  - coding-standard
+  - engineering-practice
+  - prompt-engineering
+aliases:
+  - AI Agent 工程实践规范
+  - Cursor 提示词规范
 ---
 
 # AI Agent 专用 Prompt 与工程实践规范（Cursor Directory） - Summary
 
 ## 来源
-- Original file: [[架构/应用开发规范/cursor提示词.md]]
+- Original file: [[../../架构/应用开发规范/cursor提示词]]
 - Ingested: 2026-07-28
 
 ## 核心内容

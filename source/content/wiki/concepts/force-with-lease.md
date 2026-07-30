@@ -31,5 +31,5 @@ aliases:
 - [[entities/Git|Git]]
 
 ## 来源提及
-- "git push origin feature/login --force-with-lease # 注意必须强制推送！为什么？因为你变了基，不强制推送推不了。" — [[架构/应用开发规范/版本控制（用rebase取代merge）|版本控制（用rebase取代merge）]]
-- "git push origin feature/login --force-with-lease" — [[架构/应用开发规范/版本控制（用rebase取代merge）|版本控制（用rebase取代merge）]]
+- "git push origin feature/login --force-with-lease # 注意必须强制推送！为什么？因为你变了基，不强制推送推不了。" — [[../../架构/应用开发规范/版本控制（用rebase取代merge）|版本控制（用rebase取代merge）]]
+- "git push origin feature/login --force-with-lease" — [[../../架构/应用开发规范/版本控制（用rebase取代merge）|版本控制（用rebase取代merge）]]

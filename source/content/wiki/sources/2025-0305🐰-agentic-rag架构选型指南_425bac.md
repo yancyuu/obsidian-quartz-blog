@@ -2,7 +2,7 @@
 type: source
 created: 2026-06-21
 updated: 2026-06-21
-source_file: "[[🤖Agent/从hello-world到真正能用的agent/2025-0305🐰 Agentic-RAG架构选型指南.md]]"
+source_file: "[[🤖AI应用/Agent/从hello-world到真正能用的agent/2025-0305🐰 Agentic-RAG架构选型指南.md]]"
 tags: [Agentic RAG, Multi-Agent RAG, Self-Reflective RAG, Tool-Augmented RAG, Self-RAG, 反思式 RAG, 上下文工程, 意图识别, 向量检索, 权限过滤, ReAct, Function-Call, LoRA]
 aliases: ["Agentic-RAG架构选型指南", "RAG系统重构笔记"]
 ---
@@ -10,7 +10,7 @@ aliases: ["Agentic-RAG架构选型指南", "RAG系统重构笔记"]
 # RAG系统重构笔记 - 摘要
 
 ## 来源
-- 原始文件: [[🤖Agent/从hello-world到真正能用的agent/2025-0305🐰 Agentic-RAG架构选型指南.md]]
+- 原始文件: [[🤖AI应用/Agent/从hello-world到真正能用的agent/2025-0305🐰 Agentic-RAG架构选型指南.md]]
 - 录入日期: 2026-06-21
 
 ## 核心内容

@@ -17,8 +17,8 @@ tags:
 - [LLM基础原理](LLM基础原理.md)：Agent 的大脑
 - [Prompt工程基础](Prompt工程基础.md)：ReAct 等基于 Prompt 的模式
 - [RAG基础原理](RAG基础原理.md)：Agent 的「记忆/知识」组件
-- 实战：`🤖Agent/Agent框架/`、`🤖Agent/客服类智能体落地/`
-- 协议：`📓MCP&A2A/MCP与A2A.md`
+- 实战：`🤖AI应用/Agent/Agent框架/`、`🤖AI应用/Agent/客服类智能体落地/`
+- 协议：`🤖AI应用/MCP与A2A/MCP与A2A.md`
 
 ---
 
@@ -147,7 +147,7 @@ flowchart LR
 | **AutoGen / CrewAI**                   | 多智能体协作                               |
 | **Dify / Coze（扣子）/ FastGPT**       | 低代码 Agent 平台，快速搭建                |
 
-> 你仓库 `🤖Agent/Agent框架/` 已有 Agno、CAMEL-AI 等的调研，本文提供选型的原理基础。
+> 你仓库 `🤖AI应用/Agent/Agent框架/` 已有 Agno、CAMEL-AI 等的调研，本文提供选型的原理基础。
 
 ---
 
@@ -183,4 +183,4 @@ flowchart LR
 - [Anthropic · Tool Use](https://docs.anthropic.com/en/docs/build-with-claude/tool-use)
 - [LangGraph 文档](https://langchain-ai.github.io/langgraph/)
 - [Lilian Weng · LLM Powered Autonomous Agents](https://lilianweng.github.io/posts/2023-06-23-agent/)
-- 实战：`🤖Agent/💆Copilot和Agent的区别.md`
+- 实战：`🤖AI应用/Agent/💆Copilot和Agent的区别.md`

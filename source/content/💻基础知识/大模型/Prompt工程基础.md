@@ -17,7 +17,7 @@ tags:
 - [LLM基础原理](LLM基础原理.md)：理解模型为何对 Prompt 敏感
 - [Token上下文窗口与采样参数](Token上下文窗口与采样参数.md)：temperature 等如何影响输出
 - [Agent与Function-Calling基础](Agent与Function-Calling基础.md)：ReAct 等高级 Prompt 模式
-- 实战提示词见 `🤖Agent/资源/提示词.md`、`🧚DeepSeek/DeepSeek通用提示词工程.md`
+- 实战提示词见 `🤖AI应用/Agent/资源/提示词.md`、`🤖AI应用/模型与对话/DeepSeek通用提示词工程.md`
 
 ---
 

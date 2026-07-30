@@ -28,6 +28,6 @@ research_agent 是 Agent 应用架构中位于 `agents/` 目录下的一个具�
 - [[concepts/工具绑定|工具绑定]]
 
 ## 来源提及
-- "agents/ 具体业务代理" — [[架构/应用开发规范/excalid/agent-app代码结构|agent-app代码结构]]
-- "research_agent/" — [[架构/应用开发规范/excalid/agent-app代码结构|agent-app代码结构]]
-- "agent.py" — [[架构/应用开发规范/excalid/agent-app代码结构|agent-app代码结构]]
+- "agents/ 具体业务代理" — [[../../架构/应用开发规范/excalid/agent-app代码结构|agent-app代码结构]]
+- "research_agent/" — [[../../架构/应用开发规范/excalid/agent-app代码结构|agent-app代码结构]]
+- "agent.py" — [[../../架构/应用开发规范/excalid/agent-app代码结构|agent-app代码结构]]

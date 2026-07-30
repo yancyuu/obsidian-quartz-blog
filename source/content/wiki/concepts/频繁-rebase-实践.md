@@ -34,4 +34,4 @@ aliases:
 *暂无相关实体*
 
 ## 来源提及
-- "频繁 rebase（建议每天至少一次）" — [[架构/应用开发规范/版本控制（用rebase取代merge）|版本控制（用rebase取代merge）]]
+- "频繁 rebase（建议每天至少一次）" — [[../../架构/应用开发规范/版本控制（用rebase取代merge）|版本控制（用rebase取代merge）]]

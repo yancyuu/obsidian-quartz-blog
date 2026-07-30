@@ -34,6 +34,6 @@ git submodule 是 Git 版本控制系统中的一种机制，用于在一个主�
 - [[entities/git|Git]]
 
 ## 来源提及
-- "如何更新sdk（common_sdk ai_sdk）sdk的修改也会放到版本管理里面，也就是说直接在项目目录下执行下面两行" — [[架构/应用开发规范/版本控制（用rebase取代merge）|版本控制（用rebase取代merge）]]
-- "git submodule init, git submodule update" — [[架构/应用开发规范/版本控制（用rebase取代merge）|版本控制（用rebase取代merge）]]
-- "切记 不要用git submodule update --remote （remote 不是固定版本检出）" — [[架构/应用开发规范/版本控制（用rebase取代merge）|版本控制（用rebase取代merge）]]
+- "如何更新sdk（common_sdk ai_sdk）sdk的修改也会放到版本管理里面，也就是说直接在项目目录下执行下面两行" — [[../../架构/应用开发规范/版本控制（用rebase取代merge）|版本控制（用rebase取代merge）]]
+- "git submodule init, git submodule update" — [[../../架构/应用开发规范/版本控制（用rebase取代merge）|版本控制（用rebase取代merge）]]
+- "切记 不要用git submodule update --remote （remote 不是固定版本检出）" — [[../../架构/应用开发规范/版本控制（用rebase取代merge）|版本控制（用rebase取代merge）]]

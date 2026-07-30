@@ -2,15 +2,18 @@
 type: source
 created: 2026-07-28
 updated: 2026-07-28
-source_file: "[[架构/应用开发规范/excalid/agent-app代码结构.md]]"
-tags: [excalidraw]
-aliases: ["Agent App 代码结构图", "agent_app 架构图"]
+source_file: "[[../../架构/应用开发规范/excalid/agent-app代码结构]]"
+tags:
+  - excalidraw
+aliases:
+  - Agent App 代码结构图
+  - agent_app 架构图
 ---
 
 # Agent App 架构图（Excalidraw） - 摘要
 
 ## 来源
-- 原始文件：[[架构/应用开发规范/excalid/agent-app代码结构.md]]
+- 原始文件：[[../../架构/应用开发规范/excalid/agent-app代码结构]]
 - 收录日期：2026-07-28
 
 ## 核心内容

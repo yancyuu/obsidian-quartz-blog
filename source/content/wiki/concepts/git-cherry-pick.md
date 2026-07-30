@@ -33,5 +33,5 @@ aliases:
 - [[entities/git|Git]]
 
 ## 来源提及
-- "如果你还有本地提交，可先将它们存为临时分支" — [[架构/应用开发规范/版本控制（用rebase取代merge）|版本控制（用rebase取代merge）]]
-- "git branch temp-login, # 重置后再 cherry-pick 回来, git cherry-pick temp-login~n..temp-login" — [[架构/应用开发规范/版本控制（用rebase取代merge）|版本控制（用rebase取代merge）]]
+- "如果你还有本地提交，可先将它们存为临时分支" — [[../../架构/应用开发规范/版本控制（用rebase取代merge）|版本控制（用rebase取代merge）]]
+- "git branch temp-login, # 重置后再 cherry-pick 回来, git cherry-pick temp-login~n..temp-login" — [[../../架构/应用开发规范/版本控制（用rebase取代merge）|版本控制（用rebase取代merge）]]

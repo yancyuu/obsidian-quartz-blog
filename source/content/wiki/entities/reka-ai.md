@@ -26,4 +26,4 @@ Reka AI 是一家人工智能公司（官网：https://reka.ai/），在以人�
 - [[concepts/语音交互|语音交互]]
 
 ## 来源提及
-- "Reka AI 构建统一输入栈，实现图像、语音、文本三模态融合，打造"会听会说"的 Agent。" — [[🤖Agent/从hello-world到真正能用的agent/2025-0426🧘以人为中心的Agent|2025-0426🧘以人为中心的Agent]]
+- "Reka AI 构建统一输入栈，实现图像、语音、文本三模态融合，打造"会听会说"的 Agent。" — [[🤖AI应用/Agent/从hello-world到真正能用的agent/2025-0426🧘以人为中心的Agent|2025-0426🧘以人为中心的Agent]]

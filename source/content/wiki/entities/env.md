@@ -26,5 +26,5 @@ aliases:
 - [[concepts/配置驱动|配置驱动]]
 
 ## 来源提及
-- "config/settings.py & .env ^CtCXYfnH" — [[架构/应用开发规范/excalid/agent-app代码结构|agent-app代码结构]]
-- "应用入口与配置 ^MmiwpOpY" — [[架构/应用开发规范/excalid/agent-app代码结构|agent-app代码结构]]
+- "config/settings.py & .env ^CtCXYfnH" — [[../../架构/应用开发规范/excalid/agent-app代码结构|agent-app代码结构]]
+- "应用入口与配置 ^MmiwpOpY" — [[../../架构/应用开发规范/excalid/agent-app代码结构|agent-app代码结构]]

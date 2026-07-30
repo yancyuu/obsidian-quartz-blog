@@ -42,6 +42,6 @@ agents 目录结构是 agent_app 中存放具体业务代理的模块化设计�
 - [[entities/research_agent|research_agent]]
 
 ## 来源提及
-- "agents/ 具体业务代理" — [[架构/应用开发规范/excalid/agent-app代码结构|agent-app代码结构]]
-- "每个 Agent 包含自己的Prompt/Tool/Logic" — [[架构/应用开发规范/excalid/agent-app代码结构|agent-app代码结构]]
-- "agent.py 核心逻辑" — [[架构/应用开发规范/excalid/agent-app代码结构|agent-app代码结构]]
+- "agents/ 具体业务代理" — [[../../架构/应用开发规范/excalid/agent-app代码结构|agent-app代码结构]]
+- "每个 Agent 包含自己的Prompt/Tool/Logic" — [[../../架构/应用开发规范/excalid/agent-app代码结构|agent-app代码结构]]
+- "agent.py 核心逻辑" — [[../../架构/应用开发规范/excalid/agent-app代码结构|agent-app代码结构]]

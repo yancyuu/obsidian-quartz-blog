@@ -17,7 +17,7 @@ tags:
 - [LLM基础原理](LLM基础原理.md)：RAG 增强的对象
 - [Embedding与向量检索](Embedding与向量检索.md)：检索的底层
 - [大模型幻觉与评估](大模型幻觉与评估.md)：RAG 主要用来缓解幻觉
-- 实战重构见 `📚RAG/2025-0813 我的RAG系统重构笔记.md`、`📚RAG/2025-0919 RAG设计模式.md`
+- 实战重构见 `🤖AI应用/RAG/2025-0813 我的RAG系统重构笔记.md`、`🤖AI应用/RAG/2025-0919 RAG设计模式.md`
 
 ---
 
@@ -165,4 +165,4 @@ flowchart LR
 - [LlamaIndex 文档](https://docs.llamaindex.ai/) / [LangChain RAG](https://python.langchain.com/docs/use_cases/question_answering/)
 - 论文：[RAG（Lewis et al.）](https://arxiv.org/abs/2005.11401)、[Self-RAG](https://arxiv.org/abs/2310.11511)
 - [Chunking 策略 - Pinecone](https://www.pinecone.io/learn/chunking-strategies/)
-- 实战：`📚RAG/2025-0105 RAG技术进化路线.md`
+- 实战：`🤖AI应用/RAG/2025-0105 RAG技术进化路线.md`

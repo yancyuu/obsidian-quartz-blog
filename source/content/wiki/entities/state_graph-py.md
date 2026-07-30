@@ -28,6 +28,6 @@ aliases:
 - [[concepts/agent编排框架|agent编排框架]]
 
 ## 来源提及
-- "state_graph.py" — [[架构/应用开发规范/excalid/agent-app代码结构|agent-app代码结构]]
-- "LangGraph封装 ^UCWMg4Ix" — [[架构/应用开发规范/excalid/agent-app代码结构|agent-app代码结构]]
-- "orchestration/ ^kRUPsbYL" — [[架构/应用开发规范/excalid/agent-app代码结构|agent-app代码结构]]
+- "state_graph.py" — [[../../架构/应用开发规范/excalid/agent-app代码结构|agent-app代码结构]]
+- "LangGraph封装 ^UCWMg4Ix" — [[../../架构/应用开发规范/excalid/agent-app代码结构|agent-app代码结构]]
+- "orchestration/ ^kRUPsbYL" — [[../../架构/应用开发规范/excalid/agent-app代码结构|agent-app代码结构]]
